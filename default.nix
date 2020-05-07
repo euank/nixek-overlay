@@ -6,4 +6,6 @@ self: super: rec {
   inspircd = super.callPackage ./pkgs/applications/networking/irc/inspircd {};
 
   maptool = super.callPackage ./pkgs/games/maptool {};
+
+  meslolgs-nf = super.callPackage ./pkgs/data/fonts/meslolgs-nf {};
 }
