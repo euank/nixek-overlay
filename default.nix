@@ -4,4 +4,6 @@ self: super: rec {
   gitit = haskellPackages.gitit;
 
   inspircd = super.callPackage ./pkgs/applications/networking/irc/inspircd {};
+
+  maptool = super.callPackage ./pkgs/games/maptool {};
 }
