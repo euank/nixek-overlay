@@ -14,6 +14,8 @@ stdenv.mkDerivation rec {
     rev = "v${version}";
   };
 
+  enableParallelBuilding = true;
+
   nativeBuildInputs = [ perl openssl gnutls pkgconfig ];
 
   # So, this package is still not ready for prime-time. Why not?
