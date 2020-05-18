@@ -39,8 +39,8 @@ stdenv.mkDerivation rec {
     ./configure --disable-interactive \
       --disable-auto-extras \
       --prefix=$prefix \
-      --manual-dir=$outputDoc \
-      --binary-dir=$outputBin
+      --manual-dir=$out/doc \
+      --binary-dir=$out/realbin
   '';
 
   postInstallPhase = ''
@@ -48,9 +48,17 @@ stdenv.mkDerivation rec {
     cp -R $src/include $out/include
   '';
 
+  # Sooo, inspircd has two types of binaries it outputs
+  # In the '--binary-dir' above, it plops two perl scripts (a service manager
+  # one that knows how to stop and start the inspircd bin) and a 'genssl' one.
+  # Frankly, I think they're both unneeded on nixos. We can use a systemd
+  # service file and generate ssl more reasonably without using those perl
+  # scripts imho.
   fixupPhase = ''
-    mkdir -p $out/bin
-    mv $out/inspircd $out/bin/inspircd
+    # perl scripts
+    rm -rf $out/bin
+    # real elf binaries
+    mv $out/realbin $out/bin
   '';
 
   meta = {
