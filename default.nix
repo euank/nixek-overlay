@@ -1,4 +1,8 @@
 self: super: rec {
+  modules = {
+    inspircd = import ./modules/inspircd/default.nix;
+  };
+
   haskellPackages = (import ./pkgs/gitit/default.nix) self super;
   # Add a top-level alias, might as well
   gitit = haskellPackages.gitit;
