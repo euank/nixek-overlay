@@ -69,8 +69,11 @@ let
     then namedAttrsToTags tag value
     else throw "Value must be a list or attr, was ${builtins.typeOf value}";
 
+  attrsToInspircdConf' = attrset: concatStringsSep "\n" (flatten (mapAttrsToList attrPairToTags attrset));
   # The standard '<config format="xml">' attr inspircd uses to identify this format
-  addFormatAttr = attrset: { config = [{ format = "xml"; }]; } // attrset;
-  attrsToInspircdConf = attrset: concatStringsSep "\n" (flatten (mapAttrsToList attrPairToTags (addFormatAttr attrset)));
+  # As far as I can tell, this is the only order-sensitive tag. It _must_ be
+  # the first thing in the file, so we force its order here.
+  formatTag = attrsToInspircdConf' { config = [{ format = "xml"; }]; };
+  attrsToInspircdConf = attrs: formatTag + "\n" + (attrsToInspircdConf' attrs);
 in
 attrsToInspircdConf
