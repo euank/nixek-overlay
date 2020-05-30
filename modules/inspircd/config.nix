@@ -69,6 +69,8 @@ let
     then namedAttrsToTags tag value
     else throw "Value must be a list or attr, was ${builtins.typeOf value}";
 
-  attrsToInspircdConf = attrset: concatStringsSep "\n" (flatten (mapAttrsToList attrPairToTags attrset));
+  # The standard '<config format="xml">' attr inspircd uses to identify this format
+  addFormatAttr = attrset: { config = [{ format = "xml"; }]; } // attrset;
+  attrsToInspircdConf = attrset: concatStringsSep "\n" (flatten (mapAttrsToList attrPairToTags (addFormatAttr attrset)));
 in
 attrsToInspircdConf
