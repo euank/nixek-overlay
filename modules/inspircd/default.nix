@@ -85,6 +85,7 @@ in
 
         serviceConfig = {
           ExecStart = "${cfg.package}/bin/inspircd --nofork --nolog ${cfg.flags} --config ${configFile}";
+          ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
           User = "inspircd";
         };
 
