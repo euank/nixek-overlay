@@ -44,6 +44,14 @@ in
         ";
       };
 
+      logFile = mkOption {
+        type = types.nullOr types.path;
+        default = null;
+        description = "
+          The path to a file to log to. By default, logging will be disabled.
+        ";
+      };
+
       flags = mkOption {
         type = types.str;
         default = "--nopid --nolog";
@@ -91,7 +99,7 @@ in
           stopIfChanged = false;
 
           serviceConfig = {
-            ExecStart = "${cfg.package}/bin/inspircd --nofork ${cfg.flags} --config ${configPath}";
+            ExecStart = "${cfg.package}/bin/inspircd --nofork ${cfg.flags} ${if cfg.logFile == null then "--nolog" else "--logfile ${cfg.logFile}"} --config ${configPath}";
             ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
             User = "inspircd";
             Restart = "always";
