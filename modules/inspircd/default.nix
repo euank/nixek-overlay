@@ -6,6 +6,8 @@ let
 
   cfg = config.services.inspircd;
 
+  configPath = "/etc/inspircd/inspircd.conf";
+
 in
 {
 
@@ -55,41 +57,62 @@ in
 
   ###### implementation
 
-  config = mkIf cfg.enable {
-    assertions = [
-      {
-        assertion = cfg.configFile == null -> cfg.config != { };
-        message = "config must be set if configFile isn't";
-      }
-      {
-        assertion = cfg.configFile != null -> cfg.config == { };
-        message = "One of config or configFile must be set";
-      }
-    ];
+  config =
+    let
+      configFile = if cfg.configFile == null then pkgs.writeText "inspircd.conf" (attrToConfig cfg.config) else cfg.configFile;
+    in
+    mkIf cfg.enable {
+      assertions = [
+        {
+          assertion = cfg.configFile == null -> cfg.config != { };
+          message = "config must be set if configFile isn't";
+        }
+        {
+          assertion = cfg.configFile != null -> cfg.config == { };
+          message = "One of config or configFile must be set";
+        }
+      ];
 
-
-    users.users.inspircd =
-      {
-        uid = 320; # config.ids.uids.inspircd; # TODO: this works if we upstream an id, but until then this is easier
-        description = "inspircd daemon user";
+      environment.etc."inspircd/inspircd.conf" = {
+        source = configFile;
       };
 
-    systemd.services.inspircd =
-      let
-        configFile = if cfg.configFile == null then pkgs.writeText "inspircd.conf" (attrToConfig cfg.config) else cfg.configFile;
-      in
-      {
-        description = "inspircd service";
-        after = [ "network.target" ];
-        wantedBy = [ "multi-user.target" ];
-
-        serviceConfig = {
-          ExecStart = "${cfg.package}/bin/inspircd --nofork --nolog ${cfg.flags} --config ${configFile}";
-          ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
-          User = "inspircd";
+      users.users.inspircd =
+        {
+          uid = 320; # config.ids.uids.inspircd; # TODO: this works if we upstream an id, but until then this is easier
+          description = "inspircd daemon user";
         };
 
-        unitConfig.Documentation = "man:inspircd(8)";
+      systemd.services.inspircd =
+        {
+          description = "inspircd service";
+          after = [ "network.target" ];
+          wantedBy = [ "multi-user.target" ];
+          stopIfChanged = false;
+
+          serviceConfig = {
+            ExecStart = "${cfg.package}/bin/inspircd --nofork --nolog ${cfg.flags} --config ${configPath}";
+            ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
+            User = "inspircd";
+            Restart = "always";
+            RestartSec = "10s";
+          };
+
+          unitConfig.Documentation = "man:inspircd(8)";
+        };
+      # inspired by https://github.com/NixOS/nixpkgs/blob/d7e569657406f6bb57e29b64d6a5044ddc0d844e/nixos/modules/services/web-servers/nginx/default.nix#L749
+      systemd.services.inspircd-config-reload = {
+        wants = [ "inspircd.service" ];
+        wantedBy = [ "multi-user.target" ];
+        restartTriggers = [ configFile ];
+        serviceConfig.Type = "oneshot";
+        serviceConfig.TimeoutSec = 60;
+        script = ''
+              if /run/current-system/systemd/bin/systemctl -q is-active inspircd.service ; then
+          /run/current-system/systemd/bin/systemctl reload inspircd.service
+              fi
+        '';
+        serviceConfig.RemainAfterExit = true;
       };
-  };
+    };
 }
