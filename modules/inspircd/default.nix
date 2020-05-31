@@ -91,7 +91,7 @@ in
           stopIfChanged = false;
 
           serviceConfig = {
-            ExecStart = "${cfg.package}/bin/inspircd --nofork --nolog ${cfg.flags} --config ${configPath}";
+            ExecStart = "${cfg.package}/bin/inspircd --nofork ${cfg.flags} --config ${configPath}";
             ExecReload = "${pkgs.coreutils}/bin/kill -HUP $MAINPID";
             User = "inspircd";
             Restart = "always";
