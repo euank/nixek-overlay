@@ -59,7 +59,6 @@ let
   # into
   # '<tag name="foo" bar="baz"> <tag name="a" b="c">'
   # inspircd happens to contain many xml objects of this type.
-  namedAttrsToTags' = tag: attrs: mapAttrsToList (name: subAttrs: (attrsToConfigTag tag ({ name = name; } // subAttrs))) attrs;
   namedAttrsToTags = tag: mapAttrsToList (name: subAttrs: (attrsToConfigTag tag ({ name = name; } // subAttrs)));
   listAttrsToTags = tag: map (attrs: attrsToConfigTag tag attrs);
   attrPairToTags = tag: value:
