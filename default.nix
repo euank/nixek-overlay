@@ -7,6 +7,8 @@ self: super: rec {
   # Add a top-level alias, might as well
   gitit = haskellPackages.gitit;
 
+  hashpipe = super.callPackage ./pkgs/applications/networking/irc/hashpipe {};
+
   inspircd = super.callPackage ./pkgs/applications/networking/irc/inspircd {};
 
   inspircd2 = super.callPackage ./pkgs/applications/networking/irc/inspircd2 {};
