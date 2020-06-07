@@ -15,5 +15,7 @@ self: super: rec {
 
   maptool = super.callPackage ./pkgs/games/maptool {};
 
+  np2kai = super.callPackage ./pkgs/misc/emulators/np2kai {};
+
   meslolgs-nf = super.callPackage ./pkgs/data/fonts/meslolgs-nf {};
 }
