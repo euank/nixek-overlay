@@ -7,13 +7,14 @@ let
   };
 in
 buildGradle {
+  version = "1.7.0";
   envSpec = ./gradle-env.json;
 
   # Patched version from my github so this all works
   src = fetchgit {
     url = "https://github.com/euank/maptool.git";
-    rev = "9fc4f5ad12e5f430c9113b7d20150495152dd6f4";
-    sha256 = "1kbgji6g4mgg80xpjfzxb8lrp81w80whvvlypfa6l8afdg9x0jw3";
+    rev = "697e9549cf42ac84fe03d74b30ae2f761868f974";
+    sha256 = "1n1hzh6mmsls1bgjmr924fk15zg25l81q9f75sjr4fgjqc8bl59j";
     # Used for versioning, TODO mock this out somehow
     leaveDotGit = true;
   };

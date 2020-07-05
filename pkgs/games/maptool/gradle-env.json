@@ -1042,31 +1042,31 @@
           "id": {
             "group": "com.github.RPTools",
             "name": "dicelib",
-            "version": "1.5.5",
+            "version": "1.6.1",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "dicelib-1.5.5.jar",
-          "path": "com/github/RPTools/dicelib/1.5.5",
+          "name": "dicelib-1.6.1.jar",
+          "path": "com/github/RPTools/dicelib/1.6.1",
           "urls": [
-            "https://jitpack.io/com/github/RPTools/dicelib/1.5.5/dicelib-1.5.5.jar"
+            "https://jitpack.io/com/github/RPTools/dicelib/1.6.1/dicelib-1.6.1.jar"
           ],
-          "sha256": "1a7fa519d6ddc422ed8029fbebbd0901f7e3f7558c7766ff39f918f09621999b"
+          "sha256": "0bf350c177f8b1c7e8c48d10a5b71d45ae46de99946c390c70c46e3fc7a1b2bf"
         },
         {
           "id": {
             "group": "com.github.RPTools",
             "name": "dicelib",
-            "version": "1.5.5",
+            "version": "1.6.1",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "dicelib-1.5.5.pom",
-          "path": "com/github/RPTools/dicelib/1.5.5",
+          "name": "dicelib-1.6.1.pom",
+          "path": "com/github/RPTools/dicelib/1.6.1",
           "urls": [
-            "https://jitpack.io/com/github/RPTools/dicelib/1.5.5/dicelib-1.5.5.pom"
+            "https://jitpack.io/com/github/RPTools/dicelib/1.6.1/dicelib-1.6.1.pom"
           ],
-          "sha256": "ca7d2f30529a90d0974cf4266f2a312f3edab3ba13a179552d123541c1eb03b9"
+          "sha256": "d514276f577212e9d413b1a7dcbaf4157a4dbb0e7e9e22a8452035f729bd05f2"
         },
         {
           "id": {
@@ -1320,6 +1320,38 @@
         },
         {
           "id": {
+            "group": "com.ibm.icu",
+            "name": "icu4j",
+            "version": "59.1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "icu4j-59.1.jar",
+          "path": "com/ibm/icu/icu4j/59.1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/ibm/icu/icu4j/59.1/icu4j-59.1.jar",
+            "https://jcenter.bintray.com/com/ibm/icu/icu4j/59.1/icu4j-59.1.jar"
+          ],
+          "sha256": "deae084ed81bf5193ef43b1819ee6f120359f101ef0f11aa94697f82e9a91005"
+        },
+        {
+          "id": {
+            "group": "com.ibm.icu",
+            "name": "icu4j",
+            "version": "59.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "icu4j-59.1.pom",
+          "path": "com/ibm/icu/icu4j/59.1",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/ibm/icu/icu4j/59.1/icu4j-59.1.pom",
+            "https://jcenter.bintray.com/com/ibm/icu/icu4j/59.1/icu4j-59.1.pom"
+          ],
+          "sha256": "1af2cc34ee9d79c25d930d3b375bf10e24d689cc1db5543019f9b888625c38ca"
+        },
+        {
+          "id": {
             "group": "com.jayway.jsonpath",
             "name": "json-path",
             "version": "2.4.0",
@@ -1461,6 +1493,150 @@
             "https://jcenter.bintray.com/com/jcabi/parent/0.49/parent-0.49.pom"
           ],
           "sha256": "71f7c6aa690f25c4e29c8beee40be424221de0546cb195ec64505aef5d197378"
+        },
+        {
+          "id": {
+            "group": "com.openhtmltopdf",
+            "name": "openhtmltopdf-core",
+            "version": "1.0.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "openhtmltopdf-core-1.0.0.jar",
+          "path": "com/openhtmltopdf/openhtmltopdf-core/1.0.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/openhtmltopdf/openhtmltopdf-core/1.0.0/openhtmltopdf-core-1.0.0.jar",
+            "https://jcenter.bintray.com/com/openhtmltopdf/openhtmltopdf-core/1.0.0/openhtmltopdf-core-1.0.0.jar"
+          ],
+          "sha256": "1e80ad38b94abec2cd29965cf338171b3b9463301380d477d6e9d052f9a7c3a9"
+        },
+        {
+          "id": {
+            "group": "com.openhtmltopdf",
+            "name": "openhtmltopdf-core",
+            "version": "1.0.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "openhtmltopdf-core-1.0.0.pom",
+          "path": "com/openhtmltopdf/openhtmltopdf-core/1.0.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/openhtmltopdf/openhtmltopdf-core/1.0.0/openhtmltopdf-core-1.0.0.pom",
+            "https://jcenter.bintray.com/com/openhtmltopdf/openhtmltopdf-core/1.0.0/openhtmltopdf-core-1.0.0.pom"
+          ],
+          "sha256": "59ab10336c2d896cb878631e439da11596b0af4f30313b55912a32be6b76528d"
+        },
+        {
+          "id": {
+            "group": "com.openhtmltopdf",
+            "name": "openhtmltopdf-jsoup-dom-converter",
+            "version": "1.0.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "openhtmltopdf-jsoup-dom-converter-1.0.0.jar",
+          "path": "com/openhtmltopdf/openhtmltopdf-jsoup-dom-converter/1.0.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/openhtmltopdf/openhtmltopdf-jsoup-dom-converter/1.0.0/openhtmltopdf-jsoup-dom-converter-1.0.0.jar",
+            "https://jcenter.bintray.com/com/openhtmltopdf/openhtmltopdf-jsoup-dom-converter/1.0.0/openhtmltopdf-jsoup-dom-converter-1.0.0.jar"
+          ],
+          "sha256": "eb7ba2f2d6a59479ae3f04e3b844c9efe5c7a5fb55579602b70232fcd351287b"
+        },
+        {
+          "id": {
+            "group": "com.openhtmltopdf",
+            "name": "openhtmltopdf-jsoup-dom-converter",
+            "version": "1.0.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "openhtmltopdf-jsoup-dom-converter-1.0.0.pom",
+          "path": "com/openhtmltopdf/openhtmltopdf-jsoup-dom-converter/1.0.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/openhtmltopdf/openhtmltopdf-jsoup-dom-converter/1.0.0/openhtmltopdf-jsoup-dom-converter-1.0.0.pom",
+            "https://jcenter.bintray.com/com/openhtmltopdf/openhtmltopdf-jsoup-dom-converter/1.0.0/openhtmltopdf-jsoup-dom-converter-1.0.0.pom"
+          ],
+          "sha256": "2c8460128b3da5b62f277df58aff96aec254163ce1497ef19a75c6681b386fee"
+        },
+        {
+          "id": {
+            "group": "com.openhtmltopdf",
+            "name": "openhtmltopdf-parent",
+            "version": "1.0.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "openhtmltopdf-parent-1.0.0.pom",
+          "path": "com/openhtmltopdf/openhtmltopdf-parent/1.0.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/openhtmltopdf/openhtmltopdf-parent/1.0.0/openhtmltopdf-parent-1.0.0.pom",
+            "https://jcenter.bintray.com/com/openhtmltopdf/openhtmltopdf-parent/1.0.0/openhtmltopdf-parent-1.0.0.pom"
+          ],
+          "sha256": "b473f4164e7c579e5295840ea8c6a606b768043a08ee002fd8e2e27d4f7591b7"
+        },
+        {
+          "id": {
+            "group": "com.openhtmltopdf",
+            "name": "openhtmltopdf-pdfbox",
+            "version": "1.0.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "openhtmltopdf-pdfbox-1.0.0.jar",
+          "path": "com/openhtmltopdf/openhtmltopdf-pdfbox/1.0.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/openhtmltopdf/openhtmltopdf-pdfbox/1.0.0/openhtmltopdf-pdfbox-1.0.0.jar",
+            "https://jcenter.bintray.com/com/openhtmltopdf/openhtmltopdf-pdfbox/1.0.0/openhtmltopdf-pdfbox-1.0.0.jar"
+          ],
+          "sha256": "60cbb0a2a05c5b9dee311fb6cde7363c48f765a6e5b9531465b6436b0625ec20"
+        },
+        {
+          "id": {
+            "group": "com.openhtmltopdf",
+            "name": "openhtmltopdf-pdfbox",
+            "version": "1.0.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "openhtmltopdf-pdfbox-1.0.0.pom",
+          "path": "com/openhtmltopdf/openhtmltopdf-pdfbox/1.0.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/openhtmltopdf/openhtmltopdf-pdfbox/1.0.0/openhtmltopdf-pdfbox-1.0.0.pom",
+            "https://jcenter.bintray.com/com/openhtmltopdf/openhtmltopdf-pdfbox/1.0.0/openhtmltopdf-pdfbox-1.0.0.pom"
+          ],
+          "sha256": "4e6ea320340c1574d1186dc69096f211b75bc726cc5ed72e8f1b6ac42782b54c"
+        },
+        {
+          "id": {
+            "group": "com.openhtmltopdf",
+            "name": "openhtmltopdf-rtl-support",
+            "version": "1.0.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "openhtmltopdf-rtl-support-1.0.0.jar",
+          "path": "com/openhtmltopdf/openhtmltopdf-rtl-support/1.0.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/openhtmltopdf/openhtmltopdf-rtl-support/1.0.0/openhtmltopdf-rtl-support-1.0.0.jar",
+            "https://jcenter.bintray.com/com/openhtmltopdf/openhtmltopdf-rtl-support/1.0.0/openhtmltopdf-rtl-support-1.0.0.jar"
+          ],
+          "sha256": "f8cbcd7d3bb968a44a3d383cf0db3246d219588adeb9175df5fe43eb6df7e162"
+        },
+        {
+          "id": {
+            "group": "com.openhtmltopdf",
+            "name": "openhtmltopdf-rtl-support",
+            "version": "1.0.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "openhtmltopdf-rtl-support-1.0.0.pom",
+          "path": "com/openhtmltopdf/openhtmltopdf-rtl-support/1.0.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/openhtmltopdf/openhtmltopdf-rtl-support/1.0.0/openhtmltopdf-rtl-support-1.0.0.pom",
+            "https://jcenter.bintray.com/com/openhtmltopdf/openhtmltopdf-rtl-support/1.0.0/openhtmltopdf-rtl-support-1.0.0.pom"
+          ],
+          "sha256": "1f5b231234eb1789ca44b52ed148ebae20fa8117f578ef0a3b1e6c71700b565a"
         },
         {
           "id": {
@@ -1864,6 +2040,1558 @@
         },
         {
           "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark/0.61.12/flexmark-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark/0.61.12/flexmark-0.61.12.jar"
+          ],
+          "sha256": "b58958a2962fbdab2ca524f54264a1c672da6176c5611defe47c4fa789b41cb4"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark/0.61.12/flexmark-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark/0.61.12/flexmark-0.61.12.pom"
+          ],
+          "sha256": "fdf4ef8a39ba1960cc6c208eb5c062150cec672ac35c0b76bb21a9e76e186fe7"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-all",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-all-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-all/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-all/0.61.12/flexmark-all-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-all/0.61.12/flexmark-all-0.61.12.jar"
+          ],
+          "sha256": "7550f2691266ae19cd98bf87649426b7538dd6869b81f9e169eb5d4d8186879c"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-all",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-all-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-all/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-all/0.61.12/flexmark-all-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-all/0.61.12/flexmark-all-0.61.12.pom"
+          ],
+          "sha256": "93a58770b7fa7f8bd461462bdba96f609b86b9547348379b836140251de0bdd0"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-abbreviation",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-abbreviation-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-abbreviation/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-abbreviation/0.61.12/flexmark-ext-abbreviation-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-abbreviation/0.61.12/flexmark-ext-abbreviation-0.61.12.jar"
+          ],
+          "sha256": "846b1de2bb42ddd9639d062432fafac0f7de383afeb3d3d6b2397a6609bde2a8"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-abbreviation",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-abbreviation-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-abbreviation/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-abbreviation/0.61.12/flexmark-ext-abbreviation-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-abbreviation/0.61.12/flexmark-ext-abbreviation-0.61.12.pom"
+          ],
+          "sha256": "89a2fcad100d280a3a83eb518ac692d6f86a6a9f08cc6d1cc645129a8cdf29bd"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-admonition",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-admonition-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-admonition/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-admonition/0.61.12/flexmark-ext-admonition-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-admonition/0.61.12/flexmark-ext-admonition-0.61.12.jar"
+          ],
+          "sha256": "2d0610b510c3388b9a9c83ee95781235721feb4ef823a0c4fcb3d3da1c46d3a6"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-admonition",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-admonition-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-admonition/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-admonition/0.61.12/flexmark-ext-admonition-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-admonition/0.61.12/flexmark-ext-admonition-0.61.12.pom"
+          ],
+          "sha256": "3f5e939eaa080e827a05b02405bf6d6e169552b82c45205c14e250fd8c71c648"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-anchorlink",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-anchorlink-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-anchorlink/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.61.12/flexmark-ext-anchorlink-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-anchorlink/0.61.12/flexmark-ext-anchorlink-0.61.12.jar"
+          ],
+          "sha256": "e035105387ab553abb47c78ac5548b0c297836f1efaf9515f6f9b3886d2e6fa2"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-anchorlink",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-anchorlink-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-anchorlink/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-anchorlink/0.61.12/flexmark-ext-anchorlink-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-anchorlink/0.61.12/flexmark-ext-anchorlink-0.61.12.pom"
+          ],
+          "sha256": "2316ede531b9fafaac6f21f746c3d66532eadc7b879ae2e8c67a65cbf2aa3c79"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-aside",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-aside-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-aside/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-aside/0.61.12/flexmark-ext-aside-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-aside/0.61.12/flexmark-ext-aside-0.61.12.jar"
+          ],
+          "sha256": "bb4fbdb56d1c1ea04b1d56db9f3986aae98b4d8966d21ab879883f3c22d4d02e"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-aside",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-aside-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-aside/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-aside/0.61.12/flexmark-ext-aside-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-aside/0.61.12/flexmark-ext-aside-0.61.12.pom"
+          ],
+          "sha256": "530fa3fe4a73fe966202ab593563d02981d59a2c844a99c57f69526fc013d1e8"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-attributes",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-attributes-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-attributes/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-attributes/0.61.12/flexmark-ext-attributes-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-attributes/0.61.12/flexmark-ext-attributes-0.61.12.jar"
+          ],
+          "sha256": "d3777118f147cf94c5cb5082cf6b05c37e973ea030d8a0791a43ca3fcb01f0b0"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-attributes",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-attributes-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-attributes/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-attributes/0.61.12/flexmark-ext-attributes-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-attributes/0.61.12/flexmark-ext-attributes-0.61.12.pom"
+          ],
+          "sha256": "480aed4a8598c26be16b42c31a1cec3726975d8accd0978d873521b01a1978b8"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-autolink",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-autolink-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-autolink/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.61.12/flexmark-ext-autolink-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-autolink/0.61.12/flexmark-ext-autolink-0.61.12.jar"
+          ],
+          "sha256": "a959cecda11c1f1f87dfca33ac2983f2e0ff52befc6e00493c4a6d17956d59fc"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-autolink",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-autolink-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-autolink/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-autolink/0.61.12/flexmark-ext-autolink-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-autolink/0.61.12/flexmark-ext-autolink-0.61.12.pom"
+          ],
+          "sha256": "4fc6344741e9371738678542d59cc7836013b31f281de4c14d207b0f42313f02"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-definition",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-definition-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-definition/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-definition/0.61.12/flexmark-ext-definition-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-definition/0.61.12/flexmark-ext-definition-0.61.12.jar"
+          ],
+          "sha256": "47945b20cf7e164a7f19c9841d4cb51cb44b9e10abd5668b7d29860d9599151c"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-definition",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-definition-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-definition/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-definition/0.61.12/flexmark-ext-definition-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-definition/0.61.12/flexmark-ext-definition-0.61.12.pom"
+          ],
+          "sha256": "697babeed07a78e9f88b4de48c3c867b8caba94d36b2a74e70ed355f61fdf084"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-emoji",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-emoji-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-emoji/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.61.12/flexmark-ext-emoji-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-emoji/0.61.12/flexmark-ext-emoji-0.61.12.jar"
+          ],
+          "sha256": "3ff08351d104fded23f5200ba7bd21b55da89cfd5c3b6c7b32b750808178f842"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-emoji",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-emoji-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-emoji/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-emoji/0.61.12/flexmark-ext-emoji-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-emoji/0.61.12/flexmark-ext-emoji-0.61.12.pom"
+          ],
+          "sha256": "8183628b622c5326a8fd53ea4dc410191ac6a90c1b31eb45f434f051d74cdddc"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-enumerated-reference",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-enumerated-reference-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.61.12/flexmark-ext-enumerated-reference-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.61.12/flexmark-ext-enumerated-reference-0.61.12.jar"
+          ],
+          "sha256": "8aa128e0b311f3c589615ef8891fe0c520b06d960cdcda62cbbfbd238f769dc5"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-enumerated-reference",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-enumerated-reference-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.61.12/flexmark-ext-enumerated-reference-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-enumerated-reference/0.61.12/flexmark-ext-enumerated-reference-0.61.12.pom"
+          ],
+          "sha256": "2e018cb2130317197ff17290d9582c761118608b40aef54c6ec859a38d1c560d"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-escaped-character",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-escaped-character-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-escaped-character/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-escaped-character/0.61.12/flexmark-ext-escaped-character-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-escaped-character/0.61.12/flexmark-ext-escaped-character-0.61.12.jar"
+          ],
+          "sha256": "71869cc903530662f6f0767c52476b02fdc38838279602ab9968078d1e322c65"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-escaped-character",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-escaped-character-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-escaped-character/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-escaped-character/0.61.12/flexmark-ext-escaped-character-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-escaped-character/0.61.12/flexmark-ext-escaped-character-0.61.12.pom"
+          ],
+          "sha256": "ee3a66e0a3739bc85fff5e76ed942d9431cccd2071744efbfcc0d690ab1b0cb6"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-footnotes",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-footnotes-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-footnotes/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-footnotes/0.61.12/flexmark-ext-footnotes-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-footnotes/0.61.12/flexmark-ext-footnotes-0.61.12.jar"
+          ],
+          "sha256": "b97439bd9d568f6d349c1f0f1deb9b5b2e1b91b950d8de076eafc97a92880736"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-footnotes",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-footnotes-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-footnotes/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-footnotes/0.61.12/flexmark-ext-footnotes-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-footnotes/0.61.12/flexmark-ext-footnotes-0.61.12.pom"
+          ],
+          "sha256": "5377f1b027ca61c21dcd95a3817362dab77d3a81df1cb37fc20e6f3f4a11d773"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-gfm-issues",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-gfm-issues-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-gfm-issues/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.61.12/flexmark-ext-gfm-issues-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.61.12/flexmark-ext-gfm-issues-0.61.12.jar"
+          ],
+          "sha256": "914ae9826a234e709796f92749ee1a9de5d0d59dcec7df4946f9a0162fab7ad8"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-gfm-issues",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-gfm-issues-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-gfm-issues/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.61.12/flexmark-ext-gfm-issues-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-gfm-issues/0.61.12/flexmark-ext-gfm-issues-0.61.12.pom"
+          ],
+          "sha256": "eced15a7122ed128c511785806156968fa8a8b5ec651e77d6d703f4229022bbb"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-gfm-strikethrough",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-gfm-strikethrough-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.61.12/flexmark-ext-gfm-strikethrough-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.61.12/flexmark-ext-gfm-strikethrough-0.61.12.jar"
+          ],
+          "sha256": "500d4397ebd6e39e27189ba4bd10c28652b58fe9751f495ec9c93775a849b385"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-gfm-strikethrough",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-gfm-strikethrough-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.61.12/flexmark-ext-gfm-strikethrough-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-gfm-strikethrough/0.61.12/flexmark-ext-gfm-strikethrough-0.61.12.pom"
+          ],
+          "sha256": "605472446c4b5085bcc20e1f4349abba957f0d58b601dc56bcb63c9a5c6f6fd2"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-gfm-tasklist",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-gfm-tasklist-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.61.12/flexmark-ext-gfm-tasklist-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.61.12/flexmark-ext-gfm-tasklist-0.61.12.jar"
+          ],
+          "sha256": "c794965a8761fc1a20b12d9a784c7f8b9147ae8899030f9d4cf25fa17b38a6f5"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-gfm-tasklist",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-gfm-tasklist-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.61.12/flexmark-ext-gfm-tasklist-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-gfm-tasklist/0.61.12/flexmark-ext-gfm-tasklist-0.61.12.pom"
+          ],
+          "sha256": "5c5436a7472d29b8315be40e5ee8656258c106e87f70a43241a011043b8682b2"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-gfm-users",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-gfm-users-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-gfm-users/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-users/0.61.12/flexmark-ext-gfm-users-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-gfm-users/0.61.12/flexmark-ext-gfm-users-0.61.12.jar"
+          ],
+          "sha256": "405b87b1fc8fa63dee32e0660bb4c401d42519f0c52e64f286c0bf7d419c5cf6"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-gfm-users",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-gfm-users-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-gfm-users/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-gfm-users/0.61.12/flexmark-ext-gfm-users-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-gfm-users/0.61.12/flexmark-ext-gfm-users-0.61.12.pom"
+          ],
+          "sha256": "428f7d745345b583ade098d5272bc3ff34ab2d1a6746bad3e399c44e03d98bb2"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-gitlab",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-gitlab-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-gitlab/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-gitlab/0.61.12/flexmark-ext-gitlab-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-gitlab/0.61.12/flexmark-ext-gitlab-0.61.12.jar"
+          ],
+          "sha256": "811fa96a473e65f26cbf20d58ec9d663010ecd319735ea1321d69755aaf4313a"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-gitlab",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-gitlab-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-gitlab/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-gitlab/0.61.12/flexmark-ext-gitlab-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-gitlab/0.61.12/flexmark-ext-gitlab-0.61.12.pom"
+          ],
+          "sha256": "142586781daa17d0d6010213441240208ec4e792e011743e59e1c1af8511a66a"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-ins",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-ins-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-ins/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.61.12/flexmark-ext-ins-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-ins/0.61.12/flexmark-ext-ins-0.61.12.jar"
+          ],
+          "sha256": "7820b71ddbf68a72bb4c74d29927d8a76d36ea57205667b1299fce1cd5aab3eb"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-ins",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-ins-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-ins/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-ins/0.61.12/flexmark-ext-ins-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-ins/0.61.12/flexmark-ext-ins-0.61.12.pom"
+          ],
+          "sha256": "0893488e220e1b56875d4a0834fbfd52cc0aece461d48eefc86c8adb4afbbc29"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-jekyll-front-matter",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-jekyll-front-matter-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.61.12/flexmark-ext-jekyll-front-matter-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.61.12/flexmark-ext-jekyll-front-matter-0.61.12.jar"
+          ],
+          "sha256": "b9a8366df25148f19f80790e698ff1fe97de022e40f17062e3cc52aeea1ec73e"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-jekyll-front-matter",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-jekyll-front-matter-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.61.12/flexmark-ext-jekyll-front-matter-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-jekyll-front-matter/0.61.12/flexmark-ext-jekyll-front-matter-0.61.12.pom"
+          ],
+          "sha256": "fd5489831ab2855c4cb3ec32599a0d83268ace8d1ff0df6d7c0aa389758b6af4"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-jekyll-tag",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-jekyll-tag-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.61.12/flexmark-ext-jekyll-tag-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.61.12/flexmark-ext-jekyll-tag-0.61.12.jar"
+          ],
+          "sha256": "224c1d274517914ade0f98661edcca1bf2920db18e42bde9c347305c6cb456f8"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-jekyll-tag",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-jekyll-tag-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.61.12/flexmark-ext-jekyll-tag-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-jekyll-tag/0.61.12/flexmark-ext-jekyll-tag-0.61.12.pom"
+          ],
+          "sha256": "8d53679b50fe10d9fe9c868ce8aa9a7a19cc6e84350e761bd2d6f5cb9b2ff82e"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-macros",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-macros-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-macros/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-macros/0.61.12/flexmark-ext-macros-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-macros/0.61.12/flexmark-ext-macros-0.61.12.jar"
+          ],
+          "sha256": "33769a6c158bd0515a0bfbd89091e830389d996744f975c06d5348dfcc213e66"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-macros",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-macros-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-macros/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-macros/0.61.12/flexmark-ext-macros-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-macros/0.61.12/flexmark-ext-macros-0.61.12.pom"
+          ],
+          "sha256": "257182abc23f87f23b8d6c5fc6aab69d6275e0716bc4b439ff2c2f6c1191f75c"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-media-tags",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-media-tags-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-media-tags/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-media-tags/0.61.12/flexmark-ext-media-tags-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-media-tags/0.61.12/flexmark-ext-media-tags-0.61.12.jar"
+          ],
+          "sha256": "bd656b3422e854ea5098c33ac4b12514d7841e55980d4f719e0841c9a8ed782e"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-media-tags",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-media-tags-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-media-tags/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-media-tags/0.61.12/flexmark-ext-media-tags-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-media-tags/0.61.12/flexmark-ext-media-tags-0.61.12.pom"
+          ],
+          "sha256": "26bd9f0bde165371f909ead98aa3e2227586d3842f42658c7cdd1c5e020dd485"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-superscript",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-superscript-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-superscript/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.61.12/flexmark-ext-superscript-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-superscript/0.61.12/flexmark-ext-superscript-0.61.12.jar"
+          ],
+          "sha256": "b9798419007c2ef39cab7c055f467cc580bdfe32cbe17ef659a09113d2d732e5"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-superscript",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-superscript-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-superscript/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-superscript/0.61.12/flexmark-ext-superscript-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-superscript/0.61.12/flexmark-ext-superscript-0.61.12.pom"
+          ],
+          "sha256": "76dbe02ecd1d1aa9b2c2979f2bf6c642517efa09d9e7e261b125328640634d45"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-tables",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-tables-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-tables/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.61.12/flexmark-ext-tables-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-tables/0.61.12/flexmark-ext-tables-0.61.12.jar"
+          ],
+          "sha256": "8c83b671e44773943a2a0df06b5c2017b54c54c7ab124b328e2c7253eba17bf3"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-tables",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-tables-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-tables/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-tables/0.61.12/flexmark-ext-tables-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-tables/0.61.12/flexmark-ext-tables-0.61.12.pom"
+          ],
+          "sha256": "d950ecde94b375bf4d08b6a2cffc119e657313f51ca584e4d1ebc3000636a6fd"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-toc",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-toc-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-toc/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-toc/0.61.12/flexmark-ext-toc-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-toc/0.61.12/flexmark-ext-toc-0.61.12.jar"
+          ],
+          "sha256": "40da1eb7ffd45cd441ab75a94d201e0a473e8e4349f2db20712fa54094d17af3"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-toc",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-toc-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-toc/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-toc/0.61.12/flexmark-ext-toc-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-toc/0.61.12/flexmark-ext-toc-0.61.12.pom"
+          ],
+          "sha256": "efa2014bc17d530f5c68ebc7816cea2c2caa71d09ee4bb4370fa870c8f3f1c83"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-typographic",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-typographic-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-typographic/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-typographic/0.61.12/flexmark-ext-typographic-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-typographic/0.61.12/flexmark-ext-typographic-0.61.12.jar"
+          ],
+          "sha256": "31ef0199834e51afad875f077cdfec8994fb9fe31debbe1f8f9bfb9789e6998c"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-typographic",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-typographic-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-typographic/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-typographic/0.61.12/flexmark-ext-typographic-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-typographic/0.61.12/flexmark-ext-typographic-0.61.12.pom"
+          ],
+          "sha256": "c973a635fc72f706904fd826cc582de68c6f07940ef922ebd54cafdc2bbcefe4"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-wikilink",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-wikilink-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-wikilink/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.61.12/flexmark-ext-wikilink-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-wikilink/0.61.12/flexmark-ext-wikilink-0.61.12.jar"
+          ],
+          "sha256": "a7c4937544bdd3e9ccee73c33ae361962556f17dd980264092828366df459bc8"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-wikilink",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-wikilink-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-wikilink/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-wikilink/0.61.12/flexmark-ext-wikilink-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-wikilink/0.61.12/flexmark-ext-wikilink-0.61.12.pom"
+          ],
+          "sha256": "1280b33a22048214b50fc41897110270c5396ba0fc22aa112b6dc3acb9fd0022"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-xwiki-macros",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-xwiki-macros-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.61.12/flexmark-ext-xwiki-macros-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.61.12/flexmark-ext-xwiki-macros-0.61.12.jar"
+          ],
+          "sha256": "b3afeda0ab7874e6fb9bf88980505890719b5c11fd9b1f15a52c545648ca6cd7"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-xwiki-macros",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-xwiki-macros-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.61.12/flexmark-ext-xwiki-macros-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-xwiki-macros/0.61.12/flexmark-ext-xwiki-macros-0.61.12.pom"
+          ],
+          "sha256": "e1a7a44ca9b04aef6e139cef071125b2d7e02f5e92880d3511e320102e559837"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-yaml-front-matter",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-yaml-front-matter-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.61.12/flexmark-ext-yaml-front-matter-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.61.12/flexmark-ext-yaml-front-matter-0.61.12.jar"
+          ],
+          "sha256": "5f284f9c10000d00803f0839d960d71cf1c451ec0ac6d0ee03115efcdd9ec352"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-yaml-front-matter",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-yaml-front-matter-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.61.12/flexmark-ext-yaml-front-matter-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-yaml-front-matter/0.61.12/flexmark-ext-yaml-front-matter-0.61.12.pom"
+          ],
+          "sha256": "48ab2b455ea66295643b84aa070f3814bac3c5a35afcf887c38a9b00dc7f946a"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-youtube-embedded",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-ext-youtube-embedded-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.61.12/flexmark-ext-youtube-embedded-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.61.12/flexmark-ext-youtube-embedded-0.61.12.jar"
+          ],
+          "sha256": "ddd0160147a9e1fcbe1730af35485cc4668c88abc479957b1a47a9b7bea7e9f2"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-ext-youtube-embedded",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-ext-youtube-embedded-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.61.12/flexmark-ext-youtube-embedded-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-ext-youtube-embedded/0.61.12/flexmark-ext-youtube-embedded-0.61.12.pom"
+          ],
+          "sha256": "77e2267ec5ab24194c7b55e60437262960be9e26af9a05a66c78faa0bbbf468d"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-html2md-converter",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-html2md-converter-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-html2md-converter/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-html2md-converter/0.61.12/flexmark-html2md-converter-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-html2md-converter/0.61.12/flexmark-html2md-converter-0.61.12.jar"
+          ],
+          "sha256": "2750acfa859e5c59fa0090dbfca656cbf31dd3e194549e37712a415ead12eccb"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-html2md-converter",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-html2md-converter-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-html2md-converter/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-html2md-converter/0.61.12/flexmark-html2md-converter-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-html2md-converter/0.61.12/flexmark-html2md-converter-0.61.12.pom"
+          ],
+          "sha256": "7fecdc407760ad8e4ab7420259ef5bc88d072f283fa92b5a58fb488a84d7dfc2"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-java",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-java-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-java/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-java/0.61.12/flexmark-java-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-java/0.61.12/flexmark-java-0.61.12.pom"
+          ],
+          "sha256": "574ce9903bdb0947bf287d93ba41caf5844b090efd0e6497c6b24aad46c31daa"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-jira-converter",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-jira-converter-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-jira-converter/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.61.12/flexmark-jira-converter-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-jira-converter/0.61.12/flexmark-jira-converter-0.61.12.jar"
+          ],
+          "sha256": "cebd6499058e347549fd6128373795968b990ea4e1baeea559d28eabc4e07127"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-jira-converter",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-jira-converter-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-jira-converter/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-jira-converter/0.61.12/flexmark-jira-converter-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-jira-converter/0.61.12/flexmark-jira-converter-0.61.12.pom"
+          ],
+          "sha256": "040162411432732a82eff7f858136555581cffc54795391830b7cd9681a7ad8d"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-pdf-converter",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-pdf-converter-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-pdf-converter/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-pdf-converter/0.61.12/flexmark-pdf-converter-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-pdf-converter/0.61.12/flexmark-pdf-converter-0.61.12.jar"
+          ],
+          "sha256": "f2ed1fdd1267ccb03c32cd0b65fc0eb562f57380b05aab4b774e051977999e43"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-pdf-converter",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-pdf-converter-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-pdf-converter/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-pdf-converter/0.61.12/flexmark-pdf-converter-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-pdf-converter/0.61.12/flexmark-pdf-converter-0.61.12.pom"
+          ],
+          "sha256": "ffbeabd3a77b8bae33bcfd23cfe7fd02dd986e2bd427d3984e6f4a29dc701331"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-profile-pegdown",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-profile-pegdown-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-profile-pegdown/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-profile-pegdown/0.61.12/flexmark-profile-pegdown-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-profile-pegdown/0.61.12/flexmark-profile-pegdown-0.61.12.jar"
+          ],
+          "sha256": "9a4e5344e9ee22d8f2e463f53c466b3665c04c23d8c7925e74a1021d81311cef"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-profile-pegdown",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-profile-pegdown-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-profile-pegdown/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-profile-pegdown/0.61.12/flexmark-profile-pegdown-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-profile-pegdown/0.61.12/flexmark-profile-pegdown-0.61.12.pom"
+          ],
+          "sha256": "774c3c12358b4ea941a967f36ebadd9f6b78d5a4a96f0fa9353e875cec58b67a"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-util-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-util/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util/0.61.12/flexmark-util-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util/0.61.12/flexmark-util-0.61.12.jar"
+          ],
+          "sha256": "e8c6fee287ddab00907efd3da793112e2e6267709538e372de15ac70db6107aa"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-util-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-util/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util/0.61.12/flexmark-util-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util/0.61.12/flexmark-util-0.61.12.pom"
+          ],
+          "sha256": "efa50e850681bd35ef8c40050ce1b1b2860654076fe84ce51088f649a3d52e84"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-ast",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-util-ast-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-util-ast/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.61.12/flexmark-util-ast-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-ast/0.61.12/flexmark-util-ast-0.61.12.jar"
+          ],
+          "sha256": "a01e74ca343f92db57bb5179228de93da5d87ac1458b11a50dc008288f2c0fb6"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-ast",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-util-ast-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-util-ast/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-ast/0.61.12/flexmark-util-ast-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-ast/0.61.12/flexmark-util-ast-0.61.12.pom"
+          ],
+          "sha256": "8e2dc09b842f41f9a657a588da5d88c6684451cbe3b5316ca6e414a3f8dfdfda"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-builder",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-util-builder-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-util-builder/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.61.12/flexmark-util-builder-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-builder/0.61.12/flexmark-util-builder-0.61.12.jar"
+          ],
+          "sha256": "cfbfb4ac0a808319f4ea259003a79ec8db54ef89ade3047d7cb1444dfd371704"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-builder",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-util-builder-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-util-builder/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-builder/0.61.12/flexmark-util-builder-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-builder/0.61.12/flexmark-util-builder-0.61.12.pom"
+          ],
+          "sha256": "0b1b65d628d21f8f30a7449c79405408fa16181a0ad9ceea16e8a2e3a6fa56c6"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-collection",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-util-collection-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-util-collection/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.61.12/flexmark-util-collection-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-collection/0.61.12/flexmark-util-collection-0.61.12.jar"
+          ],
+          "sha256": "6dda26dd0bdda722fad7477038c1b2e8212704fc4141043de05c64473e9ce5fe"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-collection",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-util-collection-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-util-collection/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-collection/0.61.12/flexmark-util-collection-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-collection/0.61.12/flexmark-util-collection-0.61.12.pom"
+          ],
+          "sha256": "06423408323ec961635d2d8bc1825b6e493f9d6c786d6588415da9e6fc265974"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-data",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-util-data-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-util-data/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.61.12/flexmark-util-data-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-data/0.61.12/flexmark-util-data-0.61.12.jar"
+          ],
+          "sha256": "1b671401fd28fe5afdad1ee723bd68889654c70d7dc1d00256ecc86900d97626"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-data",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-util-data-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-util-data/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-data/0.61.12/flexmark-util-data-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-data/0.61.12/flexmark-util-data-0.61.12.pom"
+          ],
+          "sha256": "2aa269baf120bbc53f5835e50378de197c4d6e0e35ee6edd3c1c5017276e10f9"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-dependency",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-util-dependency-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-util-dependency/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.61.12/flexmark-util-dependency-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-dependency/0.61.12/flexmark-util-dependency-0.61.12.jar"
+          ],
+          "sha256": "52e493a675cd1891da4bd1f77aecb9d7481b3e5466628d6115edb3db9f1e2523"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-dependency",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-util-dependency-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-util-dependency/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-dependency/0.61.12/flexmark-util-dependency-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-dependency/0.61.12/flexmark-util-dependency-0.61.12.pom"
+          ],
+          "sha256": "5a0e3cddaddaa99962ba4f499c1d1e2b171a4543cb3fef2a69875b1906c74003"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-format",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-util-format-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-util-format/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.61.12/flexmark-util-format-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-format/0.61.12/flexmark-util-format-0.61.12.jar"
+          ],
+          "sha256": "7de6ca4546baf33e94d323d7135963318bc5fce1a24f3c868ea59b7ccda7cdf7"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-format",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-util-format-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-util-format/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-format/0.61.12/flexmark-util-format-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-format/0.61.12/flexmark-util-format-0.61.12.pom"
+          ],
+          "sha256": "9193bce5c0566173919a27e97c41d697c9b78f767ce4a8cd9717cb32070a8107"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-html",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-util-html-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-util-html/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.61.12/flexmark-util-html-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-html/0.61.12/flexmark-util-html-0.61.12.jar"
+          ],
+          "sha256": "701441c43f02821f7d0255342e9624430cbd06bfca2dfac06b2c047cce0ff328"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-html",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-util-html-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-util-html/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-html/0.61.12/flexmark-util-html-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-html/0.61.12/flexmark-util-html-0.61.12.pom"
+          ],
+          "sha256": "e515a116130b1b9f82ead9248881858e2ce5d7674127e8588b18dec83379b20c"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-misc",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-util-misc-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-util-misc/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.61.12/flexmark-util-misc-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-misc/0.61.12/flexmark-util-misc-0.61.12.jar"
+          ],
+          "sha256": "ca0e4cf07d16f42dad5eb76f1f11d5ecffd5ac8ce2f2b362b790dd1247d3e3bd"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-misc",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-util-misc-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-util-misc/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-misc/0.61.12/flexmark-util-misc-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-misc/0.61.12/flexmark-util-misc-0.61.12.pom"
+          ],
+          "sha256": "125a373f54c8299613bf97e604f8c050fb7a0e203c46829dd47a5a14a2b9fc04"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-options",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-util-options-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-util-options/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.61.12/flexmark-util-options-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-options/0.61.12/flexmark-util-options-0.61.12.jar"
+          ],
+          "sha256": "eae6b3e8568cf77582c48ecf06b79b60751979ba1ab601f23cdac648e81631a3"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-options",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-util-options-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-util-options/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-options/0.61.12/flexmark-util-options-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-options/0.61.12/flexmark-util-options-0.61.12.pom"
+          ],
+          "sha256": "5f832d1ee15e520b6090f057536a6228fead79d2cc59119c5632502889078187"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-sequence",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-util-sequence-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-util-sequence/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.61.12/flexmark-util-sequence-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-sequence/0.61.12/flexmark-util-sequence-0.61.12.jar"
+          ],
+          "sha256": "82de6629b1c6fe57d9d730e94b889bb54994dc9ea84b5f670ce2527f5cbbc2c8"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-sequence",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-util-sequence-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-util-sequence/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-sequence/0.61.12/flexmark-util-sequence-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-sequence/0.61.12/flexmark-util-sequence-0.61.12.pom"
+          ],
+          "sha256": "5b8610c6789778c277a3cb1faad34ce88a2153069bf0304911b99a2fd8a66bbe"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-visitor",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-util-visitor-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-util-visitor/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.61.12/flexmark-util-visitor-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-visitor/0.61.12/flexmark-util-visitor-0.61.12.jar"
+          ],
+          "sha256": "cf0d48b209678faf4b6c23162f4a6402173c44d67990f6a9836782d627282163"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-util-visitor",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-util-visitor-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-util-visitor/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-util-visitor/0.61.12/flexmark-util-visitor-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-util-visitor/0.61.12/flexmark-util-visitor-0.61.12.pom"
+          ],
+          "sha256": "6ed0b0feb1e6ae63741b39745b0544feb0f2a068d025835fae5a20c3a673d85e"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-youtrack-converter",
+            "version": "0.61.12",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "flexmark-youtrack-converter-0.61.12.jar",
+          "path": "com/vladsch/flexmark/flexmark-youtrack-converter/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-youtrack-converter/0.61.12/flexmark-youtrack-converter-0.61.12.jar",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-youtrack-converter/0.61.12/flexmark-youtrack-converter-0.61.12.jar"
+          ],
+          "sha256": "cd1e0bbf40a537a5692f77d60fb4e6f13d4bede667d650b1b31af64ae18c71e3"
+        },
+        {
+          "id": {
+            "group": "com.vladsch.flexmark",
+            "name": "flexmark-youtrack-converter",
+            "version": "0.61.12",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "flexmark-youtrack-converter-0.61.12.pom",
+          "path": "com/vladsch/flexmark/flexmark-youtrack-converter/0.61.12",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/vladsch/flexmark/flexmark-youtrack-converter/0.61.12/flexmark-youtrack-converter-0.61.12.pom",
+            "https://jcenter.bintray.com/com/vladsch/flexmark/flexmark-youtrack-converter/0.61.12/flexmark-youtrack-converter-0.61.12.pom"
+          ],
+          "sha256": "f4691be1fb889a4c3a1fc913e5a74dc2fc87be8bd9588d5c979b814b2951623b"
+        },
+        {
+          "id": {
             "group": "com.withay",
             "name": "withay-util",
             "version": "1.0",
@@ -2177,6 +3905,38 @@
             "http://maptool.craigs-stuff.net/repo/de/muntjak/tinylookandfeel/tinylaf-nocp/1.4.0/tinylaf-nocp-1.4.0.pom"
           ],
           "sha256": "92907232e0c448c8188efbb8b991027ac72a4b617742fda4c0c845027db4c517"
+        },
+        {
+          "id": {
+            "group": "de.rototor.pdfbox",
+            "name": "graphics2d",
+            "version": "0.24",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "graphics2d-0.24.jar",
+          "path": "de/rototor/pdfbox/graphics2d/0.24",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/de/rototor/pdfbox/graphics2d/0.24/graphics2d-0.24.jar",
+            "https://jcenter.bintray.com/de/rototor/pdfbox/graphics2d/0.24/graphics2d-0.24.jar"
+          ],
+          "sha256": "10ffe4b4bd3d84e038d3eed7199a13830a407eafb8da7e82f84fb3ebd46d6969"
+        },
+        {
+          "id": {
+            "group": "de.rototor.pdfbox",
+            "name": "graphics2d",
+            "version": "0.24",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "graphics2d-0.24.pom",
+          "path": "de/rototor/pdfbox/graphics2d/0.24",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/de/rototor/pdfbox/graphics2d/0.24/graphics2d-0.24.pom",
+            "https://jcenter.bintray.com/de/rototor/pdfbox/graphics2d/0.24/graphics2d-0.24.pom"
+          ],
+          "sha256": "e1b6bcfd5706bfb3fc0c8ee896ba230350bdbf82add58e3b13a1935106fcee4b"
         },
         {
           "id": {
@@ -3359,6 +5119,22 @@
           "id": {
             "group": "org.apache.pdfbox",
             "name": "pdfbox-parent",
+            "version": "2.0.16",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "pdfbox-parent-2.0.16.pom",
+          "path": "org/apache/pdfbox/pdfbox-parent/2.0.16",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/pdfbox-parent/2.0.16/pdfbox-parent-2.0.16.pom",
+            "https://jcenter.bintray.com/org/apache/pdfbox/pdfbox-parent/2.0.16/pdfbox-parent-2.0.16.pom"
+          ],
+          "sha256": "7234657aaab8aa2d6338a877f0a07c68a37375acb2986d78825afcfde03bc0f8"
+        },
+        {
+          "id": {
+            "group": "org.apache.pdfbox",
+            "name": "pdfbox-parent",
             "version": "2.0.18",
             "type": "pom",
             "extension": "pom"
@@ -3370,6 +5146,38 @@
             "https://jcenter.bintray.com/org/apache/pdfbox/pdfbox-parent/2.0.18/pdfbox-parent-2.0.18.pom"
           ],
           "sha256": "28af28a18619738c9fe84a5b7a933fce60294fae842ff186b918d882ae4bcabf"
+        },
+        {
+          "id": {
+            "group": "org.apache.pdfbox",
+            "name": "xmpbox",
+            "version": "2.0.16",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "xmpbox-2.0.16.jar",
+          "path": "org/apache/pdfbox/xmpbox/2.0.16",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/xmpbox/2.0.16/xmpbox-2.0.16.jar",
+            "https://jcenter.bintray.com/org/apache/pdfbox/xmpbox/2.0.16/xmpbox-2.0.16.jar"
+          ],
+          "sha256": "07e10843588954428a64d0fdd18aaa0fcfd3ccc5fcff703163427f854146c03b"
+        },
+        {
+          "id": {
+            "group": "org.apache.pdfbox",
+            "name": "xmpbox",
+            "version": "2.0.16",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "xmpbox-2.0.16.pom",
+          "path": "org/apache/pdfbox/xmpbox/2.0.16",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/xmpbox/2.0.16/xmpbox-2.0.16.pom",
+            "https://jcenter.bintray.com/org/apache/pdfbox/xmpbox/2.0.16/xmpbox-2.0.16.pom"
+          ],
+          "sha256": "76bcf92693dc1d45559bee50ba1474fb4f1123fa20eb0fae080507a42e24e27d"
         },
         {
           "id": {
@@ -4255,33 +6063,33 @@
           "id": {
             "group": "org.jetbrains",
             "name": "annotations",
-            "version": "13.0",
+            "version": "15.0",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "annotations-13.0.jar",
-          "path": "org/jetbrains/annotations/13.0",
+          "name": "annotations-15.0.jar",
+          "path": "org/jetbrains/annotations/15.0",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.jar",
-            "https://jcenter.bintray.com/org/jetbrains/annotations/13.0/annotations-13.0.jar"
+            "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.jar",
+            "https://jcenter.bintray.com/org/jetbrains/annotations/15.0/annotations-15.0.jar"
           ],
-          "sha256": "ace2a10dc8e2d5fd34925ecac03e4988b2c0f851650c94b8cef49ba1bd111478"
+          "sha256": "d74599cef2b363fdb3cdd3198515aca090e3ea3e98b2ba473c6e46f114dab272"
         },
         {
           "id": {
             "group": "org.jetbrains",
             "name": "annotations",
-            "version": "13.0",
+            "version": "15.0",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "annotations-13.0.pom",
-          "path": "org/jetbrains/annotations/13.0",
+          "name": "annotations-15.0.pom",
+          "path": "org/jetbrains/annotations/15.0",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/13.0/annotations-13.0.pom",
-            "https://jcenter.bintray.com/org/jetbrains/annotations/13.0/annotations-13.0.pom"
+            "https://repo.maven.apache.org/maven2/org/jetbrains/annotations/15.0/annotations-15.0.pom",
+            "https://jcenter.bintray.com/org/jetbrains/annotations/15.0/annotations-15.0.pom"
           ],
-          "sha256": "965aeb2bedff369819bdde1bf7a0b3b89b8247dd69c88b86375d76163bb8c397"
+          "sha256": "6726678ac07b481b5e35d3aeefce526b95fd18ede33d0d85cb1c688bcdf0e840"
         },
         {
           "id": {
@@ -4346,6 +6154,38 @@
             "https://jcenter.bintray.com/org/jetbrains/kotlin/kotlin-stdlib-common/1.3.61/kotlin-stdlib-common-1.3.61.pom"
           ],
           "sha256": "e22db009bb1a61636d9425635989736db5e3fca494809abf244468dc474cfc04"
+        },
+        {
+          "id": {
+            "group": "org.jsoup",
+            "name": "jsoup",
+            "version": "1.11.3",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jsoup-1.11.3.jar",
+          "path": "org/jsoup/jsoup/1.11.3",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar",
+            "https://jcenter.bintray.com/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.jar"
+          ],
+          "sha256": "df2c71a4240ecbdae7cdcd1667bcf0d747e4e3dcefe8161e787adcff7e5f2fa0"
+        },
+        {
+          "id": {
+            "group": "org.jsoup",
+            "name": "jsoup",
+            "version": "1.11.3",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jsoup-1.11.3.pom",
+          "path": "org/jsoup/jsoup/1.11.3",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.pom",
+            "https://jcenter.bintray.com/org/jsoup/jsoup/1.11.3/jsoup-1.11.3.pom"
+          ],
+          "sha256": "2ab5d27158fb407508a72e3f67af212b92e9916cd3e3b5f02b7bc76c010fb26e"
         },
         {
           "id": {
@@ -4602,6 +6442,38 @@
             "https://jcenter.bintray.com/org/mozilla/rhino/1.7.12/rhino-1.7.12.pom"
           ],
           "sha256": "5c76d74ab9089169e7604f8c69a30d5e3e083139bfd56233e79481c8dd68106f"
+        },
+        {
+          "id": {
+            "group": "org.nibor.autolink",
+            "name": "autolink",
+            "version": "0.6.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "autolink-0.6.0.jar",
+          "path": "org/nibor/autolink/autolink/0.6.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar",
+            "https://jcenter.bintray.com/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.jar"
+          ],
+          "sha256": "a80be030f6386f18111cad9161c0b6983157352a1b59a59e6002172f0d321c04"
+        },
+        {
+          "id": {
+            "group": "org.nibor.autolink",
+            "name": "autolink",
+            "version": "0.6.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "autolink-0.6.0.pom",
+          "path": "org/nibor/autolink/autolink/0.6.0",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.pom",
+            "https://jcenter.bintray.com/org/nibor/autolink/autolink/0.6.0/autolink-0.6.0.pom"
+          ],
+          "sha256": "916755647a34ccb367e11834d28380198c834adfcf660e0d983e375b8f5c28f2"
         },
         {
           "id": {
