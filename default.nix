@@ -19,5 +19,7 @@ self: super: rec {
 
   meslolgs-nf = super.callPackage ./pkgs/data/fonts/meslolgs-nf {};
 
+  spigot-mc = super.callPackage ./pkgs/games/spigot {};
+
   nixek-images = super.callPackage ./images { };
 }
