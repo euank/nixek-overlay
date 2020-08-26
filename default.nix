@@ -21,6 +21,8 @@ self: super: rec {
 
   spigot-mc = super.callPackage ./pkgs/games/spigot {};
 
+  bukkit-plugins = super.callPackage ./pkgs/games/spigot/plugins.nix {};
+
   tl = super.callPackage ./pkgs/applications/security/tl {};
 
   nixek-images = super.callPackage ./images { };
