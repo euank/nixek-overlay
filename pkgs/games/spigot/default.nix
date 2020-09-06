@@ -10,17 +10,17 @@ let
   spigot = fetchgit {
     url = "https://hub.spigotmc.org/stash/scm/spigot/spigot.git";
     rev = "379750e0474d4ed87bbbf715545fe2e75c0ca4e9";
-    sha256 = "1xb72735vznfqlz5p6p6akh02gw3q5fpmiwvgrqjgza0j9gyc9d1";
+    sha256 = "0kr9aaqrwgq3lxwgap0qdsk87mhv1wigkl48dqz84xzx7c1xidfv";
   };
   builddata = fetchgit {
     url = "https://hub.spigotmc.org/stash/scm/spigot/builddata.git";
     rev = "2589242ccafbffaeb0a36d16e9f59f97ab3411b7";
-    sha256 = "1dpd5hq9xhdbd16maajqj1pxrr2jzm0xg9xd2jgynl6pg507ghb1";
+    sha256 = "1y3vrkhmkvv31k1x6a2qwfk471h5mc49vbcyxc8nhjxzyhgd0nsv";
   };
   bukkit = fetchgit {
     url = "https://hub.spigotmc.org/stash/scm/spigot/bukkit.git";
     rev = "18e9d9315b72ee85bff8ba10c849b72f994f9ae1";
-    sha256 = "1ci9rraz96wdjcrf8ixbka2pmgdqsk0qlrs2hjsvs7n85vi5w8ip";
+    sha256 = "0m14lcx8ckz5cpgaaz651wk4di25kbj8qk01isvn1g3wsz0a10ph";
   };
   minecraft = fetchurl {
     url = "https://launcher.mojang.com/v1/objects/c5f6fb23c3876461d46ec380421e42b289789530/server.jar";
