@@ -86,6 +86,11 @@ let
   mvn2nix = (import (fetchTarball "https://github.com/euank/mvn2nix/archive/9057ed47da403fdbf3b78d2171f4c29e4e429f9c.tar.gz") { });
   apiRepo = mvn2nix.buildMavenRepositoryFromLockFile { file = ./mvn2nix-spigot-api.lock; };
   spigotRepo = mvn2nix.buildMavenRepositoryFromLockFile { file = ./mvn2nix-spigot.lock; };
+
+  serverScript = pkgs.writeScript "spigot-mc" ''
+    #!/bin/sh
+    exec "${pkgs.jre_headless}/bin/java" "$@" -jar "$(dirname $0)/../java/server.jar" nogui
+  '';
 in
 stdenv.mkDerivation rec {
   name = "spigot";
@@ -135,7 +140,10 @@ stdenv.mkDerivation rec {
   '';
 
   installPhase = ''
-    cp Spigot-Server/target/spigot-${version}-*.jar $out
+    mkdir -p $out/java
+    cp Spigot-Server/target/spigot-${version}-*.jar $out/java/server.jar
+    mkdir -p $out/bin
+    cp "${serverScript}" "$out/bin/spigot-mc"
   '';
 
   meta = {
