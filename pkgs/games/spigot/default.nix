@@ -83,6 +83,9 @@ let
     '';
   };
 
+  mvn2nix = (import (fetchTarball "https://github.com/euank/mvn2nix/archive/9057ed47da403fdbf3b78d2171f4c29e4e429f9c.tar.gz") { });
+  apiRepo = mvn2nix.buildMavenRepositoryFromLockFile { file = ./mvn2nix-spigot-api.lock; };
+  spigotRepo = mvn2nix.buildMavenRepositoryFromLockFile { file = ./mvn2nix-spigot.lock; };
 in
 stdenv.mkDerivation rec {
   name = "spigot";
@@ -104,12 +107,18 @@ stdenv.mkDerivation rec {
   '';
 
   buildPhase = ''
+    set -x
     export HOME="$(mktemp -d)"
+    mkdir -p "$HOME/.m2/repository"
     export XDG_CONFIG_HOME=$HOME
     export MAVEN_OPTS=-Dmaven.repo.local=$HOME/.m2
     export M2_HOME="${maven}"
 
-    mvn install:install-file -Dfile=${patchedServer version} -Dpackaging=jar -DgroupId=org.spigotmc -DartifactId=minecraft-server -Dversion=${version}-SNAPSHOT
+    rsync -a --chmod "u+w" "${apiRepo}/" "$HOME/.m2/repository/"
+    rsync -a --chmod "u+w" "${spigotRepo}/" "$HOME/.m2/repository/"
+
+    mkdir -p "$HOME/.m2/repository/org/spigotmc/minecraft-server/${version}-SNAPSHOT"
+    cp "${patchedServer version}" "$HOME/.m2/repository/org/spigotmc/minecraft-server/${version}-SNAPSHOT/minecraft-server-${version}-SNAPSHOT.jar"
 
     # And another round of patching
     pushd Spigot-Server
@@ -123,15 +132,12 @@ stdenv.mkDerivation rec {
     done
     popd
 
-    mvn clean install
+    mvn --offline -Dmaven.repo.local="$HOME/.m2/repository/" package
   '';
 
   installPhase = ''
     cp Spigot-Server/target/spigot-${version}-*.jar $out
   '';
-
-  # sha256 = "73cb3858a687a8494ca3323053016282f3dad39d42cf62ca4e79dda2aac7d9ac";
-  outputHash = "sha256:0x9cj5gczi6c1hlklmjx0nyw8r1padwjfwyd4ni17z18id0fnxi1";
 
   meta = {
     name = "spigot-mc";
