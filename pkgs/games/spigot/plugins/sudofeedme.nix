@@ -12,7 +12,7 @@ stdenv.mkDerivation {
   nativeBuildInputs = [ ant openjdk11 ];
 
   buildPhase = ''
-    cp ${spigot-mc} Bukkit.jar
+    cp ${spigot-mc}/java/server.jar Bukkit.jar
     ant
   '';
 
