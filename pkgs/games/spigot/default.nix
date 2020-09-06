@@ -89,7 +89,7 @@ let
 
   serverScript = pkgs.writeScript "spigot-mc" ''
     #!/bin/sh
-    exec "${pkgs.jre_headless}/bin/java" "$@" -jar "$(dirname $0)/../java/server.jar" nogui
+    exec "${pkgs.openjdk11_headless}/bin/java" "$@" -jar "$(dirname $0)/../java/server.jar" nogui
   '';
 in
 stdenv.mkDerivation rec {
