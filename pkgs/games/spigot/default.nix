@@ -107,7 +107,6 @@ stdenv.mkDerivation rec {
   '';
 
   buildPhase = ''
-    set -x
     export HOME="$(mktemp -d)"
     mkdir -p "$HOME/.m2/repository"
     export XDG_CONFIG_HOME=$HOME
