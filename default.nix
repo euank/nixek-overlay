@@ -1,6 +1,7 @@
 self: super: rec {
   modules = {
     inspircd = import ./modules/inspircd/default.nix;
+    spigot-mc = import ./modules/spigot-mc/default.nix;
   };
 
   haskellPackages = (import ./pkgs/gitit/default.nix) self super;
