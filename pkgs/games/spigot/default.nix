@@ -4,27 +4,27 @@
 let
   craftbukkit = fetchgit {
     url = "https://hub.spigotmc.org/stash/scm/spigot/craftbukkit.git";
-    rev = "7d8884b263a7f9f1bfb7aa63bd1f0767f1382bf3";
-    sha256 = "0yyv9dgldabab2zrx6dx7q7pn97z25mxfg460vvj9wbcp18l9vly";
+    rev = "bf3d7207140a295c35d4024a43cd188824c5a359";
+    sha256 = "1ghim98yrdf7s0vyw0rl9976a59jbc6lqvpr22g760fa7ahhbz18";
   };
   spigot = fetchgit {
     url = "https://hub.spigotmc.org/stash/scm/spigot/spigot.git";
-    rev = "379750e0474d4ed87bbbf715545fe2e75c0ca4e9";
-    sha256 = "0kr9aaqrwgq3lxwgap0qdsk87mhv1wigkl48dqz84xzx7c1xidfv";
+    rev = "3a70bd92b96d836dd046576a57deb7c8573c88a7";
+    sha256 = "1ix4a76v4pqd4a7hbh2qsdqr8mykwfyz4jfc3hj1akh2s4p735g7";
   };
   builddata = fetchgit {
     url = "https://hub.spigotmc.org/stash/scm/spigot/builddata.git";
-    rev = "2589242ccafbffaeb0a36d16e9f59f97ab3411b7";
-    sha256 = "1y3vrkhmkvv31k1x6a2qwfk471h5mc49vbcyxc8nhjxzyhgd0nsv";
+    rev = "b2025bdddde79aea004399ec5f3652a1bce56b7a";
+    sha256 = "0i3fnr909ap10l1pm7hyg0jz52za8104659a8rfhnlbzxnwqa2kl";
   };
   bukkit = fetchgit {
     url = "https://hub.spigotmc.org/stash/scm/spigot/bukkit.git";
-    rev = "18e9d9315b72ee85bff8ba10c849b72f994f9ae1";
-    sha256 = "0m14lcx8ckz5cpgaaz651wk4di25kbj8qk01isvn1g3wsz0a10ph";
+    rev = "84fcddbf950c5414164ec4767c77b5a113aeca6e";
+    sha256 = "1gzw6nw16y126hkm78pcly1m1z1pri46yn1nbxwfghzk0x1hk79i";
   };
   minecraft = fetchurl {
-    url = "https://launcher.mojang.com/v1/objects/c5f6fb23c3876461d46ec380421e42b289789530/server.jar";
-    sha256 = "0fbghwrj9b2y9lkn2b17id4ghglwvyvcc8065h582ksfz0zys0i9";
+    url = "https://launcher.mojang.com/v1/objects/f02f4473dbf152c23d7d484952121db0b36698cb/server.jar";
+    sha256 = "0nxdyw23037cr9cfcsfq1cvpy75am5dzmbgvvh3fq6h89kkm1r1j";
   };
 
   clMapped = version: pkgs.runCommand "minecraft-cl" {} ''
@@ -62,7 +62,7 @@ let
       $out/classes $out
   '';
 
-  version = "1.16.2";
+  version = "1.16.3";
   patchedCraftbukkit = stdenv.mkDerivation {
     name = "craftbukkit";
     inherit version;
