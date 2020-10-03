@@ -26,5 +26,9 @@ self: super: rec {
 
   tl = super.callPackage ./pkgs/applications/security/tl {};
 
+  terraform-providers = super.terraform-providers // {
+    stripe = super.callPackage ./pkgs/applications/networking/cluster/terraform-providers/stripe {};
+  };
+
   nixek-images = super.callPackage ./images { };
 }
