@@ -725,6 +725,11 @@
       "sha256": "14df735a04e945f31198b4e9cbfddd103d238108d4f35bf77441216f0c4a4b29",
       "url": "https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.pom"
     },
+    "junit:junit:jar:4.13.1": {
+      "layout": "junit/junit/4.13.1/junit-4.13.1.jar",
+      "sha256": "c30719db974d6452793fe191b3638a5777005485bae145924044530ffa5f6122",
+      "url": "https://hub.spigotmc.org/nexus/content/groups/public/junit/junit/4.13.1/junit-4.13.1.jar"
+    },
     "org.ow2:ow2:pom:1.5": {
       "layout": "org/ow2/ow2/1.5/ow2-1.5.pom",
       "sha256": "0f8a1b116e760b8fe6389c51b84e4b07a70fc11082d4f936e453b583dd50b43b",
@@ -1500,11 +1505,6 @@
       "sha256": "e17e706c6f03c453f6000599cab607c2af5f1cc6e3a3b1e6fce27e5ef4999eab",
       "url": "https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar"
     },
-    "junit:junit:pom:4.13": {
-      "layout": "junit/junit/4.13/junit-4.13.pom",
-      "sha256": "9a0dc4c3fa2b086e708226737ef4bb37847c3cb1ce4e203517c09f6305b2267e",
-      "url": "https://hub.spigotmc.org/nexus/content/groups/public/junit/junit/4.13/junit-4.13.pom"
-    },
     "org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7": {
       "layout": "org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar",
       "sha256": "37e66f15f348df957538f81f7e10a3fdcf84e5fbd687b2001ee3d6ab4a25aafe",
@@ -1674,6 +1674,11 @@
       "layout": "org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.pom",
       "sha256": "0adc76dbae4051be08ed8205bd0f6caea6f4c7c3cb836a03f6bd2fd734d149ad",
       "url": "https://hub.spigotmc.org/nexus/content/groups/public/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.pom"
+    },
+    "junit:junit:pom:4.13.1": {
+      "layout": "junit/junit/4.13.1/junit-4.13.1.pom",
+      "sha256": "c68defdedaaaeae1432e12a5302bf2bfa05057d8b5acc65aaa3f3d9853ff40d6",
+      "url": "https://hub.spigotmc.org/nexus/content/groups/public/junit/junit/4.13.1/junit-4.13.1.pom"
     },
     "org.codehaus.plexus:plexus:pom:2.0.6": {
       "layout": "org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom",
@@ -1994,11 +1999,6 @@
       "layout": "org/codehaus/plexus/plexus-components/4.0/plexus-components-4.0.pom",
       "sha256": "1a5c0f95f65ed3e98edcf4f3b27c21cbcb14567384d9e4cf07f83a49675347ed",
       "url": "https://hub.spigotmc.org/nexus/content/groups/public/org/codehaus/plexus/plexus-components/4.0/plexus-components-4.0.pom"
-    },
-    "junit:junit:jar:4.13": {
-      "layout": "junit/junit/4.13/junit-4.13.jar",
-      "sha256": "4b8532f63bdc0e0661507f947eb324a954d1dbac631ad19c8aa9a00feed1d863",
-      "url": "https://hub.spigotmc.org/nexus/content/groups/public/junit/junit/4.13/junit-4.13.jar"
     },
     "org.apache.maven.shared:maven-shared-components:pom:33": {
       "layout": "org/apache/maven/shared/maven-shared-components/33/maven-shared-components-33.pom",
