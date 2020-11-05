@@ -2,10 +2,10 @@
 
 stdenv.mkDerivation rec {
   name = "bukkit-discordsrv";
-  version = "1.19.1";
+  version = "1.20.0";
   src = fetchurl {
     url = "https://github.com/DiscordSRV/DiscordSRV/releases/download/v${version}/DiscordSRV-Build-${version}.jar";
-    sha256 = "08jlb5d8h14p8834ga3aj7kzxk3692hj8awh7z9j1r2844amy7ic";
+    sha256 = "1milz6hbknlam3n3ji9qj2hsmspjs2hl9zbazgydypqj5vkjfbf9";
   };
 
   phases = [ "installPhase" ];
