@@ -14,7 +14,7 @@ buildGradle {
   src = fetchgit {
     url = "https://github.com/euank/maptool.git";
     rev = "697e9549cf42ac84fe03d74b30ae2f761868f974";
-    sha256 = "1n1hzh6mmsls1bgjmr924fk15zg25l81q9f75sjr4fgjqc8bl59j";
+    sha256 = "1ynkklvgr8sb9nspvij8mg4ndn0ss7739blj0l7limb6y2hjabp0";
     # Used for versioning, TODO mock this out somehow
     leaveDotGit = true;
   };
