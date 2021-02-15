@@ -1,7 +1,9 @@
 self: super: rec {
   modules = {
-    inspircd = import ./modules/inspircd/default.nix;
-    spigot-mc = import ./modules/spigot-mc/default.nix;
+    inspircd = import ./modules/inspircd;
+    spigot-mc = import ./modules/spigot-mc;
+    drone-server = import ./modules/drone-server;
+    drone-docker-runner = import ./modules/drone-docker-runner;
   };
 
   haskellPackages = (import ./pkgs/gitit/default.nix) self super;
