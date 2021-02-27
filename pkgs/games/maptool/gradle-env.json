@@ -4,14 +4,630 @@
     "version": "unspecified",
     "path": "",
     "gradle": {
-      "version": "5.3.1",
+      "version": "6.4.1",
       "type": "bin",
-      "url": "https://services.gradle.org/distributions/gradle-5.3.1-bin.zip",
-      "sha256": "1c59a17a054e9c82f0dd881871c9646e943ec4c71dd52ebc6137d17f82337436",
-      "nativeVersion": "0.17"
+      "url": "https://services.gradle.org/distributions/gradle-6.4.1-bin.zip",
+      "sha256": "e58cdff0cee6d9b422dcd08ebeb3177bc44eaa09bd9a2e838ff74c408fe1cbcd",
+      "nativeVersion": "0.22-milestone-2"
     },
     "dependencies": {
+      "settings": [],
       "plugin": [
+        {
+          "id": {
+            "group": "com.diffplug.durian",
+            "name": "durian-collect",
+            "version": "1.2.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "durian-collect-1.2.0.jar",
+          "path": "com/diffplug/durian/durian-collect/1.2.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/durian/durian-collect/1.2.0/durian-collect-1.2.0.jar"
+          ],
+          "sha256": "b194c0b88021cc116c21c1dc76f49c2c1fe175af5bcb74c8ba67b9dbbf9a48cc"
+        },
+        {
+          "id": {
+            "group": "com.diffplug.durian",
+            "name": "durian-collect",
+            "version": "1.2.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "durian-collect-1.2.0.pom",
+          "path": "com/diffplug/durian/durian-collect/1.2.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/durian/durian-collect/1.2.0/durian-collect-1.2.0.pom"
+          ],
+          "sha256": "8bb762086a0a4fd2a6473bbf905c744763afa1d59a5630f73bb04b7872c09ff3"
+        },
+        {
+          "id": {
+            "group": "com.diffplug.durian",
+            "name": "durian-core",
+            "version": "1.2.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "durian-core-1.2.0.jar",
+          "path": "com/diffplug/durian/durian-core/1.2.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/durian/durian-core/1.2.0/durian-core-1.2.0.jar"
+          ],
+          "sha256": "17ed0aacb3a3c16323332168bbdead8694f32800b2b47d69d4a4c49b114d5dae"
+        },
+        {
+          "id": {
+            "group": "com.diffplug.durian",
+            "name": "durian-core",
+            "version": "1.2.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "durian-core-1.2.0.pom",
+          "path": "com/diffplug/durian/durian-core/1.2.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/durian/durian-core/1.2.0/durian-core-1.2.0.pom"
+          ],
+          "sha256": "870320e90755371b01796fe81ba525fd1dee8b70346f554551eedd4289f0b662"
+        },
+        {
+          "id": {
+            "group": "com.diffplug.durian",
+            "name": "durian-io",
+            "version": "1.2.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "durian-io-1.2.0.jar",
+          "path": "com/diffplug/durian/durian-io/1.2.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/durian/durian-io/1.2.0/durian-io-1.2.0.jar"
+          ],
+          "sha256": "095fd1dc77888c073f0be39a018156ee526722798b09de9e285ef2135e16eac4"
+        },
+        {
+          "id": {
+            "group": "com.diffplug.durian",
+            "name": "durian-io",
+            "version": "1.2.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "durian-io-1.2.0.pom",
+          "path": "com/diffplug/durian/durian-io/1.2.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/durian/durian-io/1.2.0/durian-io-1.2.0.pom"
+          ],
+          "sha256": "350919424324e2750a3ddc2fa1bce6a90ac8ce2925698a60a9b4d1d6e4922ffe"
+        },
+        {
+          "id": {
+            "group": "com.diffplug.gradle.spotless",
+            "name": "com.diffplug.gradle.spotless.gradle.plugin",
+            "version": "3.28.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "com.diffplug.gradle.spotless.gradle.plugin-3.28.0.pom",
+          "path": "com/diffplug/gradle/spotless/com.diffplug.gradle.spotless.gradle.plugin/3.28.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/gradle/spotless/com.diffplug.gradle.spotless.gradle.plugin/3.28.0/com.diffplug.gradle.spotless.gradle.plugin-3.28.0.pom"
+          ],
+          "sha256": "15438172b2510b32684000685326c1ca80048a9b57e34fe8a8262c7e38485687"
+        },
+        {
+          "id": {
+            "group": "com.diffplug.spotless",
+            "name": "spotless-lib",
+            "version": "1.28.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "spotless-lib-1.28.0.jar",
+          "path": "com/diffplug/spotless/spotless-lib/1.28.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/spotless/spotless-lib/1.28.0/spotless-lib-1.28.0.jar"
+          ],
+          "sha256": "69593d92da88cd78595f5baef333fd311ccb612269aeabc35b3a630c77e046a9"
+        },
+        {
+          "id": {
+            "group": "com.diffplug.spotless",
+            "name": "spotless-lib",
+            "version": "1.28.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "spotless-lib-1.28.0.pom",
+          "path": "com/diffplug/spotless/spotless-lib/1.28.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/spotless/spotless-lib/1.28.0/spotless-lib-1.28.0.pom"
+          ],
+          "sha256": "6ccdcb34365bf4079f583da2c257b07744d4745172d8d152e0bf33475518304d"
+        },
+        {
+          "id": {
+            "group": "com.diffplug.spotless",
+            "name": "spotless-lib-extra",
+            "version": "1.28.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "spotless-lib-extra-1.28.0.jar",
+          "path": "com/diffplug/spotless/spotless-lib-extra/1.28.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/spotless/spotless-lib-extra/1.28.0/spotless-lib-extra-1.28.0.jar"
+          ],
+          "sha256": "ec94ae79e204d1cdb98e686047a64358eb703961d060d494c7c5a38b79aae18b"
+        },
+        {
+          "id": {
+            "group": "com.diffplug.spotless",
+            "name": "spotless-lib-extra",
+            "version": "1.28.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "spotless-lib-extra-1.28.0.pom",
+          "path": "com/diffplug/spotless/spotless-lib-extra/1.28.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/spotless/spotless-lib-extra/1.28.0/spotless-lib-extra-1.28.0.pom"
+          ],
+          "sha256": "daa8ae935a9271f03ad316eb062f2c45a874177bdbfcdc6a4f3c6f9c018d6150"
+        },
+        {
+          "id": {
+            "group": "com.diffplug.spotless",
+            "name": "spotless-plugin-gradle",
+            "version": "3.28.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "spotless-plugin-gradle-3.28.0.jar",
+          "path": "com/diffplug/spotless/spotless-plugin-gradle/3.28.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/spotless/spotless-plugin-gradle/3.28.0/spotless-plugin-gradle-3.28.0.jar"
+          ],
+          "sha256": "920f06e09ea0aee9099010ed3a86b2115965ce76598dfefaf96d35ddd6a13b04"
+        },
+        {
+          "id": {
+            "group": "com.diffplug.spotless",
+            "name": "spotless-plugin-gradle",
+            "version": "3.28.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "spotless-plugin-gradle-3.28.0.pom",
+          "path": "com/diffplug/spotless/spotless-plugin-gradle/3.28.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/diffplug/spotless/spotless-plugin-gradle/3.28.0/spotless-plugin-gradle-3.28.0.pom"
+          ],
+          "sha256": "599e98dc0720508418be47ae378a1f250498fb4ac5c0b1252a7948a7d04de493"
+        },
+        {
+          "id": {
+            "group": "com.github.javaparser",
+            "name": "javaparser-core",
+            "version": "3.13.5",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "javaparser-core-3.13.5.jar",
+          "path": "com/github/javaparser/javaparser-core/3.13.5",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/github/javaparser/javaparser-core/3.13.5/javaparser-core-3.13.5.jar"
+          ],
+          "sha256": "3ad8087c59e6a13b699a4917897086ae30f9834b5d5718d88d1b321c887b461a"
+        },
+        {
+          "id": {
+            "group": "com.github.javaparser",
+            "name": "javaparser-core",
+            "version": "3.13.5",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javaparser-core-3.13.5.pom",
+          "path": "com/github/javaparser/javaparser-core/3.13.5",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/github/javaparser/javaparser-core/3.13.5/javaparser-core-3.13.5.pom"
+          ],
+          "sha256": "4371244f44169f05d831eef4a3975e8f02762260ee374aa5b195dd30bd79a98b"
+        },
+        {
+          "id": {
+            "group": "com.github.javaparser",
+            "name": "javaparser-parent",
+            "version": "3.13.5",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javaparser-parent-3.13.5.pom",
+          "path": "com/github/javaparser/javaparser-parent/3.13.5",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/github/javaparser/javaparser-parent/3.13.5/javaparser-parent-3.13.5.pom"
+          ],
+          "sha256": "083e6824737bd2b675882624151f0dcf2fb7540729d5e49f90c41d0540677073"
+        },
+        {
+          "id": {
+            "group": "com.github.javaparser",
+            "name": "javaparser-symbol-solver-core",
+            "version": "3.13.5",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "javaparser-symbol-solver-core-3.13.5.jar",
+          "path": "com/github/javaparser/javaparser-symbol-solver-core/3.13.5",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/github/javaparser/javaparser-symbol-solver-core/3.13.5/javaparser-symbol-solver-core-3.13.5.jar"
+          ],
+          "sha256": "09adb3cda5efece7e62996bf8be43eeb831b1e649dd13ef161e327d3ba66cea3"
+        },
+        {
+          "id": {
+            "group": "com.github.javaparser",
+            "name": "javaparser-symbol-solver-core",
+            "version": "3.13.5",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javaparser-symbol-solver-core-3.13.5.pom",
+          "path": "com/github/javaparser/javaparser-symbol-solver-core/3.13.5",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/github/javaparser/javaparser-symbol-solver-core/3.13.5/javaparser-symbol-solver-core-3.13.5.pom"
+          ],
+          "sha256": "18a873ada89d1fbe5fb3beefcdea3be8848b3b535f2ff042c403eeab8b088fd1"
+        },
+        {
+          "id": {
+            "group": "com.github.javaparser",
+            "name": "javaparser-symbol-solver-logic",
+            "version": "3.13.5",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "javaparser-symbol-solver-logic-3.13.5.jar",
+          "path": "com/github/javaparser/javaparser-symbol-solver-logic/3.13.5",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/github/javaparser/javaparser-symbol-solver-logic/3.13.5/javaparser-symbol-solver-logic-3.13.5.jar"
+          ],
+          "sha256": "593a9659b70c0ef0677431d7ad8680ef9c86aa71deab9fb35db2b028d5de7973"
+        },
+        {
+          "id": {
+            "group": "com.github.javaparser",
+            "name": "javaparser-symbol-solver-logic",
+            "version": "3.13.5",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javaparser-symbol-solver-logic-3.13.5.pom",
+          "path": "com/github/javaparser/javaparser-symbol-solver-logic/3.13.5",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/github/javaparser/javaparser-symbol-solver-logic/3.13.5/javaparser-symbol-solver-logic-3.13.5.pom"
+          ],
+          "sha256": "1bf9d50f28c6f24c5aeda6c642e45a48cde22d94b5e52cd4cfa3d370ee3f69d6"
+        },
+        {
+          "id": {
+            "group": "com.github.javaparser",
+            "name": "javaparser-symbol-solver-model",
+            "version": "3.13.5",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "javaparser-symbol-solver-model-3.13.5.jar",
+          "path": "com/github/javaparser/javaparser-symbol-solver-model/3.13.5",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/github/javaparser/javaparser-symbol-solver-model/3.13.5/javaparser-symbol-solver-model-3.13.5.jar"
+          ],
+          "sha256": "0d71c0d24d9f86181b198446ee8ddf18a597130877903c2276d3015ffe45383f"
+        },
+        {
+          "id": {
+            "group": "com.github.javaparser",
+            "name": "javaparser-symbol-solver-model",
+            "version": "3.13.5",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javaparser-symbol-solver-model-3.13.5.pom",
+          "path": "com/github/javaparser/javaparser-symbol-solver-model/3.13.5",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/github/javaparser/javaparser-symbol-solver-model/3.13.5/javaparser-symbol-solver-model-3.13.5.pom"
+          ],
+          "sha256": "39cf4dd454b1ed489afc7c89d0500163f282e214c34dc99ce3faf75bd2490c8e"
+        },
+        {
+          "id": {
+            "group": "com.google.code.findbugs",
+            "name": "jsr305",
+            "version": "3.0.2",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jsr305-3.0.2.jar",
+          "path": "com/google/code/findbugs/jsr305/3.0.2",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar"
+          ],
+          "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7"
+        },
+        {
+          "id": {
+            "group": "com.google.code.findbugs",
+            "name": "jsr305",
+            "version": "3.0.2",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jsr305-3.0.2.pom",
+          "path": "com/google/code/findbugs/jsr305/3.0.2",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom"
+          ],
+          "sha256": "19889dbdf1b254b2601a5ee645b8147a974644882297684c798afe5d63d78dfe"
+        },
+        {
+          "id": {
+            "group": "com.google.errorprone",
+            "name": "error_prone_annotations",
+            "version": "2.2.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "error_prone_annotations-2.2.0.jar",
+          "path": "com/google/errorprone/error_prone_annotations/2.2.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.jar"
+          ],
+          "sha256": "6ebd22ca1b9d8ec06d41de8d64e0596981d9607b42035f9ed374f9de271a481a"
+        },
+        {
+          "id": {
+            "group": "com.google.errorprone",
+            "name": "error_prone_annotations",
+            "version": "2.2.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "error_prone_annotations-2.2.0.pom",
+          "path": "com/google/errorprone/error_prone_annotations/2.2.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/errorprone/error_prone_annotations/2.2.0/error_prone_annotations-2.2.0.pom"
+          ],
+          "sha256": "5e0258ea1ba4e51a133742680bc22448f7ab214be4073e8619f645ef1be42dd5"
+        },
+        {
+          "id": {
+            "group": "com.google.errorprone",
+            "name": "error_prone_parent",
+            "version": "2.2.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "error_prone_parent-2.2.0.pom",
+          "path": "com/google/errorprone/error_prone_parent/2.2.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/errorprone/error_prone_parent/2.2.0/error_prone_parent-2.2.0.pom"
+          ],
+          "sha256": "c460902ddf5ece68832c6b271ce52a0928b05cf3a6ac81a8f548c73cbd541138"
+        },
+        {
+          "id": {
+            "group": "com.google.gradle",
+            "name": "osdetector-gradle-plugin",
+            "version": "1.6.1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "osdetector-gradle-plugin-1.6.1.jar",
+          "path": "com/google/gradle/osdetector-gradle-plugin/1.6.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/gradle/osdetector-gradle-plugin/1.6.1/osdetector-gradle-plugin-1.6.1.jar"
+          ],
+          "sha256": "37f4a6d92f258762ecf62fd77186522bbecb5da1b20debc78f8361b856df0da7"
+        },
+        {
+          "id": {
+            "group": "com.google.gradle",
+            "name": "osdetector-gradle-plugin",
+            "version": "1.6.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "osdetector-gradle-plugin-1.6.1.pom",
+          "path": "com/google/gradle/osdetector-gradle-plugin/1.6.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/gradle/osdetector-gradle-plugin/1.6.1/osdetector-gradle-plugin-1.6.1.pom"
+          ],
+          "sha256": "8b831113a94e097bc49e1eca4d327fd22340570454d44cbb71c252b99e6c4c3f"
+        },
+        {
+          "id": {
+            "group": "com.google.guava",
+            "name": "failureaccess",
+            "version": "1.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "failureaccess-1.0.jar",
+          "path": "com/google/guava/failureaccess/1.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/guava/failureaccess/1.0/failureaccess-1.0.jar"
+          ],
+          "sha256": "d084bef9cd07a8537a1753e4850a69b7e8bab1d1e22e9f3a1e4826309a7a2336"
+        },
+        {
+          "id": {
+            "group": "com.google.guava",
+            "name": "failureaccess",
+            "version": "1.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "failureaccess-1.0.pom",
+          "path": "com/google/guava/failureaccess/1.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/guava/failureaccess/1.0/failureaccess-1.0.pom"
+          ],
+          "sha256": "cd1679adfc5eb56a7dca57edfa86499875300e763ba22dc9ff483fc5cc3c9a9a"
+        },
+        {
+          "id": {
+            "group": "com.google.guava",
+            "name": "guava",
+            "version": "27.0-jre",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "guava-27.0-jre.jar",
+          "path": "com/google/guava/guava/27.0-jre",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/guava/guava/27.0-jre/guava-27.0-jre.jar"
+          ],
+          "sha256": "63b09db6861011e7fb2481be7790c7fd4b03f0bb884b3de2ecba8823ad19bf3f"
+        },
+        {
+          "id": {
+            "group": "com.google.guava",
+            "name": "guava",
+            "version": "27.0-jre",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "guava-27.0-jre.pom",
+          "path": "com/google/guava/guava/27.0-jre",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/guava/guava/27.0-jre/guava-27.0-jre.pom"
+          ],
+          "sha256": "87a7cae265a762a9819794601e9352702f3c31afab2eeb87b92d3590778e6065"
+        },
+        {
+          "id": {
+            "group": "com.google.guava",
+            "name": "guava-parent",
+            "version": "26.0-android",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "guava-parent-26.0-android.pom",
+          "path": "com/google/guava/guava-parent/26.0-android",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom"
+          ],
+          "sha256": "f8698ab46ca996ce889c1afc8ca4f25eb8ac6b034dc898d4583742360016cc04"
+        },
+        {
+          "id": {
+            "group": "com.google.guava",
+            "name": "guava-parent",
+            "version": "27.0-jre",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "guava-parent-27.0-jre.pom",
+          "path": "com/google/guava/guava-parent/27.0-jre",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/guava/guava-parent/27.0-jre/guava-parent-27.0-jre.pom"
+          ],
+          "sha256": "dea6d8ebf9ef4eba79cbd2aba7185254de5c3f656e9adf4bbeef25475aad750e"
+        },
+        {
+          "id": {
+            "group": "com.google.guava",
+            "name": "listenablefuture",
+            "version": "9999.0-empty-to-avoid-conflict-with-guava",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+          "path": "com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"
+          ],
+          "sha256": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99"
+        },
+        {
+          "id": {
+            "group": "com.google.guava",
+            "name": "listenablefuture",
+            "version": "9999.0-empty-to-avoid-conflict-with-guava",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.pom",
+          "path": "com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.pom"
+          ],
+          "sha256": "18d4b1db26153d4e55079ce1f76bb1fe05cdb862ef9954a88cbcc4ff38b8679b"
+        },
+        {
+          "id": {
+            "group": "com.google.j2objc",
+            "name": "j2objc-annotations",
+            "version": "1.1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "j2objc-annotations-1.1.jar",
+          "path": "com/google/j2objc/j2objc-annotations/1.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar"
+          ],
+          "sha256": "2994a7eb78f2710bd3d3bfb639b2c94e219cedac0d4d084d516e78c16dddecf6"
+        },
+        {
+          "id": {
+            "group": "com.google.j2objc",
+            "name": "j2objc-annotations",
+            "version": "1.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "j2objc-annotations-1.1.pom",
+          "path": "com/google/j2objc/j2objc-annotations/1.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.pom"
+          ],
+          "sha256": "f0c98c571e93a7cb4dd18df0fa308f0963e7a0620ac2d4244e61e709d03ad6be"
+        },
+        {
+          "id": {
+            "group": "com.googlecode.concurrent-trees",
+            "name": "concurrent-trees",
+            "version": "2.6.1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "concurrent-trees-2.6.1.jar",
+          "path": "com/googlecode/concurrent-trees/concurrent-trees/2.6.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/googlecode/concurrent-trees/concurrent-trees/2.6.1/concurrent-trees-2.6.1.jar"
+          ],
+          "sha256": "04e3724984e2a5cbf55606cfa372a5bd3d3c5d2a21533a7004e3cde539761fa5"
+        },
+        {
+          "id": {
+            "group": "com.googlecode.concurrent-trees",
+            "name": "concurrent-trees",
+            "version": "2.6.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "concurrent-trees-2.6.1.pom",
+          "path": "com/googlecode/concurrent-trees/concurrent-trees/2.6.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/com/googlecode/concurrent-trees/concurrent-trees/2.6.1/concurrent-trees-2.6.1.pom"
+          ],
+          "sha256": "43c2b9b142e7055d1f2a5827f10944925d22747d9756b3250c07aab47538a971"
+        },
         {
           "id": {
             "group": "com.googlecode.javaewah",
@@ -104,6 +720,36 @@
         },
         {
           "id": {
+            "group": "kr.motd.maven",
+            "name": "os-maven-plugin",
+            "version": "1.6.0",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "os-maven-plugin-1.6.0.jar",
+          "path": "kr/motd/maven/os-maven-plugin/1.6.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/kr/motd/maven/os-maven-plugin/1.6.0/os-maven-plugin-1.6.0.jar"
+          ],
+          "sha256": "1cd9d6c089f966711bc7d9564976b3ffe65102616a5247681cc23095cfbdd1ac"
+        },
+        {
+          "id": {
+            "group": "kr.motd.maven",
+            "name": "os-maven-plugin",
+            "version": "1.6.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "os-maven-plugin-1.6.0.pom",
+          "path": "kr/motd/maven/os-maven-plugin/1.6.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/kr/motd/maven/os-maven-plugin/1.6.0/os-maven-plugin-1.6.0.pom"
+          ],
+          "sha256": "cd151f51078a46777b50f8283b882a8ace0c08bbbe17446b3f9ea63c8122fca8"
+        },
+        {
+          "id": {
             "group": "org.ajoberstar.grgit",
             "name": "grgit-core",
             "version": "4.0.1",
@@ -176,6 +822,51 @@
             "https://plugins.gradle.org/m2/org/ajoberstar/grgit/org.ajoberstar.grgit.gradle.plugin/4.0.1/org.ajoberstar.grgit.gradle.plugin-4.0.1.pom"
           ],
           "sha256": "a86181d0039178e44f060aef4e86d610eecbf1a05636d1fea2daf8543c2d1d20"
+        },
+        {
+          "id": {
+            "group": "org.beryx",
+            "name": "badass-runtime-plugin",
+            "version": "1.11.4",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "badass-runtime-plugin-1.11.4.jar",
+          "path": "org/beryx/badass-runtime-plugin/1.11.4",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/beryx/badass-runtime-plugin/1.11.4/badass-runtime-plugin-1.11.4.jar"
+          ],
+          "sha256": "0b5930360b6f4d1e40cd285261e9d922bf4eb412493107d47bb532fe64c2879f"
+        },
+        {
+          "id": {
+            "group": "org.beryx",
+            "name": "badass-runtime-plugin",
+            "version": "1.11.4",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "badass-runtime-plugin-1.11.4.pom",
+          "path": "org/beryx/badass-runtime-plugin/1.11.4",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/beryx/badass-runtime-plugin/1.11.4/badass-runtime-plugin-1.11.4.pom"
+          ],
+          "sha256": "1c5cb388e80b711678899024bf08d641de5e7e680ac0cd1c918b48143393e0c7"
+        },
+        {
+          "id": {
+            "group": "org.beryx.runtime",
+            "name": "org.beryx.runtime.gradle.plugin",
+            "version": "1.11.4",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "org.beryx.runtime.gradle.plugin-1.11.4.pom",
+          "path": "org/beryx/runtime/org.beryx.runtime.gradle.plugin/1.11.4",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/beryx/runtime/org.beryx.runtime.gradle.plugin/1.11.4/org.beryx.runtime.gradle.plugin-1.11.4.pom"
+          ],
+          "sha256": "02eee55bf0d1799e3f65ab4db2ba1260f9b9c7ccf728d5ba5419f9d00229130b"
         },
         {
           "id": {
@@ -269,6 +960,156 @@
         },
         {
           "id": {
+            "group": "org.checkerframework",
+            "name": "checker-qual",
+            "version": "2.5.2",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "checker-qual-2.5.2.jar",
+          "path": "org/checkerframework/checker-qual/2.5.2",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.jar"
+          ],
+          "sha256": "64b02691c8b9d4e7700f8ee2e742dce7ea2c6e81e662b7522c9ee3bf568c040a"
+        },
+        {
+          "id": {
+            "group": "org.checkerframework",
+            "name": "checker-qual",
+            "version": "2.5.2",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "checker-qual-2.5.2.pom",
+          "path": "org/checkerframework/checker-qual/2.5.2",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/checkerframework/checker-qual/2.5.2/checker-qual-2.5.2.pom"
+          ],
+          "sha256": "dc4cd438a36462d013c2338c8e206d102a322a00f33729e8955ee219859c9ede"
+        },
+        {
+          "id": {
+            "group": "org.codehaus.groovy",
+            "name": "groovy",
+            "version": "2.4.7",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "groovy-2.4.7.jar",
+          "path": "org/codehaus/groovy/groovy/2.4.7",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/codehaus/groovy/groovy/2.4.7/groovy-2.4.7.jar"
+          ],
+          "sha256": "3a979e626477cef5dda735fa8f005a20e080104821e63a760be6db2f022b1523"
+        },
+        {
+          "id": {
+            "group": "org.codehaus.groovy",
+            "name": "groovy",
+            "version": "2.4.7",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "groovy-2.4.7.pom",
+          "path": "org/codehaus/groovy/groovy/2.4.7",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/codehaus/groovy/groovy/2.4.7/groovy-2.4.7.pom"
+          ],
+          "sha256": "9a76974ff96069d8503f56c5da0661fad202316df0387108ecf180ec5feaf358"
+        },
+        {
+          "id": {
+            "group": "org.codehaus.groovy",
+            "name": "groovy-xml",
+            "version": "2.4.7",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "groovy-xml-2.4.7.jar",
+          "path": "org/codehaus/groovy/groovy-xml/2.4.7",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/codehaus/groovy/groovy-xml/2.4.7/groovy-xml-2.4.7.jar"
+          ],
+          "sha256": "c17b65b6b15589395abc79aa08541523985f7a405eeb11493fa758a339bf252f"
+        },
+        {
+          "id": {
+            "group": "org.codehaus.groovy",
+            "name": "groovy-xml",
+            "version": "2.4.7",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "groovy-xml-2.4.7.pom",
+          "path": "org/codehaus/groovy/groovy-xml/2.4.7",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/codehaus/groovy/groovy-xml/2.4.7/groovy-xml-2.4.7.pom"
+          ],
+          "sha256": "8a742922a28873f1229a7e847384184858873344b533202c28757377a6bd6af0"
+        },
+        {
+          "id": {
+            "group": "org.codehaus.mojo",
+            "name": "animal-sniffer-annotations",
+            "version": "1.17",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "animal-sniffer-annotations-1.17.jar",
+          "path": "org/codehaus/mojo/animal-sniffer-annotations/1.17",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.jar"
+          ],
+          "sha256": "92654f493ecfec52082e76354f0ebf87648dc3d5cec2e3c3cdb947c016747a53"
+        },
+        {
+          "id": {
+            "group": "org.codehaus.mojo",
+            "name": "animal-sniffer-annotations",
+            "version": "1.17",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "animal-sniffer-annotations-1.17.pom",
+          "path": "org/codehaus/mojo/animal-sniffer-annotations/1.17",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/codehaus/mojo/animal-sniffer-annotations/1.17/animal-sniffer-annotations-1.17.pom"
+          ],
+          "sha256": "e956ab5d2eb48fabae12300d0cd2d3294d4a2a41abc2068c23cb4d60ad76cbe5"
+        },
+        {
+          "id": {
+            "group": "org.codehaus.mojo",
+            "name": "animal-sniffer-parent",
+            "version": "1.17",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "animal-sniffer-parent-1.17.pom",
+          "path": "org/codehaus/mojo/animal-sniffer-parent/1.17",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/codehaus/mojo/animal-sniffer-parent/1.17/animal-sniffer-parent-1.17.pom"
+          ],
+          "sha256": "18a03df16e2a184c582db7b125633c15fb7714027a84c1b532d72933dc08b81f"
+        },
+        {
+          "id": {
+            "group": "org.codehaus.mojo",
+            "name": "mojo-parent",
+            "version": "40",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "mojo-parent-40.pom",
+          "path": "org/codehaus/mojo/mojo-parent/40",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/codehaus/mojo/mojo-parent/40/mojo-parent-40.pom"
+          ],
+          "sha256": "fc648dcdc404f8bf66e0583914ecf980176618201227bea114fae85043cb755e"
+        },
+        {
+          "id": {
             "group": "org.eclipse.jgit",
             "name": "org.eclipse.jgit",
             "version": "5.6.0.201912101111-r",
@@ -314,48 +1155,318 @@
         },
         {
           "id": {
-            "group": "org.slf4j",
-            "name": "slf4j-api",
-            "version": "1.7.2",
+            "group": "org.javamodularity",
+            "name": "moduleplugin",
+            "version": "1.5.0",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "slf4j-api-1.7.2.jar",
-          "path": "org/slf4j/slf4j-api/1.7.2",
+          "name": "moduleplugin-1.5.0.jar",
+          "path": "org/javamodularity/moduleplugin/1.5.0",
           "urls": [
-            "https://plugins.gradle.org/m2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.jar"
+            "https://plugins.gradle.org/m2/org/javamodularity/moduleplugin/1.5.0/moduleplugin-1.5.0.jar"
           ],
-          "sha256": "3bae789b401333b2a1d1603b7fa573e19908628191707203f6eb708cdee2c052"
+          "sha256": "756ed301407da61a2266f189f4798e592a15e75fefd10dc1b4ed5b54fc760d7f"
+        },
+        {
+          "id": {
+            "group": "org.javamodularity",
+            "name": "moduleplugin",
+            "version": "1.5.0",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "moduleplugin-1.5.0.pom",
+          "path": "org/javamodularity/moduleplugin/1.5.0",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/javamodularity/moduleplugin/1.5.0/moduleplugin-1.5.0.pom"
+          ],
+          "sha256": "3c67ad864c48d14281f709966d2f085d7930a15238fa05391a12d6830d7f5c95"
+        },
+        {
+          "id": {
+            "group": "org.javassist",
+            "name": "javassist",
+            "version": "3.24.0-GA",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "javassist-3.24.0-GA.jar",
+          "path": "org/javassist/javassist/3.24.0-GA",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar"
+          ],
+          "sha256": "aba81efa678b621203fb89aeff81d6f126f7a9dd709401e5609c42976684ae23"
+        },
+        {
+          "id": {
+            "group": "org.javassist",
+            "name": "javassist",
+            "version": "3.24.0-GA",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javassist-3.24.0-GA.pom",
+          "path": "org/javassist/javassist/3.24.0-GA",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.pom"
+          ],
+          "sha256": "c9d3790f030276541d118a11be67fd271bf81e301b962780e542c2e5f636c1b1"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-plugin",
+            "version": "0.0.8",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "javafx-plugin-0.0.8.jar",
+          "path": "org/openjfx/javafx-plugin/0.0.8",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/openjfx/javafx-plugin/0.0.8/javafx-plugin-0.0.8.jar"
+          ],
+          "sha256": "2d48ba151d186a5317b748aa606e73b6d81996bd85552945141e8e86031463ee"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-plugin",
+            "version": "0.0.8",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javafx-plugin-0.0.8.pom",
+          "path": "org/openjfx/javafx-plugin/0.0.8",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/openjfx/javafx-plugin/0.0.8/javafx-plugin-0.0.8.pom"
+          ],
+          "sha256": "aa14e852fa1a4f600f8ed474c4e83dbc4138fd415c51672cd598579c51a24bb4"
+        },
+        {
+          "id": {
+            "group": "org.openjfx.javafxplugin",
+            "name": "org.openjfx.javafxplugin.gradle.plugin",
+            "version": "0.0.8",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "org.openjfx.javafxplugin.gradle.plugin-0.0.8.pom",
+          "path": "org/openjfx/javafxplugin/org.openjfx.javafxplugin.gradle.plugin/0.0.8",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/openjfx/javafxplugin/org.openjfx.javafxplugin.gradle.plugin/0.0.8/org.openjfx.javafxplugin.gradle.plugin-0.0.8.pom"
+          ],
+          "sha256": "a4e29e5ff62550ff2fa85d70daafa39719c2777050951b8f68f24fedfa379c5c"
+        },
+        {
+          "id": {
+            "group": "org.ow2",
+            "name": "ow2",
+            "version": "1.5",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "ow2-1.5.pom",
+          "path": "org/ow2/ow2/1.5",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/ow2/ow2/1.5/ow2-1.5.pom"
+          ],
+          "sha256": "0f8a1b116e760b8fe6389c51b84e4b07a70fc11082d4f936e453b583dd50b43b"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm",
+            "version": "8.0.1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "asm-8.0.1.jar",
+          "path": "org/ow2/asm/asm/8.0.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/ow2/asm/asm/8.0.1/asm-8.0.1.jar"
+          ],
+          "sha256": "ca5b8d11569e53921b0e3486469e7c674361c79845dad3d514f38ab6e0c8c10a"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm",
+            "version": "8.0.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "asm-8.0.1.pom",
+          "path": "org/ow2/asm/asm/8.0.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/ow2/asm/asm/8.0.1/asm-8.0.1.pom"
+          ],
+          "sha256": "adba414cfab091bbba5d3c56be6196ed4f624cad932d87043d02ba56abae34ac"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-analysis",
+            "version": "8.0.1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "asm-analysis-8.0.1.jar",
+          "path": "org/ow2/asm/asm-analysis/8.0.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/ow2/asm/asm-analysis/8.0.1/asm-analysis-8.0.1.jar"
+          ],
+          "sha256": "fc68d27d03ae26180523ce20e387db00bd0fdeec54fca24d2990592c0afad112"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-analysis",
+            "version": "8.0.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "asm-analysis-8.0.1.pom",
+          "path": "org/ow2/asm/asm-analysis/8.0.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/ow2/asm/asm-analysis/8.0.1/asm-analysis-8.0.1.pom"
+          ],
+          "sha256": "fcc36b964aef55933a363235defef85633fc1449181d3a90e2961d196f1a89c8"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-commons",
+            "version": "8.0.1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "asm-commons-8.0.1.jar",
+          "path": "org/ow2/asm/asm-commons/8.0.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/ow2/asm/asm-commons/8.0.1/asm-commons-8.0.1.jar"
+          ],
+          "sha256": "cb9422df1f98a886b608b27318d9903d6c7fe2813521d5452c86531ec3c02b9f"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-commons",
+            "version": "8.0.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "asm-commons-8.0.1.pom",
+          "path": "org/ow2/asm/asm-commons/8.0.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/ow2/asm/asm-commons/8.0.1/asm-commons-8.0.1.pom"
+          ],
+          "sha256": "bb4ecfa895a6ecf6ff427cce40dcc100768351be07901c4173bdce8143b3ea51"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-tree",
+            "version": "8.0.1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "asm-tree-8.0.1.jar",
+          "path": "org/ow2/asm/asm-tree/8.0.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/ow2/asm/asm-tree/8.0.1/asm-tree-8.0.1.jar"
+          ],
+          "sha256": "f321b2b6ba609207dc7ae4907bd9a8e639f975ce62d90239acd9353994d1c811"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-tree",
+            "version": "8.0.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "asm-tree-8.0.1.pom",
+          "path": "org/ow2/asm/asm-tree/8.0.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/ow2/asm/asm-tree/8.0.1/asm-tree-8.0.1.pom"
+          ],
+          "sha256": "440ed5b47e1536fd1130fc0b8057c7ab6b4066260e64709fb5c393860ca92953"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-util",
+            "version": "8.0.1",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "asm-util-8.0.1.jar",
+          "path": "org/ow2/asm/asm-util/8.0.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/ow2/asm/asm-util/8.0.1/asm-util-8.0.1.jar"
+          ],
+          "sha256": "37a536e4a9c0e6c27498b44eedf4b0b3fc3318b032ba58a1c830c632b2c22597"
+        },
+        {
+          "id": {
+            "group": "org.ow2.asm",
+            "name": "asm-util",
+            "version": "8.0.1",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "asm-util-8.0.1.pom",
+          "path": "org/ow2/asm/asm-util/8.0.1",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/ow2/asm/asm-util/8.0.1/asm-util-8.0.1.pom"
+          ],
+          "sha256": "c282e8d75c8ab892e706b94eb3bf242ed0188739776001528f2801aa49516eb1"
         },
         {
           "id": {
             "group": "org.slf4j",
             "name": "slf4j-api",
-            "version": "1.7.2",
+            "version": "1.7.25",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "slf4j-api-1.7.25.jar",
+          "path": "org/slf4j/slf4j-api/1.7.25",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar"
+          ],
+          "sha256": "18c4a0095d5c1da6b817592e767bb23d29dd2f560ad74df75ff3961dbde25b79"
+        },
+        {
+          "id": {
+            "group": "org.slf4j",
+            "name": "slf4j-api",
+            "version": "1.7.25",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "slf4j-api-1.7.2.pom",
-          "path": "org/slf4j/slf4j-api/1.7.2",
+          "name": "slf4j-api-1.7.25.pom",
+          "path": "org/slf4j/slf4j-api/1.7.25",
           "urls": [
-            "https://plugins.gradle.org/m2/org/slf4j/slf4j-api/1.7.2/slf4j-api-1.7.2.pom"
+            "https://plugins.gradle.org/m2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom"
           ],
-          "sha256": "2eaca71afe0a1516f4abd8e9ff907838d268f38c81c3a542cce8d7f3b87c5d4c"
+          "sha256": "7cd9d7a0b5d93dfd461a148891b43509cf403a9c7f9fb49060d3554df1c81e1e"
         },
         {
           "id": {
             "group": "org.slf4j",
             "name": "slf4j-parent",
-            "version": "1.7.2",
+            "version": "1.7.25",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "slf4j-parent-1.7.2.pom",
-          "path": "org/slf4j/slf4j-parent/1.7.2",
+          "name": "slf4j-parent-1.7.25.pom",
+          "path": "org/slf4j/slf4j-parent/1.7.25",
           "urls": [
-            "https://plugins.gradle.org/m2/org/slf4j/slf4j-parent/1.7.2/slf4j-parent-1.7.2.pom"
+            "https://plugins.gradle.org/m2/org/slf4j/slf4j-parent/1.7.25/slf4j-parent-1.7.25.pom"
           ],
-          "sha256": "1d8e084a6f2384ade42685332b52a0ece090478641dc14c0fa8c52e1e2984425"
+          "sha256": "18f5c52120db036e88d6136f8839c832d074bdda95c756c6f429249d2db54ac6"
         },
         {
           "id": {
@@ -386,278 +1497,6 @@
             "https://plugins.gradle.org/m2/org/sonatype/oss/oss-parent/6/oss-parent-6.pom"
           ],
           "sha256": "b4306d13e8f5392458a1b30866f1cff161b3d2e6999a88d059eea3932c8a8499"
-        }
-      ],
-      "buildscript": [
-        {
-          "id": {
-            "group": "com.diffplug.durian",
-            "name": "durian-collect",
-            "version": "1.2.0",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "durian-collect-1.2.0.jar",
-          "path": "com/diffplug/durian/durian-collect/1.2.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/diffplug/durian/durian-collect/1.2.0/durian-collect-1.2.0.jar"
-          ],
-          "sha256": "b194c0b88021cc116c21c1dc76f49c2c1fe175af5bcb74c8ba67b9dbbf9a48cc"
-        },
-        {
-          "id": {
-            "group": "com.diffplug.durian",
-            "name": "durian-collect",
-            "version": "1.2.0",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "durian-collect-1.2.0.pom",
-          "path": "com/diffplug/durian/durian-collect/1.2.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/diffplug/durian/durian-collect/1.2.0/durian-collect-1.2.0.pom"
-          ],
-          "sha256": "8bb762086a0a4fd2a6473bbf905c744763afa1d59a5630f73bb04b7872c09ff3"
-        },
-        {
-          "id": {
-            "group": "com.diffplug.durian",
-            "name": "durian-core",
-            "version": "1.2.0",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "durian-core-1.2.0.jar",
-          "path": "com/diffplug/durian/durian-core/1.2.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/diffplug/durian/durian-core/1.2.0/durian-core-1.2.0.jar"
-          ],
-          "sha256": "17ed0aacb3a3c16323332168bbdead8694f32800b2b47d69d4a4c49b114d5dae"
-        },
-        {
-          "id": {
-            "group": "com.diffplug.durian",
-            "name": "durian-core",
-            "version": "1.2.0",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "durian-core-1.2.0.pom",
-          "path": "com/diffplug/durian/durian-core/1.2.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/diffplug/durian/durian-core/1.2.0/durian-core-1.2.0.pom"
-          ],
-          "sha256": "870320e90755371b01796fe81ba525fd1dee8b70346f554551eedd4289f0b662"
-        },
-        {
-          "id": {
-            "group": "com.diffplug.durian",
-            "name": "durian-io",
-            "version": "1.2.0",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "durian-io-1.2.0.jar",
-          "path": "com/diffplug/durian/durian-io/1.2.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/diffplug/durian/durian-io/1.2.0/durian-io-1.2.0.jar"
-          ],
-          "sha256": "095fd1dc77888c073f0be39a018156ee526722798b09de9e285ef2135e16eac4"
-        },
-        {
-          "id": {
-            "group": "com.diffplug.durian",
-            "name": "durian-io",
-            "version": "1.2.0",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "durian-io-1.2.0.pom",
-          "path": "com/diffplug/durian/durian-io/1.2.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/diffplug/durian/durian-io/1.2.0/durian-io-1.2.0.pom"
-          ],
-          "sha256": "350919424324e2750a3ddc2fa1bce6a90ac8ce2925698a60a9b4d1d6e4922ffe"
-        },
-        {
-          "id": {
-            "group": "com.diffplug.spotless",
-            "name": "spotless-lib",
-            "version": "1.27.0",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "spotless-lib-1.27.0.jar",
-          "path": "com/diffplug/spotless/spotless-lib/1.27.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/diffplug/spotless/spotless-lib/1.27.0/spotless-lib-1.27.0.jar"
-          ],
-          "sha256": "c995333ad7f24f18e4fe11bc422c0ec64f42f4124c667b07ab1ac54e1f14e563"
-        },
-        {
-          "id": {
-            "group": "com.diffplug.spotless",
-            "name": "spotless-lib",
-            "version": "1.27.0",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "spotless-lib-1.27.0.pom",
-          "path": "com/diffplug/spotless/spotless-lib/1.27.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/diffplug/spotless/spotless-lib/1.27.0/spotless-lib-1.27.0.pom"
-          ],
-          "sha256": "2b71446bd96f30ad68eda16917734a92159bc6b9dbfc8244849cf98532768353"
-        },
-        {
-          "id": {
-            "group": "com.diffplug.spotless",
-            "name": "spotless-lib-extra",
-            "version": "1.27.0",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "spotless-lib-extra-1.27.0.jar",
-          "path": "com/diffplug/spotless/spotless-lib-extra/1.27.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/diffplug/spotless/spotless-lib-extra/1.27.0/spotless-lib-extra-1.27.0.jar"
-          ],
-          "sha256": "eabb84c8e99b9cfbe61eeb8f47170736e4d605fc653c636e24871812d6e8f56b"
-        },
-        {
-          "id": {
-            "group": "com.diffplug.spotless",
-            "name": "spotless-lib-extra",
-            "version": "1.27.0",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "spotless-lib-extra-1.27.0.pom",
-          "path": "com/diffplug/spotless/spotless-lib-extra/1.27.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/diffplug/spotless/spotless-lib-extra/1.27.0/spotless-lib-extra-1.27.0.pom"
-          ],
-          "sha256": "899011cece4ac19ef34b6795bd633675382f22cd93ea46f89acf09a2a6d2e0cf"
-        },
-        {
-          "id": {
-            "group": "com.diffplug.spotless",
-            "name": "spotless-plugin-gradle",
-            "version": "3.27.1",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "spotless-plugin-gradle-3.27.1.jar",
-          "path": "com/diffplug/spotless/spotless-plugin-gradle/3.27.1",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/diffplug/spotless/spotless-plugin-gradle/3.27.1/spotless-plugin-gradle-3.27.1.jar"
-          ],
-          "sha256": "a36619dd32ee5678a072ac7a208d411e0485f82cd959b017fc0213ebc40de6ba"
-        },
-        {
-          "id": {
-            "group": "com.diffplug.spotless",
-            "name": "spotless-plugin-gradle",
-            "version": "3.27.1",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "spotless-plugin-gradle-3.27.1.pom",
-          "path": "com/diffplug/spotless/spotless-plugin-gradle/3.27.1",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/diffplug/spotless/spotless-plugin-gradle/3.27.1/spotless-plugin-gradle-3.27.1.pom"
-          ],
-          "sha256": "dda83b0c75f6b0f05e9f0c4109a79dd8ab1c21837482b5930539f15597a94737"
-        },
-        {
-          "id": {
-            "group": "com.googlecode.concurrent-trees",
-            "name": "concurrent-trees",
-            "version": "2.6.1",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "concurrent-trees-2.6.1.jar",
-          "path": "com/googlecode/concurrent-trees/concurrent-trees/2.6.1",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/googlecode/concurrent-trees/concurrent-trees/2.6.1/concurrent-trees-2.6.1.jar"
-          ],
-          "sha256": "04e3724984e2a5cbf55606cfa372a5bd3d3c5d2a21533a7004e3cde539761fa5"
-        },
-        {
-          "id": {
-            "group": "com.googlecode.concurrent-trees",
-            "name": "concurrent-trees",
-            "version": "2.6.1",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "concurrent-trees-2.6.1.pom",
-          "path": "com/googlecode/concurrent-trees/concurrent-trees/2.6.1",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/com/googlecode/concurrent-trees/concurrent-trees/2.6.1/concurrent-trees-2.6.1.pom"
-          ],
-          "sha256": "43c2b9b142e7055d1f2a5827f10944925d22747d9756b3250c07aab47538a971"
-        },
-        {
-          "id": {
-            "group": "org.codehaus.groovy",
-            "name": "groovy",
-            "version": "2.4.7",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "groovy-2.4.7.jar",
-          "path": "org/codehaus/groovy/groovy/2.4.7",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/2.4.7/groovy-2.4.7.jar"
-          ],
-          "sha256": "3a979e626477cef5dda735fa8f005a20e080104821e63a760be6db2f022b1523"
-        },
-        {
-          "id": {
-            "group": "org.codehaus.groovy",
-            "name": "groovy",
-            "version": "2.4.7",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "groovy-2.4.7.pom",
-          "path": "org/codehaus/groovy/groovy/2.4.7",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy/2.4.7/groovy-2.4.7.pom"
-          ],
-          "sha256": "9a76974ff96069d8503f56c5da0661fad202316df0387108ecf180ec5feaf358"
-        },
-        {
-          "id": {
-            "group": "org.codehaus.groovy",
-            "name": "groovy-xml",
-            "version": "2.4.7",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "groovy-xml-2.4.7.jar",
-          "path": "org/codehaus/groovy/groovy-xml/2.4.7",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-xml/2.4.7/groovy-xml-2.4.7.jar"
-          ],
-          "sha256": "c17b65b6b15589395abc79aa08541523985f7a405eeb11493fa758a339bf252f"
-        },
-        {
-          "id": {
-            "group": "org.codehaus.groovy",
-            "name": "groovy-xml",
-            "version": "2.4.7",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "groovy-xml-2.4.7.pom",
-          "path": "org/codehaus/groovy/groovy-xml/2.4.7",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/org/codehaus/groovy/groovy-xml/2.4.7/groovy-xml-2.4.7.pom"
-          ],
-          "sha256": "8a742922a28873f1229a7e847384184858873344b533202c28757377a6bd6af0"
         },
         {
           "id": {
@@ -670,43 +1509,59 @@
           "name": "oss-parent-7.pom",
           "path": "org/sonatype/oss/oss-parent/7",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom"
+            "https://plugins.gradle.org/m2/org/sonatype/oss/oss-parent/7/oss-parent-7.pom"
           ],
           "sha256": "b51f8867c92b6a722499557fc3a1fdea77bdf9ef574722fe90ce436a29559454"
+        },
+        {
+          "id": {
+            "group": "org.sonatype.oss",
+            "name": "oss-parent",
+            "version": "9",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "oss-parent-9.pom",
+          "path": "org/sonatype/oss/oss-parent/9",
+          "urls": [
+            "https://plugins.gradle.org/m2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom"
+          ],
+          "sha256": "fb40265f982548212ff82e362e59732b2187ec6f0d80182885c14ef1f982827a"
         }
       ],
+      "buildscript": [],
       "project": [
         {
           "id": {
             "group": "antlr",
             "name": "antlr",
-            "version": "2.7.6",
+            "version": "2.7.7",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "antlr-2.7.6.jar",
-          "path": "antlr/antlr/2.7.6",
+          "name": "antlr-2.7.7.jar",
+          "path": "antlr/antlr/2.7.7",
           "urls": [
-            "https://repo.maven.apache.org/maven2/antlr/antlr/2.7.6/antlr-2.7.6.jar",
-            "https://jcenter.bintray.com/antlr/antlr/2.7.6/antlr-2.7.6.jar"
+            "https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar",
+            "https://jcenter.bintray.com/antlr/antlr/2.7.7/antlr-2.7.7.jar"
           ],
-          "sha256": "df74f330d36526ff9e717731fd855152fcff51618f0b5785d0049022f89d568b"
+          "sha256": "88fbda4b912596b9f56e8e12e580cc954bacfb51776ecfddd3e18fc1cf56dc4c"
         },
         {
           "id": {
             "group": "antlr",
             "name": "antlr",
-            "version": "2.7.6",
+            "version": "2.7.7",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "antlr-2.7.6.pom",
-          "path": "antlr/antlr/2.7.6",
+          "name": "antlr-2.7.7.pom",
+          "path": "antlr/antlr/2.7.7",
           "urls": [
-            "https://repo.maven.apache.org/maven2/antlr/antlr/2.7.6/antlr-2.7.6.pom",
-            "https://jcenter.bintray.com/antlr/antlr/2.7.6/antlr-2.7.6.pom"
+            "https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom",
+            "https://jcenter.bintray.com/antlr/antlr/2.7.7/antlr-2.7.7.pom"
           ],
-          "sha256": "509104d74d6891ffdddcdf02f9b7152bbf61a184296d4e7e746f2dfdca9fd6fa"
+          "sha256": "100f793ba27f8b4e4204edb46171ebf36e54e0f94cfc02527fea07a0bb1fceb7"
         },
         {
           "id": {
@@ -740,33 +1595,35 @@
         },
         {
           "id": {
-            "group": "com.caucho.hessian",
+            "group": "com.caucho",
             "name": "hessian",
-            "version": "3.1.6",
+            "version": "4.0.63",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "hessian-3.1.6.jar",
-          "path": "com/caucho/hessian/hessian/3.1.6",
+          "name": "hessian-4.0.63.jar",
+          "path": "com/caucho/hessian/4.0.63",
           "urls": [
-            "http://maptool.craigs-stuff.net/repo/com/caucho/hessian/hessian/3.1.6/hessian-3.1.6.jar"
+            "https://repo.maven.apache.org/maven2/com/caucho/hessian/4.0.63/hessian-4.0.63.jar",
+            "https://jcenter.bintray.com/com/caucho/hessian/4.0.63/hessian-4.0.63.jar"
           ],
-          "sha256": "deefe83467bf4be97f1c998f102a9f01b791caf04e48bd2de209f8f2ff6b0b67"
+          "sha256": "447139f6f53b1d9b6d84b0827f5446aec6328ad7eb67e1061df2470fb4c73c6b"
         },
         {
           "id": {
-            "group": "com.caucho.hessian",
+            "group": "com.caucho",
             "name": "hessian",
-            "version": "3.1.6",
+            "version": "4.0.63",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "hessian-3.1.6.pom",
-          "path": "com/caucho/hessian/hessian/3.1.6",
+          "name": "hessian-4.0.63.pom",
+          "path": "com/caucho/hessian/4.0.63",
           "urls": [
-            "http://maptool.craigs-stuff.net/repo/com/caucho/hessian/hessian/3.1.6/hessian-3.1.6.pom"
+            "https://repo.maven.apache.org/maven2/com/caucho/hessian/4.0.63/hessian-4.0.63.pom",
+            "https://jcenter.bintray.com/com/caucho/hessian/4.0.63/hessian-4.0.63.pom"
           ],
-          "sha256": "42d3286e5dae441b0ef23808a3b0e2624be0874afe2e7f19d15fddb6a83b7e1f"
+          "sha256": "5c975aaa063b7caa523cf1e561a3efa33d4931429efd3321b97b3fa70517a771"
         },
         {
           "id": {
@@ -1011,62 +1868,32 @@
         {
           "id": {
             "group": "com.github.RPTools",
-            "name": "clientserver",
-            "version": "1.4.0.0",
+            "name": "dicelib",
+            "version": "1.7.0",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "clientserver-1.4.0.0.jar",
-          "path": "com/github/RPTools/clientserver/1.4.0.0",
+          "name": "dicelib-1.7.0.jar",
+          "path": "com/github/RPTools/dicelib/1.7.0",
           "urls": [
-            "https://jitpack.io/com/github/RPTools/clientserver/1.4.0.0/clientserver-1.4.0.0.jar"
+            "https://jitpack.io/com/github/RPTools/dicelib/1.7.0/dicelib-1.7.0.jar"
           ],
-          "sha256": "08d01eef0fc5acb49be954a362b847e530cfd085b145d95d8bb4b21e3ca1c51c"
-        },
-        {
-          "id": {
-            "group": "com.github.RPTools",
-            "name": "clientserver",
-            "version": "1.4.0.0",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "clientserver-1.4.0.0.pom",
-          "path": "com/github/RPTools/clientserver/1.4.0.0",
-          "urls": [
-            "https://jitpack.io/com/github/RPTools/clientserver/1.4.0.0/clientserver-1.4.0.0.pom"
-          ],
-          "sha256": "1488ef8726387b5127a6edd8451b12bdbeecc310fef1e3280d5734ca16ea69e9"
+          "sha256": "3cb5d1ec0acf84402d0ff3a9b26cd4c1210d47973b0058bba31e3863d5dd8155"
         },
         {
           "id": {
             "group": "com.github.RPTools",
             "name": "dicelib",
-            "version": "1.6.1",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "dicelib-1.6.1.jar",
-          "path": "com/github/RPTools/dicelib/1.6.1",
-          "urls": [
-            "https://jitpack.io/com/github/RPTools/dicelib/1.6.1/dicelib-1.6.1.jar"
-          ],
-          "sha256": "0bf350c177f8b1c7e8c48d10a5b71d45ae46de99946c390c70c46e3fc7a1b2bf"
-        },
-        {
-          "id": {
-            "group": "com.github.RPTools",
-            "name": "dicelib",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "dicelib-1.6.1.pom",
-          "path": "com/github/RPTools/dicelib/1.6.1",
+          "name": "dicelib-1.7.0.pom",
+          "path": "com/github/RPTools/dicelib/1.7.0",
           "urls": [
-            "https://jitpack.io/com/github/RPTools/dicelib/1.6.1/dicelib-1.6.1.pom"
+            "https://jitpack.io/com/github/RPTools/dicelib/1.7.0/dicelib-1.7.0.pom"
           ],
-          "sha256": "d514276f577212e9d413b1a7dcbaf4157a4dbb0e7e9e22a8452035f729bd05f2"
+          "sha256": "13d7175c6453d13323d37f839b809723439fe96e4474d26af88d2bd10cbaf702"
         },
         {
           "id": {
@@ -1102,31 +1929,31 @@
           "id": {
             "group": "com.github.RPTools",
             "name": "parser",
-            "version": "1.5.5",
+            "version": "1.8.3",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "parser-1.5.5.jar",
-          "path": "com/github/RPTools/parser/1.5.5",
+          "name": "parser-1.8.3.jar",
+          "path": "com/github/RPTools/parser/1.8.3",
           "urls": [
-            "https://jitpack.io/com/github/RPTools/parser/1.5.5/parser-1.5.5.jar"
+            "https://jitpack.io/com/github/RPTools/parser/1.8.3/parser-1.8.3.jar"
           ],
-          "sha256": "f4ff9cdae499d2f0c6f471f54d6ea43644f7fe31768f6e8198cf796584c4fd69"
+          "sha256": "911e31d4cb17f94abb1fec4859570fe9c504d4af40d7d048df989995574b6a0a"
         },
         {
           "id": {
             "group": "com.github.RPTools",
             "name": "parser",
-            "version": "1.5.5",
+            "version": "1.8.3",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "parser-1.5.5.pom",
-          "path": "com/github/RPTools/parser/1.5.5",
+          "name": "parser-1.8.3.pom",
+          "path": "com/github/RPTools/parser/1.8.3",
           "urls": [
-            "https://jitpack.io/com/github/RPTools/parser/1.5.5/parser-1.5.5.pom"
+            "https://jitpack.io/com/github/RPTools/parser/1.8.3/parser-1.8.3.pom"
           ],
-          "sha256": "922aaefa72a2cf6fadfbc9b4d36d0ef57472244d14c87004719300054f1b28ff"
+          "sha256": "0a27ea63ad2598e1e56269e8e45952d88fadbd0b93f22b95ab1d2977edcdc806"
         },
         {
           "id": {
@@ -1493,6 +2320,262 @@
             "https://jcenter.bintray.com/com/jcabi/parent/0.49/parent-0.49.pom"
           ],
           "sha256": "71f7c6aa690f25c4e29c8beee40be424221de0546cb195ec64505aef5d197378"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-common",
+            "version": "3.7.9",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jide-common-3.7.9.jar",
+          "path": "com/jidesoft/jide-common/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-common/3.7.9/jide-common-3.7.9.jar",
+            "https://nerps.net/repo/com/jidesoft/jide-common/3.7.9/jide-common-3.7.9.jar"
+          ],
+          "sha256": "3fc99a36f396e684f7c4c2797ccd28527cfc017b569d866de466e659c729ece6"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-common",
+            "version": "3.7.9",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jide-common-3.7.9.pom",
+          "path": "com/jidesoft/jide-common/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-common/3.7.9/jide-common-3.7.9.pom",
+            "https://nerps.net/repo/com/jidesoft/jide-common/3.7.9/jide-common-3.7.9.pom"
+          ],
+          "sha256": "b7638f3bf4b3e6a6c8befb4ab4578db95133ba83c68ebd93836bd4a9ced7a56f"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-components",
+            "version": "3.7.9",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jide-components-3.7.9.jar",
+          "path": "com/jidesoft/jide-components/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-components/3.7.9/jide-components-3.7.9.jar",
+            "https://nerps.net/repo/com/jidesoft/jide-components/3.7.9/jide-components-3.7.9.jar"
+          ],
+          "sha256": "c74cbe8415153755568a9809cc8f687a56914480e4f865c1ad306491cd4f6b62"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-components",
+            "version": "3.7.9",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jide-components-3.7.9.pom",
+          "path": "com/jidesoft/jide-components/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-components/3.7.9/jide-components-3.7.9.pom",
+            "https://nerps.net/repo/com/jidesoft/jide-components/3.7.9/jide-components-3.7.9.pom"
+          ],
+          "sha256": "9fdfe11d7dcfa3290088f6fb2d1ec07e8c0263df6b52992217826b4250255c5c"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-dialogs",
+            "version": "3.7.9",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jide-dialogs-3.7.9.jar",
+          "path": "com/jidesoft/jide-dialogs/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-dialogs/3.7.9/jide-dialogs-3.7.9.jar",
+            "https://nerps.net/repo/com/jidesoft/jide-dialogs/3.7.9/jide-dialogs-3.7.9.jar"
+          ],
+          "sha256": "427756dc65b8868f7422ef34e138fc83b1bd06ecf60bd6d0de1ba951cc50a6d2"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-dialogs",
+            "version": "3.7.9",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jide-dialogs-3.7.9.pom",
+          "path": "com/jidesoft/jide-dialogs/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-dialogs/3.7.9/jide-dialogs-3.7.9.pom",
+            "https://nerps.net/repo/com/jidesoft/jide-dialogs/3.7.9/jide-dialogs-3.7.9.pom"
+          ],
+          "sha256": "91dc96b18ceda9fb96da26519a03f96db0c8c026ec0ec79110b4006259ef1941"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-dock",
+            "version": "3.7.9",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jide-dock-3.7.9.jar",
+          "path": "com/jidesoft/jide-dock/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-dock/3.7.9/jide-dock-3.7.9.jar",
+            "https://nerps.net/repo/com/jidesoft/jide-dock/3.7.9/jide-dock-3.7.9.jar"
+          ],
+          "sha256": "61e2b5a65bf62c20cab30ad281cd3de8ce60238c31491517e1f8b58db79ea98e"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-dock",
+            "version": "3.7.9",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jide-dock-3.7.9.pom",
+          "path": "com/jidesoft/jide-dock/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-dock/3.7.9/jide-dock-3.7.9.pom",
+            "https://nerps.net/repo/com/jidesoft/jide-dock/3.7.9/jide-dock-3.7.9.pom"
+          ],
+          "sha256": "b189421a4c5f0b8fb00129726daeba75973d60a2560f76eb4cac910449328620"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-editor",
+            "version": "3.7.9",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jide-editor-3.7.9.jar",
+          "path": "com/jidesoft/jide-editor/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-editor/3.7.9/jide-editor-3.7.9.jar",
+            "https://nerps.net/repo/com/jidesoft/jide-editor/3.7.9/jide-editor-3.7.9.jar"
+          ],
+          "sha256": "052a9dc8521bf7f2396f46357e79636bb43a74461f714b1ac4b6a7a9e750bf68"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-editor",
+            "version": "3.7.9",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jide-editor-3.7.9.pom",
+          "path": "com/jidesoft/jide-editor/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-editor/3.7.9/jide-editor-3.7.9.pom",
+            "https://nerps.net/repo/com/jidesoft/jide-editor/3.7.9/jide-editor-3.7.9.pom"
+          ],
+          "sha256": "02309a34ecbc1092d53559e22650342339d81d527b42796c99c95455f8d96efc"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-grids",
+            "version": "3.7.9",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jide-grids-3.7.9.jar",
+          "path": "com/jidesoft/jide-grids/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-grids/3.7.9/jide-grids-3.7.9.jar",
+            "https://nerps.net/repo/com/jidesoft/jide-grids/3.7.9/jide-grids-3.7.9.jar"
+          ],
+          "sha256": "2484f3a37af35a0349311dfb8bc0124f4d023168187de4a8ba3920efe501ad8d"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-grids",
+            "version": "3.7.9",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jide-grids-3.7.9.pom",
+          "path": "com/jidesoft/jide-grids/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-grids/3.7.9/jide-grids-3.7.9.pom",
+            "https://nerps.net/repo/com/jidesoft/jide-grids/3.7.9/jide-grids-3.7.9.pom"
+          ],
+          "sha256": "1d0c3d276190b950ffa1bfe59881e6abf3f5bfb242f16cd730cafb407c848beb"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-properties",
+            "version": "3.7.9",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jide-properties-3.7.9.jar",
+          "path": "com/jidesoft/jide-properties/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-properties/3.7.9/jide-properties-3.7.9.jar",
+            "https://nerps.net/repo/com/jidesoft/jide-properties/3.7.9/jide-properties-3.7.9.jar"
+          ],
+          "sha256": "d11f0a20e4751e13b9fc0736f0624f4bf668d92d73d5783fbb88439a3fe77498"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-properties",
+            "version": "3.7.9",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jide-properties-3.7.9.pom",
+          "path": "com/jidesoft/jide-properties/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-properties/3.7.9/jide-properties-3.7.9.pom",
+            "https://nerps.net/repo/com/jidesoft/jide-properties/3.7.9/jide-properties-3.7.9.pom"
+          ],
+          "sha256": "5bcbfcb2810770102e0fec124c81a147d883d518dcecc52320eac59e05845fb0"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-shortcut",
+            "version": "3.7.9",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "jide-shortcut-3.7.9.jar",
+          "path": "com/jidesoft/jide-shortcut/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-shortcut/3.7.9/jide-shortcut-3.7.9.jar",
+            "https://nerps.net/repo/com/jidesoft/jide-shortcut/3.7.9/jide-shortcut-3.7.9.jar"
+          ],
+          "sha256": "23dc86d7d7bf7025a1938eece894fd4445fda7d8fa0d4389d07131bd6b06c685"
+        },
+        {
+          "id": {
+            "group": "com.jidesoft",
+            "name": "jide-shortcut",
+            "version": "3.7.9",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "jide-shortcut-3.7.9.pom",
+          "path": "com/jidesoft/jide-shortcut/3.7.9",
+          "urls": [
+            "http://maptool.craigs-stuff.net/repo/com/jidesoft/jide-shortcut/3.7.9/jide-shortcut-3.7.9.pom",
+            "https://nerps.net/repo/com/jidesoft/jide-shortcut/3.7.9/jide-shortcut-3.7.9.pom"
+          ],
+          "sha256": "a89b0a179523cb4d469c7f22816502f35b5dd70bfa5dc5352cee6e0088681f0f"
         },
         {
           "id": {
@@ -1913,6 +2996,38 @@
         {
           "id": {
             "group": "com.twelvemonkeys.imageio",
+            "name": "imageio-batik",
+            "version": "3.4.3",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "imageio-batik-3.4.3.jar",
+          "path": "com/twelvemonkeys/imageio/imageio-batik/3.4.3",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/twelvemonkeys/imageio/imageio-batik/3.4.3/imageio-batik-3.4.3.jar",
+            "https://jcenter.bintray.com/com/twelvemonkeys/imageio/imageio-batik/3.4.3/imageio-batik-3.4.3.jar"
+          ],
+          "sha256": "89f9eb8de91d3adc4cf1a8a738b5f343e2c8738eabdd9796cc5fe6c71f50561c"
+        },
+        {
+          "id": {
+            "group": "com.twelvemonkeys.imageio",
+            "name": "imageio-batik",
+            "version": "3.4.3",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "imageio-batik-3.4.3.pom",
+          "path": "com/twelvemonkeys/imageio/imageio-batik/3.4.3",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/twelvemonkeys/imageio/imageio-batik/3.4.3/imageio-batik-3.4.3.pom",
+            "https://jcenter.bintray.com/com/twelvemonkeys/imageio/imageio-batik/3.4.3/imageio-batik-3.4.3.pom"
+          ],
+          "sha256": "cc59da40e688529ab8f4567114ab7dad151666fd6fd9782001f523f329a373e5"
+        },
+        {
+          "id": {
+            "group": "com.twelvemonkeys.imageio",
             "name": "imageio-core",
             "version": "3.4.3",
             "type": "jar",
@@ -2037,6 +3152,38 @@
             "https://jcenter.bintray.com/com/twelvemonkeys/imageio/imageio-psd/3.4.3/imageio-psd-3.4.3.pom"
           ],
           "sha256": "2ba3c5201192a370a63bb222e24c4eca35b78fdcd8f687f20ab6099a27d1f119"
+        },
+        {
+          "id": {
+            "group": "com.twelvemonkeys.imageio",
+            "name": "imageio-tiff",
+            "version": "3.4.3",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "imageio-tiff-3.4.3.jar",
+          "path": "com/twelvemonkeys/imageio/imageio-tiff/3.4.3",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/twelvemonkeys/imageio/imageio-tiff/3.4.3/imageio-tiff-3.4.3.jar",
+            "https://jcenter.bintray.com/com/twelvemonkeys/imageio/imageio-tiff/3.4.3/imageio-tiff-3.4.3.jar"
+          ],
+          "sha256": "0c5cf4960da6267a10623d914be64572deaa8060e7d5a2ab72e2a39d8bf40e60"
+        },
+        {
+          "id": {
+            "group": "com.twelvemonkeys.imageio",
+            "name": "imageio-tiff",
+            "version": "3.4.3",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "imageio-tiff-3.4.3.pom",
+          "path": "com/twelvemonkeys/imageio/imageio-tiff/3.4.3",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/com/twelvemonkeys/imageio/imageio-tiff/3.4.3/imageio-tiff-3.4.3.pom",
+            "https://jcenter.bintray.com/com/twelvemonkeys/imageio/imageio-tiff/3.4.3/imageio-tiff-3.4.3.pom"
+          ],
+          "sha256": "b46bcc98c95aa0a985c8149e505be78b285d112c2a1fe318bd394d460434432b"
         },
         {
           "id": {
@@ -4052,278 +5199,6 @@
         },
         {
           "id": {
-            "group": "jide-common",
-            "name": "jide-common",
-            "version": "3.7.6",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "jide-common-3.7.6.jar",
-          "path": "jide-common/jide-common/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-common/jide-common/3.7.6/jide-common-3.7.6.jar"
-          ],
-          "sha256": "d41e3b7d7080869e83875dd0f3c9c968e17cb82ea9eafcef1bf8284582241471"
-        },
-        {
-          "id": {
-            "group": "jide-common",
-            "name": "jide-common",
-            "version": "3.7.6",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "jide-common-3.7.6.pom",
-          "path": "jide-common/jide-common/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-common/jide-common/3.7.6/jide-common-3.7.6.pom"
-          ],
-          "sha256": "291ff68e990571b7c77645c21eee84fea7e98a030182940912a82006d00dd3b9"
-        },
-        {
-          "id": {
-            "group": "jide-components",
-            "name": "jide-components",
-            "version": "3.7.6",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "jide-components-3.7.6.jar",
-          "path": "jide-components/jide-components/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-components/jide-components/3.7.6/jide-components-3.7.6.jar"
-          ],
-          "sha256": "e4e84d80401b7cd585d469371602edf3b9e10b1c1a1e13120c13ada257ebe1b4"
-        },
-        {
-          "id": {
-            "group": "jide-components",
-            "name": "jide-components",
-            "version": "3.7.6",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "jide-components-3.7.6.pom",
-          "path": "jide-components/jide-components/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-components/jide-components/3.7.6/jide-components-3.7.6.pom"
-          ],
-          "sha256": "624e69a0129b62553af287436b7c6a79f21184ec924248ad6dc8e25965e03eff"
-        },
-        {
-          "id": {
-            "group": "jide-dialogs",
-            "name": "jide-dialogs",
-            "version": "3.7.6",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "jide-dialogs-3.7.6.jar",
-          "path": "jide-dialogs/jide-dialogs/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-dialogs/jide-dialogs/3.7.6/jide-dialogs-3.7.6.jar"
-          ],
-          "sha256": "d26bf4c48671f2b863f8909d9ed5eba0d0ee637bdef1dff87a17832d07f30c3e"
-        },
-        {
-          "id": {
-            "group": "jide-dialogs",
-            "name": "jide-dialogs",
-            "version": "3.7.6",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "jide-dialogs-3.7.6.pom",
-          "path": "jide-dialogs/jide-dialogs/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-dialogs/jide-dialogs/3.7.6/jide-dialogs-3.7.6.pom"
-          ],
-          "sha256": "cce04c7dcf1b9783ab73fef29cb971ccb4ff4b09a496812d355975a6558f8556"
-        },
-        {
-          "id": {
-            "group": "jide-dock",
-            "name": "jide-dock",
-            "version": "3.7.6",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "jide-dock-3.7.6.jar",
-          "path": "jide-dock/jide-dock/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-dock/jide-dock/3.7.6/jide-dock-3.7.6.jar"
-          ],
-          "sha256": "a0a1eb2c5e7c7df71a2e178beeb16e24e0acb516c502569968acda0b5db447fb"
-        },
-        {
-          "id": {
-            "group": "jide-dock",
-            "name": "jide-dock",
-            "version": "3.7.6",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "jide-dock-3.7.6.pom",
-          "path": "jide-dock/jide-dock/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-dock/jide-dock/3.7.6/jide-dock-3.7.6.pom"
-          ],
-          "sha256": "d29757b0470e8a1378e90f2590627b8c3dba356aaf63a6fc2dea9a90d7e2f4d2"
-        },
-        {
-          "id": {
-            "group": "jide-editor",
-            "name": "jide-editor",
-            "version": "3.7.6",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "jide-editor-3.7.6.jar",
-          "path": "jide-editor/jide-editor/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-editor/jide-editor/3.7.6/jide-editor-3.7.6.jar"
-          ],
-          "sha256": "5faf9bd05b4980582205ddd1830312ac83659164c934f075c9839581c52b7411"
-        },
-        {
-          "id": {
-            "group": "jide-editor",
-            "name": "jide-editor",
-            "version": "3.7.6",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "jide-editor-3.7.6.pom",
-          "path": "jide-editor/jide-editor/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-editor/jide-editor/3.7.6/jide-editor-3.7.6.pom"
-          ],
-          "sha256": "94accb28626375487222a63934b80f710edd40bbe651e9e30bea63dc930a2836"
-        },
-        {
-          "id": {
-            "group": "jide-grids",
-            "name": "jide-grids",
-            "version": "3.7.6",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "jide-grids-3.7.6.jar",
-          "path": "jide-grids/jide-grids/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-grids/jide-grids/3.7.6/jide-grids-3.7.6.jar"
-          ],
-          "sha256": "4a8ac3c8a3bb1166a6788d988386d24dfd6c2840de9621354fc294ef832ddf70"
-        },
-        {
-          "id": {
-            "group": "jide-grids",
-            "name": "jide-grids",
-            "version": "3.7.6",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "jide-grids-3.7.6.pom",
-          "path": "jide-grids/jide-grids/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-grids/jide-grids/3.7.6/jide-grids-3.7.6.pom"
-          ],
-          "sha256": "3def8bb002c8f014e795e502684343aeb6163f5269ae9157d1f3f390901533f4"
-        },
-        {
-          "id": {
-            "group": "jide-properties",
-            "name": "jide-properties",
-            "version": "3.7.6",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "jide-properties-3.7.6.jar",
-          "path": "jide-properties/jide-properties/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-properties/jide-properties/3.7.6/jide-properties-3.7.6.jar"
-          ],
-          "sha256": "c0cb34969412d56670855cb86a9a10ea522747807ea7f829a00225f967124bd2"
-        },
-        {
-          "id": {
-            "group": "jide-properties",
-            "name": "jide-properties",
-            "version": "3.7.6",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "jide-properties-3.7.6.pom",
-          "path": "jide-properties/jide-properties/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-properties/jide-properties/3.7.6/jide-properties-3.7.6.pom"
-          ],
-          "sha256": "caaab0634d0db2313bc3e6334258073e3d7919c9d894b438f9998eb8945c27f6"
-        },
-        {
-          "id": {
-            "group": "jide-shortcut",
-            "name": "jide-shortcut",
-            "version": "3.7.6",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "jide-shortcut-3.7.6.jar",
-          "path": "jide-shortcut/jide-shortcut/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-shortcut/jide-shortcut/3.7.6/jide-shortcut-3.7.6.jar"
-          ],
-          "sha256": "e61aca986fcad4ecbc9c18ba775ea724575f08491e96e16072d0f2597277de3e"
-        },
-        {
-          "id": {
-            "group": "jide-shortcut",
-            "name": "jide-shortcut",
-            "version": "3.7.6",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "jide-shortcut-3.7.6.pom",
-          "path": "jide-shortcut/jide-shortcut/3.7.6",
-          "urls": [
-            "http://maptool.craigs-stuff.net/repo/jide-shortcut/jide-shortcut/3.7.6/jide-shortcut-3.7.6.pom"
-          ],
-          "sha256": "ff5ac2312f8b310920ba299b003acabdb89b33c7eadbe02e3efc087dba069a9c"
-        },
-        {
-          "id": {
-            "group": "log4j",
-            "name": "log4j",
-            "version": "1.2.16",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "log4j-1.2.16.jar",
-          "path": "log4j/log4j/1.2.16",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16.jar",
-            "https://jcenter.bintray.com/log4j/log4j/1.2.16/log4j-1.2.16.jar"
-          ],
-          "sha256": "7ae3fdde7ab0cae4735a2aec04381ad9b6e25c93d24205f3ed315d9866f12fe1"
-        },
-        {
-          "id": {
-            "group": "log4j",
-            "name": "log4j",
-            "version": "1.2.16",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "log4j-1.2.16.pom",
-          "path": "log4j/log4j/1.2.16",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16.pom",
-            "https://jcenter.bintray.com/log4j/log4j/1.2.16/log4j-1.2.16.pom"
-          ],
-          "sha256": "2b1e9f1055cf0b4a4659aaf474b65e842d5c1dc580b5c4e0238ef63470d110fd"
-        },
-        {
-          "id": {
             "group": "net.bytebuddy",
             "name": "byte-buddy",
             "version": "1.10.5",
@@ -4687,6 +5562,22 @@
           "id": {
             "group": "org.apache",
             "name": "apache",
+            "version": "3",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "apache-3.pom",
+          "path": "org/apache/apache/3",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/apache/3/apache-3.pom",
+            "https://jcenter.bintray.com/org/apache/apache/3/apache-3.pom"
+          ],
+          "sha256": "393c50afb4b7aa6eb57e5377a55a1a0610b19f75b52ece01308db04a1187a20e"
+        },
+        {
+          "id": {
+            "group": "org.apache",
+            "name": "apache",
             "version": "4",
             "type": "pom",
             "extension": "pom"
@@ -4830,6 +5721,70 @@
         {
           "id": {
             "group": "org.apache.commons",
+            "name": "commons-configuration2",
+            "version": "2.7",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "commons-configuration2-2.7.jar",
+          "path": "org/apache/commons/commons-configuration2/2.7",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/commons/commons-configuration2/2.7/commons-configuration2-2.7.jar",
+            "https://jcenter.bintray.com/org/apache/commons/commons-configuration2/2.7/commons-configuration2-2.7.jar"
+          ],
+          "sha256": "69f125e5e1bc882e482e550aacec283e130922b15b07b86779f05766cda4f680"
+        },
+        {
+          "id": {
+            "group": "org.apache.commons",
+            "name": "commons-configuration2",
+            "version": "2.7",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "commons-configuration2-2.7.pom",
+          "path": "org/apache/commons/commons-configuration2/2.7",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/commons/commons-configuration2/2.7/commons-configuration2-2.7.pom",
+            "https://jcenter.bintray.com/org/apache/commons/commons-configuration2/2.7/commons-configuration2-2.7.pom"
+          ],
+          "sha256": "2787827b950c5a67ba49aba18bc0d9f2cdbe7ccbe188c544e504a9f8f85fb97e"
+        },
+        {
+          "id": {
+            "group": "org.apache.commons",
+            "name": "commons-lang3",
+            "version": "3.9",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "commons-lang3-3.9.jar",
+          "path": "org/apache/commons/commons-lang3/3.9",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar",
+            "https://jcenter.bintray.com/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar"
+          ],
+          "sha256": "de2e1dcdcf3ef917a8ce858661a06726a9a944f28e33ad7f9e08bea44dc3c230"
+        },
+        {
+          "id": {
+            "group": "org.apache.commons",
+            "name": "commons-lang3",
+            "version": "3.9",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "commons-lang3-3.9.pom",
+          "path": "org/apache/commons/commons-lang3/3.9",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.pom",
+            "https://jcenter.bintray.com/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.pom"
+          ],
+          "sha256": "a4022429b98425b430181915721279a52f610f34648bdac487d4cacbbe8dfeb5"
+        },
+        {
+          "id": {
+            "group": "org.apache.commons",
             "name": "commons-parent",
             "version": "11",
             "type": "pom",
@@ -4941,179 +5896,259 @@
         },
         {
           "id": {
+            "group": "org.apache.commons",
+            "name": "commons-parent",
+            "version": "50",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "commons-parent-50.pom",
+          "path": "org/apache/commons/commons-parent/50",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/50/commons-parent-50.pom",
+            "https://jcenter.bintray.com/org/apache/commons/commons-parent/50/commons-parent-50.pom"
+          ],
+          "sha256": "7b7a2db3f747074b5867f553d5efc8072be26ede32879d052c347e7c81117f06"
+        },
+        {
+          "id": {
+            "group": "org.apache.commons",
+            "name": "commons-text",
+            "version": "1.8",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "commons-text-1.8.jar",
+          "path": "org/apache/commons/commons-text/1.8",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.8/commons-text-1.8.jar",
+            "https://jcenter.bintray.com/org/apache/commons/commons-text/1.8/commons-text-1.8.jar"
+          ],
+          "sha256": "6fe7ad4ad5349d6b77e7a0e1c9f6037108a1ee48c42e7e6eb4b18f56d324f7b2"
+        },
+        {
+          "id": {
+            "group": "org.apache.commons",
+            "name": "commons-text",
+            "version": "1.8",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "commons-text-1.8.pom",
+          "path": "org/apache/commons/commons-text/1.8",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/commons/commons-text/1.8/commons-text-1.8.pom",
+            "https://jcenter.bintray.com/org/apache/commons/commons-text/1.8/commons-text-1.8.pom"
+          ],
+          "sha256": "f6cfdbaa59c70ad7e3febe714e0911990156ac0905295d8f2a3b751e05e59a12"
+        },
+        {
+          "id": {
             "group": "org.apache.logging.log4j",
             "name": "log4j",
-            "version": "2.12.1",
+            "version": "2.13.0",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "log4j-2.12.1.pom",
-          "path": "org/apache/logging/log4j/log4j/2.12.1",
+          "name": "log4j-2.13.0.pom",
+          "path": "org/apache/logging/log4j/log4j/2.13.0",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j/2.12.1/log4j-2.12.1.pom",
-            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j/2.12.1/log4j-2.12.1.pom"
+            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j/2.13.0/log4j-2.13.0.pom",
+            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j/2.13.0/log4j-2.13.0.pom"
           ],
-          "sha256": "75f1363cf520b6b11acf6a85efc651fa95152f47be60119040dd4d4db557cc70"
+          "sha256": "9472836703e5d24077dc04eebb899aadf524b0cf1434507c9b9b4ec7b9f241b4"
         },
         {
           "id": {
             "group": "org.apache.logging.log4j",
             "name": "log4j-1.2-api",
-            "version": "2.12.1",
+            "version": "2.13.0",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "log4j-1.2-api-2.12.1.jar",
-          "path": "org/apache/logging/log4j/log4j-1.2-api/2.12.1",
+          "name": "log4j-1.2-api-2.13.0.jar",
+          "path": "org/apache/logging/log4j/log4j-1.2-api/2.13.0",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-1.2-api/2.12.1/log4j-1.2-api-2.12.1.jar",
-            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j-1.2-api/2.12.1/log4j-1.2-api-2.12.1.jar"
+            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-1.2-api/2.13.0/log4j-1.2-api-2.13.0.jar",
+            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j-1.2-api/2.13.0/log4j-1.2-api-2.13.0.jar"
           ],
-          "sha256": "fcabb16eefa98c4979be307f769a2aaf40ca68ffdaae9a5f36e52df063caf7c0"
+          "sha256": "7ded4f1e211be9a10d4e2e0958f1e452a7af9b8939cc2cbda676bc9500a909f7"
         },
         {
           "id": {
             "group": "org.apache.logging.log4j",
             "name": "log4j-1.2-api",
-            "version": "2.12.1",
+            "version": "2.13.0",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "log4j-1.2-api-2.12.1.pom",
-          "path": "org/apache/logging/log4j/log4j-1.2-api/2.12.1",
+          "name": "log4j-1.2-api-2.13.0.pom",
+          "path": "org/apache/logging/log4j/log4j-1.2-api/2.13.0",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-1.2-api/2.12.1/log4j-1.2-api-2.12.1.pom",
-            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j-1.2-api/2.12.1/log4j-1.2-api-2.12.1.pom"
+            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-1.2-api/2.13.0/log4j-1.2-api-2.13.0.pom",
+            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j-1.2-api/2.13.0/log4j-1.2-api-2.13.0.pom"
           ],
-          "sha256": "206cadc87a2e4cbd47ceb9af9bdd9f10734960830b8e261f1835e6669c898bc9"
+          "sha256": "99deb329c2962c2417f23837fe0d8674b19b7e40f406819ba68d3ec66aab3d4f"
         },
         {
           "id": {
             "group": "org.apache.logging.log4j",
             "name": "log4j-api",
-            "version": "2.12.1",
+            "version": "2.13.0",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "log4j-api-2.12.1.jar",
-          "path": "org/apache/logging/log4j/log4j-api/2.12.1",
+          "name": "log4j-api-2.13.0.jar",
+          "path": "org/apache/logging/log4j/log4j-api/2.13.0",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar",
-            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar"
+            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.13.0/log4j-api-2.13.0.jar",
+            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j-api/2.13.0/log4j-api-2.13.0.jar"
           ],
-          "sha256": "429534d03bdb728879ab551d469e26f6f7ff4c8a8627f59ac68ab6ef26063515"
+          "sha256": "5650d84d57373de6295934fa02b2022020567082cceb50fbb34fcb7ce9a52d1f"
         },
         {
           "id": {
             "group": "org.apache.logging.log4j",
             "name": "log4j-api",
-            "version": "2.12.1",
+            "version": "2.13.0",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "log4j-api-2.12.1.pom",
-          "path": "org/apache/logging/log4j/log4j-api/2.12.1",
+          "name": "log4j-api-2.13.0.pom",
+          "path": "org/apache/logging/log4j/log4j-api/2.13.0",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.pom",
-            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.pom"
+            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.13.0/log4j-api-2.13.0.pom",
+            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j-api/2.13.0/log4j-api-2.13.0.pom"
           ],
-          "sha256": "4055a241b5254725e62447becf7ae8626ea9cd6ae56361b4d6adecd651b4dd53"
+          "sha256": "38b061092f709908361267e4a778198781278b76138d6ebf7bd1c423da938885"
         },
         {
           "id": {
             "group": "org.apache.logging.log4j",
             "name": "log4j-core",
-            "version": "2.12.1",
+            "version": "2.13.0",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "log4j-core-2.12.1.jar",
-          "path": "org/apache/logging/log4j/log4j-core/2.12.1",
+          "name": "log4j-core-2.13.0.jar",
+          "path": "org/apache/logging/log4j/log4j-core/2.13.0",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.jar",
-            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.jar"
+            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.13.0/log4j-core-2.13.0.jar",
+            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j-core/2.13.0/log4j-core-2.13.0.jar"
           ],
-          "sha256": "885e31a14fc71cb4849e93564d26a221c685a789379ef63cb2d082cedf3c2235"
+          "sha256": "82e91afe0c5628b32ae99dd6965878402c668773fbd49b45b2b8c06a426c5bbb"
         },
         {
           "id": {
             "group": "org.apache.logging.log4j",
             "name": "log4j-core",
-            "version": "2.12.1",
+            "version": "2.13.0",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "log4j-core-2.12.1.pom",
-          "path": "org/apache/logging/log4j/log4j-core/2.12.1",
+          "name": "log4j-core-2.13.0.pom",
+          "path": "org/apache/logging/log4j/log4j-core/2.13.0",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.pom",
-            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j-core/2.12.1/log4j-core-2.12.1.pom"
+            "https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-core/2.13.0/log4j-core-2.13.0.pom",
+            "https://jcenter.bintray.com/org/apache/logging/log4j/log4j-core/2.13.0/log4j-core-2.13.0.pom"
           ],
-          "sha256": "9aa71193651a170d3d95b7cf682871211c8b4b070b695d8f30a6320082ebc709"
+          "sha256": "aa0d0ddcf426147f12c5f969baeab1cff2219038d30f1a13567cea00ce506fda"
         },
         {
           "id": {
             "group": "org.apache.pdfbox",
             "name": "fontbox",
-            "version": "2.0.18",
+            "version": "2.0.20",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "fontbox-2.0.18.jar",
-          "path": "org/apache/pdfbox/fontbox/2.0.18",
+          "name": "fontbox-2.0.20.jar",
+          "path": "org/apache/pdfbox/fontbox/2.0.20",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/fontbox/2.0.18/fontbox-2.0.18.jar",
-            "https://jcenter.bintray.com/org/apache/pdfbox/fontbox/2.0.18/fontbox-2.0.18.jar"
+            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/fontbox/2.0.20/fontbox-2.0.20.jar",
+            "https://jcenter.bintray.com/org/apache/pdfbox/fontbox/2.0.20/fontbox-2.0.20.jar"
           ],
-          "sha256": "45e0566468a3d7c3ac704213209fa13ba78ca7feac5da4ef86d189bbc21b278a"
+          "sha256": "687b8f811c66eca05a6c00114ba82d0b1063e6120aa1347cad4039c36d626b49"
         },
         {
           "id": {
             "group": "org.apache.pdfbox",
             "name": "fontbox",
-            "version": "2.0.18",
+            "version": "2.0.20",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "fontbox-2.0.18.pom",
-          "path": "org/apache/pdfbox/fontbox/2.0.18",
+          "name": "fontbox-2.0.20.pom",
+          "path": "org/apache/pdfbox/fontbox/2.0.20",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/fontbox/2.0.18/fontbox-2.0.18.pom",
-            "https://jcenter.bintray.com/org/apache/pdfbox/fontbox/2.0.18/fontbox-2.0.18.pom"
+            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/fontbox/2.0.20/fontbox-2.0.20.pom",
+            "https://jcenter.bintray.com/org/apache/pdfbox/fontbox/2.0.20/fontbox-2.0.20.pom"
           ],
-          "sha256": "7780f0c43bd63d5f5fd44bc076cf72ce7a85fb1c0e6248ff975e78f6eabb9151"
+          "sha256": "c6c9a02779541379f476633af06d0fc3bebcb9e30456d17558cf400339a9fc45"
         },
         {
           "id": {
             "group": "org.apache.pdfbox",
             "name": "pdfbox",
-            "version": "2.0.18",
+            "version": "2.0.20",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "pdfbox-2.0.18.jar",
-          "path": "org/apache/pdfbox/pdfbox/2.0.18",
+          "name": "pdfbox-2.0.20.jar",
+          "path": "org/apache/pdfbox/pdfbox/2.0.20",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/pdfbox/2.0.18/pdfbox-2.0.18.jar",
-            "https://jcenter.bintray.com/org/apache/pdfbox/pdfbox/2.0.18/pdfbox-2.0.18.jar"
+            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/pdfbox/2.0.20/pdfbox-2.0.20.jar",
+            "https://jcenter.bintray.com/org/apache/pdfbox/pdfbox/2.0.20/pdfbox-2.0.20.jar"
           ],
-          "sha256": "02aa8629a95cf35dcabe582ec3471341d7fdcae1e041eaa6e26d3864387c7949"
+          "sha256": "6698afbb4c73509e11c062e74466548ab3b489f1e4399decf31a8946dd43f810"
         },
         {
           "id": {
             "group": "org.apache.pdfbox",
             "name": "pdfbox",
-            "version": "2.0.18",
+            "version": "2.0.20",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "pdfbox-2.0.18.pom",
-          "path": "org/apache/pdfbox/pdfbox/2.0.18",
+          "name": "pdfbox-2.0.20.pom",
+          "path": "org/apache/pdfbox/pdfbox/2.0.20",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/pdfbox/2.0.18/pdfbox-2.0.18.pom",
-            "https://jcenter.bintray.com/org/apache/pdfbox/pdfbox/2.0.18/pdfbox-2.0.18.pom"
+            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/pdfbox/2.0.20/pdfbox-2.0.20.pom",
+            "https://jcenter.bintray.com/org/apache/pdfbox/pdfbox/2.0.20/pdfbox-2.0.20.pom"
           ],
-          "sha256": "b5e3f79c75841bb3b8e695ccb427c96a286e602799f059ccb35ddce32f3ff84f"
+          "sha256": "0cba194f1a158384c730b5d6310d2a71c34e11ad68dd75eb0dc38c2b33af7270"
+        },
+        {
+          "id": {
+            "group": "org.apache.pdfbox",
+            "name": "pdfbox-debugger",
+            "version": "2.0.20",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "pdfbox-debugger-2.0.20.jar",
+          "path": "org/apache/pdfbox/pdfbox-debugger/2.0.20",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/pdfbox-debugger/2.0.20/pdfbox-debugger-2.0.20.jar",
+            "https://jcenter.bintray.com/org/apache/pdfbox/pdfbox-debugger/2.0.20/pdfbox-debugger-2.0.20.jar"
+          ],
+          "sha256": "ccd194bb81add7ac905335e7e4e1083b2a9d49b834e9bf2434549adb343041bb"
+        },
+        {
+          "id": {
+            "group": "org.apache.pdfbox",
+            "name": "pdfbox-debugger",
+            "version": "2.0.20",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "pdfbox-debugger-2.0.20.pom",
+          "path": "org/apache/pdfbox/pdfbox-debugger/2.0.20",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/pdfbox-debugger/2.0.20/pdfbox-debugger-2.0.20.pom",
+            "https://jcenter.bintray.com/org/apache/pdfbox/pdfbox-debugger/2.0.20/pdfbox-debugger-2.0.20.pom"
+          ],
+          "sha256": "c75a92274727435d0305aea5fdb1f2d8b9c2e970af828ea301da6f7f3abe746e"
         },
         {
           "id": {
@@ -5135,17 +6170,49 @@
           "id": {
             "group": "org.apache.pdfbox",
             "name": "pdfbox-parent",
-            "version": "2.0.18",
+            "version": "2.0.20",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "pdfbox-parent-2.0.18.pom",
-          "path": "org/apache/pdfbox/pdfbox-parent/2.0.18",
+          "name": "pdfbox-parent-2.0.20.pom",
+          "path": "org/apache/pdfbox/pdfbox-parent/2.0.20",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/pdfbox-parent/2.0.18/pdfbox-parent-2.0.18.pom",
-            "https://jcenter.bintray.com/org/apache/pdfbox/pdfbox-parent/2.0.18/pdfbox-parent-2.0.18.pom"
+            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/pdfbox-parent/2.0.20/pdfbox-parent-2.0.20.pom",
+            "https://jcenter.bintray.com/org/apache/pdfbox/pdfbox-parent/2.0.20/pdfbox-parent-2.0.20.pom"
           ],
-          "sha256": "28af28a18619738c9fe84a5b7a933fce60294fae842ff186b918d882ae4bcabf"
+          "sha256": "c071e7785db57d55182763258b6f016baedd363fe6867aa80e3d28ca5050a8ad"
+        },
+        {
+          "id": {
+            "group": "org.apache.pdfbox",
+            "name": "pdfbox-tools",
+            "version": "2.0.20",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "pdfbox-tools-2.0.20.jar",
+          "path": "org/apache/pdfbox/pdfbox-tools/2.0.20",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/pdfbox-tools/2.0.20/pdfbox-tools-2.0.20.jar",
+            "https://jcenter.bintray.com/org/apache/pdfbox/pdfbox-tools/2.0.20/pdfbox-tools-2.0.20.jar"
+          ],
+          "sha256": "8f6ee86e66d1104cccbaded2332b8b8840d77232386baed60fde673427f316f6"
+        },
+        {
+          "id": {
+            "group": "org.apache.pdfbox",
+            "name": "pdfbox-tools",
+            "version": "2.0.20",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "pdfbox-tools-2.0.20.pom",
+          "path": "org/apache/pdfbox/pdfbox-tools/2.0.20",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/pdfbox/pdfbox-tools/2.0.20/pdfbox-tools-2.0.20.pom",
+            "https://jcenter.bintray.com/org/apache/pdfbox/pdfbox-tools/2.0.20/pdfbox-tools-2.0.20.pom"
+          ],
+          "sha256": "ae388528435eb0f93f1b8a0f07af134732b834bcf2c2a40368e23e7f07acbe9d"
         },
         {
           "id": {
@@ -5178,6 +6245,598 @@
             "https://jcenter.bintray.com/org/apache/pdfbox/xmpbox/2.0.16/xmpbox-2.0.16.pom"
           ],
           "sha256": "76bcf92693dc1d45559bee50ba1474fb4f1123fa20eb0fae080507a42e24e27d"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik/1.13/batik-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik/1.13/batik-1.13.pom"
+          ],
+          "sha256": "55fbc7cb7f6adfec7748e49861c8802a57b0bdcadd6e3b1bd8cd2ed515997926"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-anim",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-anim-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-anim/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-anim/1.13/batik-anim-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-anim/1.13/batik-anim-1.13.jar"
+          ],
+          "sha256": "60c421cd9a025b7c0e5ce7982c1407bb1c16cb417e7de1356f844ba6b4319e55"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-anim",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-anim-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-anim/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-anim/1.13/batik-anim-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-anim/1.13/batik-anim-1.13.pom"
+          ],
+          "sha256": "218c2680cee57e0612ae35f5fc08dc92b4501b7d060cba5aed42028e974655cd"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-awt-util",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-awt-util-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-awt-util/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-awt-util/1.13/batik-awt-util-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-awt-util/1.13/batik-awt-util-1.13.jar"
+          ],
+          "sha256": "c0297d54aa58b6f9fe9e30990f235c20be5f4ce195cbd8bea65c7ddc834f9d0e"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-awt-util",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-awt-util-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-awt-util/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-awt-util/1.13/batik-awt-util-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-awt-util/1.13/batik-awt-util-1.13.pom"
+          ],
+          "sha256": "67365a995fe750aaa21958fa0706a4277dc07058f58e4ffd842101b6a68674a8"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-bridge",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-bridge-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-bridge/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-bridge/1.13/batik-bridge-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-bridge/1.13/batik-bridge-1.13.jar"
+          ],
+          "sha256": "772e1929d69d40b8ff0479184baf3d5547edbf7478fdceb575b5215f75a33e59"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-bridge",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-bridge-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-bridge/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-bridge/1.13/batik-bridge-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-bridge/1.13/batik-bridge-1.13.pom"
+          ],
+          "sha256": "20547ef0e6efc227bf1874a57575d7d28aa22ea14a4ebaee1b8dac43cd44e273"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-constants",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-constants-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-constants/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-constants/1.13/batik-constants-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-constants/1.13/batik-constants-1.13.jar"
+          ],
+          "sha256": "8e36325984b97fb696f1c8cbc7cf6ae92bfac490c6f6507c844b899895ce11d3"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-constants",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-constants-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-constants/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-constants/1.13/batik-constants-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-constants/1.13/batik-constants-1.13.pom"
+          ],
+          "sha256": "700fc1af426cda09382f5b8f6f624c2b043af061b59de6775dce13e40f1ed78f"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-css",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-css-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-css/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-css/1.13/batik-css-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-css/1.13/batik-css-1.13.jar"
+          ],
+          "sha256": "9bd3569bde07715db187a9944224bb144b2ed3862a2286c5efe60857e595e412"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-css",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-css-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-css/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-css/1.13/batik-css-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-css/1.13/batik-css-1.13.pom"
+          ],
+          "sha256": "31cc6d6ebda9ea86a495e77184d3c064085ac88aa479e89cc6ef76322f3526f3"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-dom",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-dom-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-dom/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-dom/1.13/batik-dom-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-dom/1.13/batik-dom-1.13.jar"
+          ],
+          "sha256": "9ecea48cfdfdeb8aad4a0fa63eb85a66f87f83727c80863a0ac6e4e5ccb313c5"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-dom",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-dom-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-dom/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-dom/1.13/batik-dom-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-dom/1.13/batik-dom-1.13.pom"
+          ],
+          "sha256": "c186f9dc5855205a005eaf1904aff500e47f5a0ef4ab9ff3bbb8bdbc075c571e"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-ext",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-ext-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-ext/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-ext/1.13/batik-ext-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-ext/1.13/batik-ext-1.13.jar"
+          ],
+          "sha256": "ee46647cce7b42549f4ad6151069a16275ada5aa780eb12c2e039120e4f51803"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-ext",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-ext-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-ext/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-ext/1.13/batik-ext-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-ext/1.13/batik-ext-1.13.pom"
+          ],
+          "sha256": "f0fd56c781384b54dba81197a8d238b4567932e9dc740a777249c08ced1e9448"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-gvt",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-gvt-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-gvt/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-gvt/1.13/batik-gvt-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-gvt/1.13/batik-gvt-1.13.jar"
+          ],
+          "sha256": "0e194d86a00e64d53cb2075a7eb344b0e22b21a6c2ecf72a6295e5a119df69ce"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-gvt",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-gvt-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-gvt/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-gvt/1.13/batik-gvt-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-gvt/1.13/batik-gvt-1.13.pom"
+          ],
+          "sha256": "28b3c7f3fe57d5ab737cc8f4b44082baa7df66f58f8674c40b86518d6f38c8d3"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-i18n",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-i18n-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-i18n/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-i18n/1.13/batik-i18n-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-i18n/1.13/batik-i18n-1.13.jar"
+          ],
+          "sha256": "a1dd1f8fd7a6d9e8814309ff6c60ddfefce9a42dcb095812c0a188c1e1dbd83f"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-i18n",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-i18n-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-i18n/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-i18n/1.13/batik-i18n-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-i18n/1.13/batik-i18n-1.13.pom"
+          ],
+          "sha256": "9bdd4395c980ed980b87c9adeaa83fd3528885d89c9a118430925fb81c4e4628"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-parser",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-parser-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-parser/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-parser/1.13/batik-parser-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-parser/1.13/batik-parser-1.13.jar"
+          ],
+          "sha256": "0f717d6f69bc244face7c28763f79e6e1a35d5eeed1fc16749ea22b81eb0c428"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-parser",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-parser-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-parser/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-parser/1.13/batik-parser-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-parser/1.13/batik-parser-1.13.pom"
+          ],
+          "sha256": "f89412d23d415b1adad4df69667e7b23156ebba3a59b8b53310d91820d2befad"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-script",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-script-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-script/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-script/1.13/batik-script-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-script/1.13/batik-script-1.13.jar"
+          ],
+          "sha256": "dbe8a7d48b7e1b04fae2fd84e3766bd6ddd25eeee8c8ce043febb594da340d05"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-script",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-script-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-script/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-script/1.13/batik-script-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-script/1.13/batik-script-1.13.pom"
+          ],
+          "sha256": "3a4d97b7dc672d60767abf239c347fcc6a9a2fe15144d68b80fa8a6302bd9b66"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-shared-resources",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-shared-resources-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-shared-resources/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-shared-resources/1.13/batik-shared-resources-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-shared-resources/1.13/batik-shared-resources-1.13.jar"
+          ],
+          "sha256": "3741aae5fd6a3e3c68affa688fe13ce1558688e21b5b3af9f45c54c9827155b6"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-shared-resources",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-shared-resources-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-shared-resources/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-shared-resources/1.13/batik-shared-resources-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-shared-resources/1.13/batik-shared-resources-1.13.pom"
+          ],
+          "sha256": "4aa357b1bf3b0377a3f9ec3c630e90517001944365bda36ce9821fd50a0e4a0e"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-svg-dom",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-svg-dom-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-svg-dom/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-svg-dom/1.13/batik-svg-dom-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-svg-dom/1.13/batik-svg-dom-1.13.jar"
+          ],
+          "sha256": "9381a9bb714ab779b91aa7c714459429462b8b52dfe2594a3bd7ebe3d3108565"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-svg-dom",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-svg-dom-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-svg-dom/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-svg-dom/1.13/batik-svg-dom-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-svg-dom/1.13/batik-svg-dom-1.13.pom"
+          ],
+          "sha256": "04ac8767d8c71b6a76eb63cce8cf17e73e60adf51f02106d3d4629fd5fa9a1f3"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-svggen",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-svggen-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-svggen/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-svggen/1.13/batik-svggen-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-svggen/1.13/batik-svggen-1.13.jar"
+          ],
+          "sha256": "7daa95e744f556aa215c8856a49023223fe85cd499a5a23e336cb132fee4b3ef"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-svggen",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-svggen-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-svggen/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-svggen/1.13/batik-svggen-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-svggen/1.13/batik-svggen-1.13.pom"
+          ],
+          "sha256": "0ad1392d0cfa58b23a3c975f14933a412ea98b37c577c2d898b1466554cbe567"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-transcoder",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-transcoder-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-transcoder/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-transcoder/1.13/batik-transcoder-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-transcoder/1.13/batik-transcoder-1.13.jar"
+          ],
+          "sha256": "da3938d97a4e813221b55143ee193f90a71e3c859ce69af6c51cc095bb254bd9"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-transcoder",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-transcoder-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-transcoder/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-transcoder/1.13/batik-transcoder-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-transcoder/1.13/batik-transcoder-1.13.pom"
+          ],
+          "sha256": "3bdd5681026fe1d89cd9dcf79867bd5aef420e94e612950c56c3aca8aab97044"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-util",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-util-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-util/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-util/1.13/batik-util-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-util/1.13/batik-util-1.13.jar"
+          ],
+          "sha256": "8d528d0ed0582ee784e23fce91ed7a996589d621c4e5a98f26ee10365a9c1bc0"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-util",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-util-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-util/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-util/1.13/batik-util-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-util/1.13/batik-util-1.13.pom"
+          ],
+          "sha256": "e1436472eebb46de7755a72d85717d0bf75b141bf1c28d0a1e81911a00d37f4c"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-xml",
+            "version": "1.13",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "batik-xml-1.13.jar",
+          "path": "org/apache/xmlgraphics/batik-xml/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-xml/1.13/batik-xml-1.13.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-xml/1.13/batik-xml-1.13.jar"
+          ],
+          "sha256": "26307c65fa848d7bb20e9172d00c7329aed9c148e60e2faaac3fb5b0d210d038"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "batik-xml",
+            "version": "1.13",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "batik-xml-1.13.pom",
+          "path": "org/apache/xmlgraphics/batik-xml/1.13",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/batik-xml/1.13/batik-xml-1.13.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/batik-xml/1.13/batik-xml-1.13.pom"
+          ],
+          "sha256": "b47294737368521c4b7d5f32d2d2b9ef15bba1284b11a6261d5824884faa4c75"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "xmlgraphics-commons",
+            "version": "2.4",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "xmlgraphics-commons-2.4.jar",
+          "path": "org/apache/xmlgraphics/xmlgraphics-commons/2.4",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/xmlgraphics-commons/2.4/xmlgraphics-commons-2.4.jar",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/xmlgraphics-commons/2.4/xmlgraphics-commons-2.4.jar"
+          ],
+          "sha256": "8dfede6865d3c8ed1311b3e5b9a74b622ed0a2c7f9b9ce42a7f2425938d55624"
+        },
+        {
+          "id": {
+            "group": "org.apache.xmlgraphics",
+            "name": "xmlgraphics-commons",
+            "version": "2.4",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "xmlgraphics-commons-2.4.pom",
+          "path": "org/apache/xmlgraphics/xmlgraphics-commons/2.4",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/apache/xmlgraphics/xmlgraphics-commons/2.4/xmlgraphics-commons-2.4.pom",
+            "https://jcenter.bintray.com/org/apache/xmlgraphics/xmlgraphics-commons/2.4/xmlgraphics-commons-2.4.pom"
+          ],
+          "sha256": "b72c9a97d6e4e9c77df867fb58378c99dfeedea8d94f35184feb774f52356bd9"
         },
         {
           "id": {
@@ -5887,145 +7546,145 @@
           "id": {
             "group": "org.jacoco",
             "name": "org.jacoco.agent",
-            "version": "0.8.1",
+            "version": "0.8.5",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "org.jacoco.agent-0.8.1.jar",
-          "path": "org/jacoco/org.jacoco.agent/0.8.1",
+          "name": "org.jacoco.agent-0.8.5.jar",
+          "path": "org/jacoco/org.jacoco.agent/0.8.5",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1.jar",
-            "https://jcenter.bintray.com/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1.jar"
+            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5.jar",
+            "https://jcenter.bintray.com/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5.jar"
           ],
-          "sha256": "01a45ada35cc410509606e524efe2376cf2c0c9aa257fcad4587d1e6f5c63c08"
+          "sha256": "852e1bf147fceab6caf7a82887dba2864d88bca6020524b67dddda073398d2f8"
         },
         {
           "id": {
             "group": "org.jacoco",
             "name": "org.jacoco.agent",
-            "version": "0.8.1",
+            "version": "0.8.5",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "org.jacoco.agent-0.8.1.pom",
-          "path": "org/jacoco/org.jacoco.agent/0.8.1",
+          "name": "org.jacoco.agent-0.8.5.pom",
+          "path": "org/jacoco/org.jacoco.agent/0.8.5",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1.pom",
-            "https://jcenter.bintray.com/org/jacoco/org.jacoco.agent/0.8.1/org.jacoco.agent-0.8.1.pom"
+            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5.pom",
+            "https://jcenter.bintray.com/org/jacoco/org.jacoco.agent/0.8.5/org.jacoco.agent-0.8.5.pom"
           ],
-          "sha256": "13297b6037985dfafb084baa798ef8421dc37a9c26c5cce486f9ee843c9a870a"
+          "sha256": "c3b2f50b692f2b081d85613527917bc6812f922e1da469a11682653b16f283fd"
         },
         {
           "id": {
             "group": "org.jacoco",
             "name": "org.jacoco.ant",
-            "version": "0.8.1",
+            "version": "0.8.5",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "org.jacoco.ant-0.8.1.jar",
-          "path": "org/jacoco/org.jacoco.ant/0.8.1",
+          "name": "org.jacoco.ant-0.8.5.jar",
+          "path": "org/jacoco/org.jacoco.ant/0.8.5",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.ant/0.8.1/org.jacoco.ant-0.8.1.jar",
-            "https://jcenter.bintray.com/org/jacoco/org.jacoco.ant/0.8.1/org.jacoco.ant-0.8.1.jar"
+            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.ant/0.8.5/org.jacoco.ant-0.8.5.jar",
+            "https://jcenter.bintray.com/org/jacoco/org.jacoco.ant/0.8.5/org.jacoco.ant-0.8.5.jar"
           ],
-          "sha256": "b47a8c4c1bce2a5acc650c5153ff473205e47d6f3d7da693a59628340ff80ae6"
+          "sha256": "cd2289b9f955c8064054145f3871e18101840ae73ee6b9f835aea51573506cce"
         },
         {
           "id": {
             "group": "org.jacoco",
             "name": "org.jacoco.ant",
-            "version": "0.8.1",
+            "version": "0.8.5",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "org.jacoco.ant-0.8.1.pom",
-          "path": "org/jacoco/org.jacoco.ant/0.8.1",
+          "name": "org.jacoco.ant-0.8.5.pom",
+          "path": "org/jacoco/org.jacoco.ant/0.8.5",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.ant/0.8.1/org.jacoco.ant-0.8.1.pom",
-            "https://jcenter.bintray.com/org/jacoco/org.jacoco.ant/0.8.1/org.jacoco.ant-0.8.1.pom"
+            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.ant/0.8.5/org.jacoco.ant-0.8.5.pom",
+            "https://jcenter.bintray.com/org/jacoco/org.jacoco.ant/0.8.5/org.jacoco.ant-0.8.5.pom"
           ],
-          "sha256": "7c50c433383bb50d09996c0684048260bce10808a4121081f23fa32e2eb3617c"
+          "sha256": "4b74fc5373ad70d387f3738ce0e9d4b170944039739e2b12a87c24202c002282"
         },
         {
           "id": {
             "group": "org.jacoco",
             "name": "org.jacoco.build",
-            "version": "0.8.1",
+            "version": "0.8.5",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "org.jacoco.build-0.8.1.pom",
-          "path": "org/jacoco/org.jacoco.build/0.8.1",
+          "name": "org.jacoco.build-0.8.5.pom",
+          "path": "org/jacoco/org.jacoco.build/0.8.5",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.build/0.8.1/org.jacoco.build-0.8.1.pom",
-            "https://jcenter.bintray.com/org/jacoco/org.jacoco.build/0.8.1/org.jacoco.build-0.8.1.pom"
+            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.build/0.8.5/org.jacoco.build-0.8.5.pom",
+            "https://jcenter.bintray.com/org/jacoco/org.jacoco.build/0.8.5/org.jacoco.build-0.8.5.pom"
           ],
-          "sha256": "6df193db5a09f784afe244ebd030886655f20146810e7970ba3ce24f341877b3"
+          "sha256": "ad6e40d227647ddbeb4f47a04d1002299986d127b7244f8b34d7b742ba1ac1ca"
         },
         {
           "id": {
             "group": "org.jacoco",
             "name": "org.jacoco.core",
-            "version": "0.8.1",
+            "version": "0.8.5",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "org.jacoco.core-0.8.1.jar",
-          "path": "org/jacoco/org.jacoco.core/0.8.1",
+          "name": "org.jacoco.core-0.8.5.jar",
+          "path": "org/jacoco/org.jacoco.core/0.8.5",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.core/0.8.1/org.jacoco.core-0.8.1.jar",
-            "https://jcenter.bintray.com/org/jacoco/org.jacoco.core/0.8.1/org.jacoco.core-0.8.1.jar"
+            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.core/0.8.5/org.jacoco.core-0.8.5.jar",
+            "https://jcenter.bintray.com/org/jacoco/org.jacoco.core/0.8.5/org.jacoco.core-0.8.5.jar"
           ],
-          "sha256": "bc1e7dcfa58235c42b5f2de1f7b884b812837e23d0aaf03d8217908462560103"
+          "sha256": "945818d150f89c03359ee9089568b2b83b4df4752fced02e6323f271481f0ddd"
         },
         {
           "id": {
             "group": "org.jacoco",
             "name": "org.jacoco.core",
-            "version": "0.8.1",
+            "version": "0.8.5",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "org.jacoco.core-0.8.1.pom",
-          "path": "org/jacoco/org.jacoco.core/0.8.1",
+          "name": "org.jacoco.core-0.8.5.pom",
+          "path": "org/jacoco/org.jacoco.core/0.8.5",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.core/0.8.1/org.jacoco.core-0.8.1.pom",
-            "https://jcenter.bintray.com/org/jacoco/org.jacoco.core/0.8.1/org.jacoco.core-0.8.1.pom"
+            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.core/0.8.5/org.jacoco.core-0.8.5.pom",
+            "https://jcenter.bintray.com/org/jacoco/org.jacoco.core/0.8.5/org.jacoco.core-0.8.5.pom"
           ],
-          "sha256": "14e0650e8d8139e02d2da228d2b2caf858407085fc556779548c0ca96a37bfd7"
+          "sha256": "2df79bbe660731df5b4f7b8d343afff59aa8b7d9d552d9c2f6e94de71eb374ef"
         },
         {
           "id": {
             "group": "org.jacoco",
             "name": "org.jacoco.report",
-            "version": "0.8.1",
+            "version": "0.8.5",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "org.jacoco.report-0.8.1.jar",
-          "path": "org/jacoco/org.jacoco.report/0.8.1",
+          "name": "org.jacoco.report-0.8.5.jar",
+          "path": "org/jacoco/org.jacoco.report/0.8.5",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.report/0.8.1/org.jacoco.report-0.8.1.jar",
-            "https://jcenter.bintray.com/org/jacoco/org.jacoco.report/0.8.1/org.jacoco.report-0.8.1.jar"
+            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.report/0.8.5/org.jacoco.report-0.8.5.jar",
+            "https://jcenter.bintray.com/org/jacoco/org.jacoco.report/0.8.5/org.jacoco.report-0.8.5.jar"
           ],
-          "sha256": "310ae1a30e6cbcc0f9d2b6a9567b63fcd93e77c8e53da9c2f6c863c3833a9e8d"
+          "sha256": "c83e687be88e74477519eb67e20cc77a98deefaed920cd2a5531863c23d95906"
         },
         {
           "id": {
             "group": "org.jacoco",
             "name": "org.jacoco.report",
-            "version": "0.8.1",
+            "version": "0.8.5",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "org.jacoco.report-0.8.1.pom",
-          "path": "org/jacoco/org.jacoco.report/0.8.1",
+          "name": "org.jacoco.report-0.8.5.pom",
+          "path": "org/jacoco/org.jacoco.report/0.8.5",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.report/0.8.1/org.jacoco.report-0.8.1.pom",
-            "https://jcenter.bintray.com/org/jacoco/org.jacoco.report/0.8.1/org.jacoco.report-0.8.1.pom"
+            "https://repo.maven.apache.org/maven2/org/jacoco/org.jacoco.report/0.8.5/org.jacoco.report-0.8.5.pom",
+            "https://jcenter.bintray.com/org/jacoco/org.jacoco.report/0.8.5/org.jacoco.report-0.8.5.pom"
           ],
-          "sha256": "5deeea7701acc9cdcc2bd330f14a023e20e19697674a796d6b84a4ccb5962a83"
+          "sha256": "574cc0a2a4e77a2939b2fc24cab92bca414d05d8a6ab9e48ffb8fbd7fe0ae725"
         },
         {
           "id": {
@@ -6191,129 +7850,193 @@
           "id": {
             "group": "org.junit.jupiter",
             "name": "junit-jupiter-api",
-            "version": "5.5.2",
+            "version": "5.6.2",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "junit-jupiter-api-5.5.2.jar",
-          "path": "org/junit/jupiter/junit-jupiter-api/5.5.2",
+          "name": "junit-jupiter-api-5.6.2.jar",
+          "path": "org/junit/jupiter/junit-jupiter-api/5.6.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar",
-            "https://jcenter.bintray.com/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.jar"
+            "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar",
+            "https://jcenter.bintray.com/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.jar"
           ],
-          "sha256": "249a2fdbd3931987c0298d00ca08ed248496e0fc11e0463c08c4f82e0cc79b1c"
+          "sha256": "3f476de9b214f20ca69da51e801186d001f67328a686df81bc3de3ba11953870"
         },
         {
           "id": {
             "group": "org.junit.jupiter",
             "name": "junit-jupiter-api",
-            "version": "5.5.2",
+            "version": "5.6.2",
+            "type": "module",
+            "extension": "module"
+          },
+          "name": "junit-jupiter-api-5.6.2.module",
+          "path": "org/junit/jupiter/junit-jupiter-api/5.6.2",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.module",
+            "https://jcenter.bintray.com/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.module"
+          ],
+          "sha256": "1afa7193e59ec77ce2e82f89747cd1624c35056549661f3e66b10aeb45964a3b"
+        },
+        {
+          "id": {
+            "group": "org.junit.jupiter",
+            "name": "junit-jupiter-api",
+            "version": "5.6.2",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "junit-jupiter-api-5.5.2.pom",
-          "path": "org/junit/jupiter/junit-jupiter-api/5.5.2",
+          "name": "junit-jupiter-api-5.6.2.pom",
+          "path": "org/junit/jupiter/junit-jupiter-api/5.6.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.pom",
-            "https://jcenter.bintray.com/org/junit/jupiter/junit-jupiter-api/5.5.2/junit-jupiter-api-5.5.2.pom"
+            "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.pom",
+            "https://jcenter.bintray.com/org/junit/jupiter/junit-jupiter-api/5.6.2/junit-jupiter-api-5.6.2.pom"
           ],
-          "sha256": "76a15d80d8587a1a5a3a5b142d2ceb37304fbd91198ba425486e57f76d088860"
+          "sha256": "1d3b97e7a6fcd708fb42cada5a70131d08d5a505b15a51bce76aca6f4d67d23b"
         },
         {
           "id": {
             "group": "org.junit.jupiter",
             "name": "junit-jupiter-engine",
-            "version": "5.5.2",
+            "version": "5.6.2",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "junit-jupiter-engine-5.5.2.jar",
-          "path": "org/junit/jupiter/junit-jupiter-engine/5.5.2",
+          "name": "junit-jupiter-engine-5.6.2.jar",
+          "path": "org/junit/jupiter/junit-jupiter-engine/5.6.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.5.2/junit-jupiter-engine-5.5.2.jar",
-            "https://jcenter.bintray.com/org/junit/jupiter/junit-jupiter-engine/5.5.2/junit-jupiter-engine-5.5.2.jar"
+            "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar",
+            "https://jcenter.bintray.com/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.jar"
           ],
-          "sha256": "6d777da9876e2ef7a0336e8f098f8d74a5a64f810aa3a4a2f5f3b766ce97837b"
+          "sha256": "0eb1ab3fc8e4130943b54f4d86824b106ef1cd90d96789343f3944e48b3c501c"
         },
         {
           "id": {
             "group": "org.junit.jupiter",
             "name": "junit-jupiter-engine",
-            "version": "5.5.2",
+            "version": "5.6.2",
+            "type": "module",
+            "extension": "module"
+          },
+          "name": "junit-jupiter-engine-5.6.2.module",
+          "path": "org/junit/jupiter/junit-jupiter-engine/5.6.2",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.module",
+            "https://jcenter.bintray.com/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.module"
+          ],
+          "sha256": "5aac8d51ec86e4ff25a7e1f5affb6a909d4e5404e6cf09f5c5ee762617929a51"
+        },
+        {
+          "id": {
+            "group": "org.junit.jupiter",
+            "name": "junit-jupiter-engine",
+            "version": "5.6.2",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "junit-jupiter-engine-5.5.2.pom",
-          "path": "org/junit/jupiter/junit-jupiter-engine/5.5.2",
+          "name": "junit-jupiter-engine-5.6.2.pom",
+          "path": "org/junit/jupiter/junit-jupiter-engine/5.6.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.5.2/junit-jupiter-engine-5.5.2.pom",
-            "https://jcenter.bintray.com/org/junit/jupiter/junit-jupiter-engine/5.5.2/junit-jupiter-engine-5.5.2.pom"
+            "https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.pom",
+            "https://jcenter.bintray.com/org/junit/jupiter/junit-jupiter-engine/5.6.2/junit-jupiter-engine-5.6.2.pom"
           ],
-          "sha256": "032fef4e2563084d397eae481a388010f443401af6252bfd377d76307f6f8bfe"
+          "sha256": "c6e6887988ca316556762b86ab60ecb644980474d9124a6f2b0edce7f34309d2"
         },
         {
           "id": {
             "group": "org.junit.platform",
             "name": "junit-platform-commons",
-            "version": "1.5.2",
+            "version": "1.6.2",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "junit-platform-commons-1.5.2.jar",
-          "path": "org/junit/platform/junit-platform-commons/1.5.2",
+          "name": "junit-platform-commons-1.6.2.jar",
+          "path": "org/junit/platform/junit-platform-commons/1.6.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2.jar",
-            "https://jcenter.bintray.com/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2.jar"
+            "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar",
+            "https://jcenter.bintray.com/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.jar"
           ],
-          "sha256": "fc44afdfc0f20c85e71a66e7943281aef3bc1e0fd62d2d69a36cb6901e682c10"
+          "sha256": "341621f4d998fd7b539b38baa7e1a3da80b7cac00b983e6206b01c9290915fe9"
         },
         {
           "id": {
             "group": "org.junit.platform",
             "name": "junit-platform-commons",
-            "version": "1.5.2",
+            "version": "1.6.2",
+            "type": "module",
+            "extension": "module"
+          },
+          "name": "junit-platform-commons-1.6.2.module",
+          "path": "org/junit/platform/junit-platform-commons/1.6.2",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.module",
+            "https://jcenter.bintray.com/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.module"
+          ],
+          "sha256": "4a38a9a91e91aa9cd1d4e27a956f50aac8c1762645800e04987fe151f181958c"
+        },
+        {
+          "id": {
+            "group": "org.junit.platform",
+            "name": "junit-platform-commons",
+            "version": "1.6.2",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "junit-platform-commons-1.5.2.pom",
-          "path": "org/junit/platform/junit-platform-commons/1.5.2",
+          "name": "junit-platform-commons-1.6.2.pom",
+          "path": "org/junit/platform/junit-platform-commons/1.6.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2.pom",
-            "https://jcenter.bintray.com/org/junit/platform/junit-platform-commons/1.5.2/junit-platform-commons-1.5.2.pom"
+            "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.pom",
+            "https://jcenter.bintray.com/org/junit/platform/junit-platform-commons/1.6.2/junit-platform-commons-1.6.2.pom"
           ],
-          "sha256": "3bd0d4ded632a8af8ca587fb6764019de771b1d6bcb89acd562435a1009faada"
+          "sha256": "c5d762d66dfea70f38df383e70b7ca5cfd2f643f0cad188800994b7fb09fbc02"
         },
         {
           "id": {
             "group": "org.junit.platform",
             "name": "junit-platform-engine",
-            "version": "1.5.2",
+            "version": "1.6.2",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "junit-platform-engine-1.5.2.jar",
-          "path": "org/junit/platform/junit-platform-engine/1.5.2",
+          "name": "junit-platform-engine-1.6.2.jar",
+          "path": "org/junit/platform/junit-platform-engine/1.6.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.5.2/junit-platform-engine-1.5.2.jar",
-            "https://jcenter.bintray.com/org/junit/platform/junit-platform-engine/1.5.2/junit-platform-engine-1.5.2.jar"
+            "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar",
+            "https://jcenter.bintray.com/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.jar"
           ],
-          "sha256": "ff20ba4ad8c00ef17baef9c55512f9c02d9a68740f7f1ac01a9a6aa0239931f8"
+          "sha256": "23b41ac95e4673f7b31e8502424451be4154fe4db1d448448945e2215473c246"
         },
         {
           "id": {
             "group": "org.junit.platform",
             "name": "junit-platform-engine",
-            "version": "1.5.2",
+            "version": "1.6.2",
+            "type": "module",
+            "extension": "module"
+          },
+          "name": "junit-platform-engine-1.6.2.module",
+          "path": "org/junit/platform/junit-platform-engine/1.6.2",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.module",
+            "https://jcenter.bintray.com/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.module"
+          ],
+          "sha256": "cb7395f9b7386ed0d60fb07475355d9af0aaeaf800e39e7594c9d56732dd60b9"
+        },
+        {
+          "id": {
+            "group": "org.junit.platform",
+            "name": "junit-platform-engine",
+            "version": "1.6.2",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "junit-platform-engine-1.5.2.pom",
-          "path": "org/junit/platform/junit-platform-engine/1.5.2",
+          "name": "junit-platform-engine-1.6.2.pom",
+          "path": "org/junit/platform/junit-platform-engine/1.6.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.5.2/junit-platform-engine-1.5.2.pom",
-            "https://jcenter.bintray.com/org/junit/platform/junit-platform-engine/1.5.2/junit-platform-engine-1.5.2.pom"
+            "https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.pom",
+            "https://jcenter.bintray.com/org/junit/platform/junit-platform-engine/1.6.2/junit-platform-engine-1.6.2.pom"
           ],
-          "sha256": "2d4b95555c21e085ebc1ddbdf42d79eb1d55640dc193b1b7e6100240fd2f189f"
+          "sha256": "6572dcfd47e62fc04d8571cd6a21c0101c5f4f779f0b162824067efa4d9dc07a"
         },
         {
           "id": {
@@ -6525,6 +8248,317 @@
         },
         {
           "id": {
+            "group": "org.openjfx",
+            "name": "javafx",
+            "version": "14",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javafx-14.pom",
+          "path": "org/openjfx/javafx/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx/14/javafx-14.pom",
+            "https://jcenter.bintray.com/org/openjfx/javafx/14/javafx-14.pom"
+          ],
+          "sha256": "2f6d85795161871a9d1286be9e2b8ec8f0dfc691fd6946f5cda4ef6fcb321c77"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-base",
+            "version": "14",
+            "type": "jar",
+            "extension": "jar",
+            "classifier": "linux"
+          },
+          "name": "javafx-base-14-linux.jar",
+          "path": "org/openjfx/javafx-base/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/14/javafx-base-14-linux.jar",
+            "https://jcenter.bintray.com/org/openjfx/javafx-base/14/javafx-base-14-linux.jar"
+          ],
+          "sha256": "4b0cca53af519444bb11f775a374b529b28f51fdad2da84b1ba99f3e56e2ceaf"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-base",
+            "version": "14",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "javafx-base-14.jar",
+          "path": "org/openjfx/javafx-base/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/14/javafx-base-14.jar",
+            "https://jcenter.bintray.com/org/openjfx/javafx-base/14/javafx-base-14.jar"
+          ],
+          "sha256": "f413a1dae1f46939493cde6b55fc6adf8ee6c978b86e42437bf685d0e6e1312f"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-base",
+            "version": "14",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javafx-base-14.pom",
+          "path": "org/openjfx/javafx-base/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-base/14/javafx-base-14.pom",
+            "https://jcenter.bintray.com/org/openjfx/javafx-base/14/javafx-base-14.pom"
+          ],
+          "sha256": "30e566fd7171dc271b3f84f9e4246ee6edec97266db4d3445af89bd64eb55de2"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-controls",
+            "version": "14",
+            "type": "jar",
+            "extension": "jar",
+            "classifier": "linux"
+          },
+          "name": "javafx-controls-14-linux.jar",
+          "path": "org/openjfx/javafx-controls/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/14/javafx-controls-14-linux.jar",
+            "https://jcenter.bintray.com/org/openjfx/javafx-controls/14/javafx-controls-14-linux.jar"
+          ],
+          "sha256": "1d888c37ab22a815baf3dd395c3293fdd635da666cfc90631077cda7b0554fe0"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-controls",
+            "version": "14",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "javafx-controls-14.jar",
+          "path": "org/openjfx/javafx-controls/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/14/javafx-controls-14.jar",
+            "https://jcenter.bintray.com/org/openjfx/javafx-controls/14/javafx-controls-14.jar"
+          ],
+          "sha256": "d3c8c53933215a9c9313428808a13c16720c232b154f0df1ae6cdfd563744817"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-controls",
+            "version": "14",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javafx-controls-14.pom",
+          "path": "org/openjfx/javafx-controls/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-controls/14/javafx-controls-14.pom",
+            "https://jcenter.bintray.com/org/openjfx/javafx-controls/14/javafx-controls-14.pom"
+          ],
+          "sha256": "32626b2e37457bd13b526818f682541bc36adea27ed565a72c834168ff18407e"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-fxml",
+            "version": "14",
+            "type": "jar",
+            "extension": "jar",
+            "classifier": "linux"
+          },
+          "name": "javafx-fxml-14-linux.jar",
+          "path": "org/openjfx/javafx-fxml/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/14/javafx-fxml-14-linux.jar",
+            "https://jcenter.bintray.com/org/openjfx/javafx-fxml/14/javafx-fxml-14-linux.jar"
+          ],
+          "sha256": "a417ea6a7459961c70104a74b13410821dd5204c126a30118a5387e7c5bfca9f"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-fxml",
+            "version": "14",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javafx-fxml-14.pom",
+          "path": "org/openjfx/javafx-fxml/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-fxml/14/javafx-fxml-14.pom",
+            "https://jcenter.bintray.com/org/openjfx/javafx-fxml/14/javafx-fxml-14.pom"
+          ],
+          "sha256": "a74d8d9e09988951221100f0022da9d830e8fd82d4ad7fcac38e7d6898411718"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-graphics",
+            "version": "14",
+            "type": "jar",
+            "extension": "jar",
+            "classifier": "linux"
+          },
+          "name": "javafx-graphics-14-linux.jar",
+          "path": "org/openjfx/javafx-graphics/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/14/javafx-graphics-14-linux.jar",
+            "https://jcenter.bintray.com/org/openjfx/javafx-graphics/14/javafx-graphics-14-linux.jar"
+          ],
+          "sha256": "ea60a6c137e07781cea8e28d90c245a0e8300d7772a5574bf53a621d480ca72a"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-graphics",
+            "version": "14",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "javafx-graphics-14.jar",
+          "path": "org/openjfx/javafx-graphics/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/14/javafx-graphics-14.jar",
+            "https://jcenter.bintray.com/org/openjfx/javafx-graphics/14/javafx-graphics-14.jar"
+          ],
+          "sha256": "ef54bf1362ed3fd64f10bbff278608cef2fb114586a1e1ef90079097f954a1ad"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-graphics",
+            "version": "14",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javafx-graphics-14.pom",
+          "path": "org/openjfx/javafx-graphics/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-graphics/14/javafx-graphics-14.pom",
+            "https://jcenter.bintray.com/org/openjfx/javafx-graphics/14/javafx-graphics-14.pom"
+          ],
+          "sha256": "b1a360dbb7925893014ca9056438fb97550323e7d82b938201e9e9a2fe25e2ab"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-media",
+            "version": "14",
+            "type": "jar",
+            "extension": "jar",
+            "classifier": "linux"
+          },
+          "name": "javafx-media-14-linux.jar",
+          "path": "org/openjfx/javafx-media/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-media/14/javafx-media-14-linux.jar",
+            "https://jcenter.bintray.com/org/openjfx/javafx-media/14/javafx-media-14-linux.jar"
+          ],
+          "sha256": "1491dc1e97463a6cfcfeaa60617f957f481563f24cf905ff9692f07c2b8c4587"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-media",
+            "version": "14",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "javafx-media-14.jar",
+          "path": "org/openjfx/javafx-media/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-media/14/javafx-media-14.jar",
+            "https://jcenter.bintray.com/org/openjfx/javafx-media/14/javafx-media-14.jar"
+          ],
+          "sha256": "4d3552250962dba3856949ba509cefac840d88f777cf62d49f8a2ecb4873ff55"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-media",
+            "version": "14",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javafx-media-14.pom",
+          "path": "org/openjfx/javafx-media/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-media/14/javafx-media-14.pom",
+            "https://jcenter.bintray.com/org/openjfx/javafx-media/14/javafx-media-14.pom"
+          ],
+          "sha256": "c0fe8a9490bdd773d01bf68bc280a5be39e4738694435a805af02fd08b230727"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-swing",
+            "version": "14",
+            "type": "jar",
+            "extension": "jar",
+            "classifier": "linux"
+          },
+          "name": "javafx-swing-14-linux.jar",
+          "path": "org/openjfx/javafx-swing/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/14/javafx-swing-14-linux.jar",
+            "https://jcenter.bintray.com/org/openjfx/javafx-swing/14/javafx-swing-14-linux.jar"
+          ],
+          "sha256": "63fe279d9740b30c7ecb211ac2ba2e4883d8b91d5c0a36ae9773894f1b2cb44e"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-swing",
+            "version": "14",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javafx-swing-14.pom",
+          "path": "org/openjfx/javafx-swing/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-swing/14/javafx-swing-14.pom",
+            "https://jcenter.bintray.com/org/openjfx/javafx-swing/14/javafx-swing-14.pom"
+          ],
+          "sha256": "caa16fa79a02ab432f45b1e2ee921d17fbf6477bcc2f86e35e556df40a4d6cd0"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-web",
+            "version": "14",
+            "type": "jar",
+            "extension": "jar",
+            "classifier": "linux"
+          },
+          "name": "javafx-web-14-linux.jar",
+          "path": "org/openjfx/javafx-web/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-web/14/javafx-web-14-linux.jar",
+            "https://jcenter.bintray.com/org/openjfx/javafx-web/14/javafx-web-14-linux.jar"
+          ],
+          "sha256": "898ad603ce4a73eb66d9ce5ff874f03b392d06940f33a97f8d925e4f5afce235"
+        },
+        {
+          "id": {
+            "group": "org.openjfx",
+            "name": "javafx-web",
+            "version": "14",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "javafx-web-14.pom",
+          "path": "org/openjfx/javafx-web/14",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/openjfx/javafx-web/14/javafx-web-14.pom",
+            "https://jcenter.bintray.com/org/openjfx/javafx-web/14/javafx-web-14.pom"
+          ],
+          "sha256": "acd8577787502c6c46808c9887bc86cf1e7579c56f6fb1ecbf09c46d087f5f0c"
+        },
+        {
+          "id": {
             "group": "org.opentest4j",
             "name": "opentest4j",
             "version": "1.2.0",
@@ -6573,6 +8607,22 @@
         },
         {
           "id": {
+            "group": "org.ow2",
+            "name": "ow2",
+            "version": "1.5",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "ow2-1.5.pom",
+          "path": "org/ow2/ow2/1.5",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5/ow2-1.5.pom",
+            "https://jcenter.bintray.com/org/ow2/ow2/1.5/ow2-1.5.pom"
+          ],
+          "sha256": "0f8a1b116e760b8fe6389c51b84e4b07a70fc11082d4f936e453b583dd50b43b"
+        },
+        {
+          "id": {
             "group": "org.ow2.asm",
             "name": "asm",
             "version": "5.0.4",
@@ -6607,97 +8657,97 @@
           "id": {
             "group": "org.ow2.asm",
             "name": "asm",
-            "version": "6.0",
+            "version": "7.2",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "asm-6.0.jar",
-          "path": "org/ow2/asm/asm/6.0",
+          "name": "asm-7.2.jar",
+          "path": "org/ow2/asm/asm/7.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.0/asm-6.0.jar",
-            "https://jcenter.bintray.com/org/ow2/asm/asm/6.0/asm-6.0.jar"
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/7.2/asm-7.2.jar",
+            "https://jcenter.bintray.com/org/ow2/asm/asm/7.2/asm-7.2.jar"
           ],
-          "sha256": "dd8971c74a4e697899a8e95caae4ea8760ea6c486dc6b97b1795e75760420461"
+          "sha256": "7e6cc9e92eb94d04e39356c6d8144ca058cda961c344a7f62166a405f3206672"
         },
         {
           "id": {
             "group": "org.ow2.asm",
             "name": "asm",
-            "version": "6.0",
+            "version": "7.2",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "asm-6.0.pom",
-          "path": "org/ow2/asm/asm/6.0",
+          "name": "asm-7.2.pom",
+          "path": "org/ow2/asm/asm/7.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/6.0/asm-6.0.pom",
-            "https://jcenter.bintray.com/org/ow2/asm/asm/6.0/asm-6.0.pom"
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm/7.2/asm-7.2.pom",
+            "https://jcenter.bintray.com/org/ow2/asm/asm/7.2/asm-7.2.pom"
           ],
-          "sha256": "c2bc497e197112e699085426bbb45b1ab0be8002da68267a3b1f450a0312c32e"
+          "sha256": "e9e529afbd4bc699f6a3380855d27d13017c360fdb68547e06d1c3842d84e262"
         },
         {
           "id": {
             "group": "org.ow2.asm",
             "name": "asm-analysis",
-            "version": "6.0",
+            "version": "7.2",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "asm-analysis-6.0.jar",
-          "path": "org/ow2/asm/asm-analysis/6.0",
+          "name": "asm-analysis-7.2.jar",
+          "path": "org/ow2/asm/asm-analysis/7.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/6.0/asm-analysis-6.0.jar",
-            "https://jcenter.bintray.com/org/ow2/asm/asm-analysis/6.0/asm-analysis-6.0.jar"
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/7.2/asm-analysis-7.2.jar",
+            "https://jcenter.bintray.com/org/ow2/asm/asm-analysis/7.2/asm-analysis-7.2.jar"
           ],
-          "sha256": "2f1a6387219c3a6cc4856481f221b03bd9f2408a326d416af09af5d6f608c1f4"
+          "sha256": "be922aae60ff1ff1768e8e6544a38a7f92bd0a6d6b0b9791f94955d1bd453de2"
         },
         {
           "id": {
             "group": "org.ow2.asm",
             "name": "asm-analysis",
-            "version": "6.0",
+            "version": "7.2",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "asm-analysis-6.0.pom",
-          "path": "org/ow2/asm/asm-analysis/6.0",
+          "name": "asm-analysis-7.2.pom",
+          "path": "org/ow2/asm/asm-analysis/7.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/6.0/asm-analysis-6.0.pom",
-            "https://jcenter.bintray.com/org/ow2/asm/asm-analysis/6.0/asm-analysis-6.0.pom"
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-analysis/7.2/asm-analysis-7.2.pom",
+            "https://jcenter.bintray.com/org/ow2/asm/asm-analysis/7.2/asm-analysis-7.2.pom"
           ],
-          "sha256": "d3aaf42e40e3e24aabda53b5de4de5e17cb78e06549bf37312dca6c77e251054"
+          "sha256": "71faa63489b3de4d6251581d2b26e87e0c167c5a08198ca62853fd83644d841f"
         },
         {
           "id": {
             "group": "org.ow2.asm",
             "name": "asm-commons",
-            "version": "6.0",
+            "version": "7.2",
             "type": "jar",
             "extension": "jar"
           },
-          "name": "asm-commons-6.0.jar",
-          "path": "org/ow2/asm/asm-commons/6.0",
+          "name": "asm-commons-7.2.jar",
+          "path": "org/ow2/asm/asm-commons/7.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/6.0/asm-commons-6.0.jar",
-            "https://jcenter.bintray.com/org/ow2/asm/asm-commons/6.0/asm-commons-6.0.jar"
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/7.2/asm-commons-7.2.jar",
+            "https://jcenter.bintray.com/org/ow2/asm/asm-commons/7.2/asm-commons-7.2.jar"
           ],
-          "sha256": "f1bce5c648a96a017bdcd01fe5d59af9845297fd7b79b81c015a6fbbd9719abf"
+          "sha256": "0e86b8b179c5fb223d1a880a0ff4960b6978223984b94e62e71135f2d8ea3558"
         },
         {
           "id": {
             "group": "org.ow2.asm",
             "name": "asm-commons",
-            "version": "6.0",
+            "version": "7.2",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "asm-commons-6.0.pom",
-          "path": "org/ow2/asm/asm-commons/6.0",
+          "name": "asm-commons-7.2.pom",
+          "path": "org/ow2/asm/asm-commons/7.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/6.0/asm-commons-6.0.pom",
-            "https://jcenter.bintray.com/org/ow2/asm/asm-commons/6.0/asm-commons-6.0.pom"
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-commons/7.2/asm-commons-7.2.pom",
+            "https://jcenter.bintray.com/org/ow2/asm/asm-commons/7.2/asm-commons-7.2.pom"
           ],
-          "sha256": "90f4f29473afb957229016eb5741954976cc1b67bc049b3981c0d1e653ad5cdd"
+          "sha256": "190ed352a8c20594b196b20194d06773b91c86b8d36868f937e5dbd0e9c0d78d"
         },
         {
           "id": {
@@ -6718,82 +8768,34 @@
         {
           "id": {
             "group": "org.ow2.asm",
-            "name": "asm-parent",
-            "version": "6.0",
-            "type": "pom",
-            "extension": "pom"
+            "name": "asm-tree",
+            "version": "7.2",
+            "type": "jar",
+            "extension": "jar"
           },
-          "name": "asm-parent-6.0.pom",
-          "path": "org/ow2/asm/asm-parent/6.0",
+          "name": "asm-tree-7.2.jar",
+          "path": "org/ow2/asm/asm-tree/7.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-parent/6.0/asm-parent-6.0.pom",
-            "https://jcenter.bintray.com/org/ow2/asm/asm-parent/6.0/asm-parent-6.0.pom"
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/7.2/asm-tree-7.2.jar",
+            "https://jcenter.bintray.com/org/ow2/asm/asm-tree/7.2/asm-tree-7.2.jar"
           ],
-          "sha256": "791d064bb9ecc9a46d43bc9efecd74c91464dfc451f321b802d2261e2ccd7d14"
+          "sha256": "c063f5a67fa03cdc9bd79fd1c2ea6816cc4a19473ecdfbd9e9153b408c6f2656"
         },
         {
           "id": {
             "group": "org.ow2.asm",
             "name": "asm-tree",
-            "version": "6.0",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "asm-tree-6.0.jar",
-          "path": "org/ow2/asm/asm-tree/6.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.jar",
-            "https://jcenter.bintray.com/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.jar"
-          ],
-          "sha256": "887998fb69727c8759e4d253f856822801e33f9fd4caa566b3ac58ee92106215"
-        },
-        {
-          "id": {
-            "group": "org.ow2.asm",
-            "name": "asm-tree",
-            "version": "6.0",
+            "version": "7.2",
             "type": "pom",
             "extension": "pom"
           },
-          "name": "asm-tree-6.0.pom",
-          "path": "org/ow2/asm/asm-tree/6.0",
+          "name": "asm-tree-7.2.pom",
+          "path": "org/ow2/asm/asm-tree/7.2",
           "urls": [
-            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.pom",
-            "https://jcenter.bintray.com/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.pom"
+            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-tree/7.2/asm-tree-7.2.pom",
+            "https://jcenter.bintray.com/org/ow2/asm/asm-tree/7.2/asm-tree-7.2.pom"
           ],
-          "sha256": "36887e0d7fdb185a92378a38ea45e596a97f10f385c5d050eb6252454ee701b4"
-        },
-        {
-          "id": {
-            "group": "org.ow2.asm",
-            "name": "asm-util",
-            "version": "6.0",
-            "type": "jar",
-            "extension": "jar"
-          },
-          "name": "asm-util-6.0.jar",
-          "path": "org/ow2/asm/asm-util/6.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/6.0/asm-util-6.0.jar",
-            "https://jcenter.bintray.com/org/ow2/asm/asm-util/6.0/asm-util-6.0.jar"
-          ],
-          "sha256": "356afebdb0f870175262e5188f8709a3b17aa2a5a6a4b0340b04d4b449bca5f6"
-        },
-        {
-          "id": {
-            "group": "org.ow2.asm",
-            "name": "asm-util",
-            "version": "6.0",
-            "type": "pom",
-            "extension": "pom"
-          },
-          "name": "asm-util-6.0.pom",
-          "path": "org/ow2/asm/asm-util/6.0",
-          "urls": [
-            "https://repo.maven.apache.org/maven2/org/ow2/asm/asm-util/6.0/asm-util-6.0.pom",
-            "https://jcenter.bintray.com/org/ow2/asm/asm-util/6.0/asm-util-6.0.pom"
-          ],
-          "sha256": "3cdfc61f988d167b97503419da82a5808b20f4205aeb46c394e6e7ffd3211f12"
+          "sha256": "56765f0a8bd0978214f7ec87a9dafb5825b8191cff554a5adc14c65d1f5b0442"
         },
         {
           "id": {
@@ -7000,6 +9002,134 @@
             "https://jcenter.bintray.com/rhino/js/1.6R5/js-1.6R5.pom"
           ],
           "sha256": "2f0e03d2bc59f1489b92ccdd077965e76fed6897c2191fd9f85c3708c6025d7b"
+        },
+        {
+          "id": {
+            "group": "xalan",
+            "name": "serializer",
+            "version": "2.7.2",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "serializer-2.7.2.jar",
+          "path": "xalan/serializer/2.7.2",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/xalan/serializer/2.7.2/serializer-2.7.2.jar",
+            "https://jcenter.bintray.com/xalan/serializer/2.7.2/serializer-2.7.2.jar"
+          ],
+          "sha256": "e8f5b4340d3b12a0cfa44ac2db4be4e0639e479ae847df04c4ed8b521734bb4a"
+        },
+        {
+          "id": {
+            "group": "xalan",
+            "name": "serializer",
+            "version": "2.7.2",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "serializer-2.7.2.pom",
+          "path": "xalan/serializer/2.7.2",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/xalan/serializer/2.7.2/serializer-2.7.2.pom",
+            "https://jcenter.bintray.com/xalan/serializer/2.7.2/serializer-2.7.2.pom"
+          ],
+          "sha256": "bb2bc5b33b8a9030e4abe03022ec4993b3ccbe30fd2aaf1fc019a0b80cc04969"
+        },
+        {
+          "id": {
+            "group": "xalan",
+            "name": "xalan",
+            "version": "2.7.2",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "xalan-2.7.2.jar",
+          "path": "xalan/xalan/2.7.2",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/xalan/xalan/2.7.2/xalan-2.7.2.jar",
+            "https://jcenter.bintray.com/xalan/xalan/2.7.2/xalan-2.7.2.jar"
+          ],
+          "sha256": "a44bd80e82cb0f4cfac0dac8575746223802514e3cec9dc75235bc0de646af14"
+        },
+        {
+          "id": {
+            "group": "xalan",
+            "name": "xalan",
+            "version": "2.7.2",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "xalan-2.7.2.pom",
+          "path": "xalan/xalan/2.7.2",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/xalan/xalan/2.7.2/xalan-2.7.2.pom",
+            "https://jcenter.bintray.com/xalan/xalan/2.7.2/xalan-2.7.2.pom"
+          ],
+          "sha256": "47e04c9456485a9cd106fe6e722097efb5c65954392a5cb095b8686cd094d292"
+        },
+        {
+          "id": {
+            "group": "xml-apis",
+            "name": "xml-apis",
+            "version": "1.4.01",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "xml-apis-1.4.01.jar",
+          "path": "xml-apis/xml-apis/1.4.01",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar",
+            "https://jcenter.bintray.com/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar"
+          ],
+          "sha256": "a840968176645684bb01aed376e067ab39614885f9eee44abe35a5f20ebe7fad"
+        },
+        {
+          "id": {
+            "group": "xml-apis",
+            "name": "xml-apis",
+            "version": "1.4.01",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "xml-apis-1.4.01.pom",
+          "path": "xml-apis/xml-apis/1.4.01",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.pom",
+            "https://jcenter.bintray.com/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.pom"
+          ],
+          "sha256": "09a82ff150ac86bfa31145e0a6afd89a02e4504785f5da112e4fae1425020e92"
+        },
+        {
+          "id": {
+            "group": "xml-apis",
+            "name": "xml-apis-ext",
+            "version": "1.3.04",
+            "type": "jar",
+            "extension": "jar"
+          },
+          "name": "xml-apis-ext-1.3.04.jar",
+          "path": "xml-apis/xml-apis-ext/1.3.04",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.jar",
+            "https://jcenter.bintray.com/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.jar"
+          ],
+          "sha256": "d0b4887dc34d57de49074a58affad439a013d0baffa1a8034f8ef2a5ea191646"
+        },
+        {
+          "id": {
+            "group": "xml-apis",
+            "name": "xml-apis-ext",
+            "version": "1.3.04",
+            "type": "pom",
+            "extension": "pom"
+          },
+          "name": "xml-apis-ext-1.3.04.pom",
+          "path": "xml-apis/xml-apis-ext/1.3.04",
+          "urls": [
+            "https://repo.maven.apache.org/maven2/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.pom",
+            "https://jcenter.bintray.com/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.pom"
+          ],
+          "sha256": "1b5939a9310a59c0df0c03726721d5fc9521e87d6c203bfa7220bae82a30d9e8"
         },
         {
           "id": {

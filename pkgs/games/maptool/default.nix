@@ -1,8 +1,9 @@
 { callPackage, gradleGen, makeWrapper, fetchgit, lib, pkgs, ... }:
 let
+  jdk = pkgs.jdk15;
   buildGradle = callPackage ./gradle-env.nix {
     gradleGen = gradleGen.override {
-      java = pkgs.jdk11;
+      java = jdk;
     };
   };
 in
@@ -19,7 +20,7 @@ buildGradle {
     leaveDotGit = true;
   };
 
-  gradleFlags = [ "distTar" ];
+  gradleFlags = [ "installDist" ];
 
   buildInputs = [ pkgs.makeWrapper ];
 
@@ -29,7 +30,6 @@ buildGradle {
 
     patchShebangs $out/realroot/bin/MapTool
 
-    makeWrapper $out/realroot/bin/MapTool $out/bin/MapTool --prefix PATH : ${lib.makeBinPath [ pkgs.jdk11 ]}
-
+    makeWrapper $out/realroot/bin/MapTool $out/bin/MapTool --prefix PATH : ${lib.makeBinPath [ jdk ]}
   '';
 }
