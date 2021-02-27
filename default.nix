@@ -24,6 +24,8 @@ self: super: rec {
 
   pulumi = super.callPackage ./pkgs/tools/admin/pulumi {};
 
+  pulumi-sdk = super.callPackage ./pkgs/tools/admin/pulumi/sdk.nix {};
+
   spigot-mc = super.callPackage ./pkgs/games/spigot {};
 
   bukkit-plugins = super.callPackage ./pkgs/games/spigot/plugins.nix {};
