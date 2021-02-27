@@ -18,9 +18,11 @@ self: super: rec {
 
   maptool = super.callPackage ./pkgs/games/maptool {};
 
+  meslolgs-nf = super.callPackage ./pkgs/data/fonts/meslolgs-nf {};
+
   np2kai = super.callPackage ./pkgs/misc/emulators/np2kai {};
 
-  meslolgs-nf = super.callPackage ./pkgs/data/fonts/meslolgs-nf {};
+  pulumi = super.callPackage ./pkgs/tools/admin/pulumi {};
 
   spigot-mc = super.callPackage ./pkgs/games/spigot {};
 
