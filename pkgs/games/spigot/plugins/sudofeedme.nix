@@ -27,6 +27,6 @@ stdenv.mkDerivation {
     architectures = [ "amd64" ];
     # Unfree because I forgot to slap a gpl license on this.
     # Happy to do so if anyone wants me to btw, just lemme know.
-    license = stdenv.lib.licenses.unfree;
+    license = lib.licenses.unfree;
   };
 }

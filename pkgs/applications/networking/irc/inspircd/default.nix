@@ -64,8 +64,8 @@ stdenv.mkDerivation rec {
   meta = {
     homepage    = "https://www.inspircd.org/";
     description = "A modular C++ IRC server";
-    platforms   = stdenv.lib.platforms.unix;
-    maintainers = with stdenv.lib.maintainers; [ euank ];
-    license     = stdenv.lib.licenses.gpl2Plus;
+    platforms   = lib.platforms.unix;
+    maintainers = with lib.maintainers; [ euank ];
+    license     = lib.licenses.gpl2Plus;
   };
 }

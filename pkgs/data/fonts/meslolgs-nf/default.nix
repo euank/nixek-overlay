@@ -1,4 +1,4 @@
-{ stdenv, fetchFromGitHub, unzip }:
+{ lib, stdenv, fetchFromGitHub, unzip }:
 
 stdenv.mkDerivation rec {
   pname = "meslolgs-nf";
@@ -21,8 +21,8 @@ stdenv.mkDerivation rec {
   meta = {
     description = "Meslo Nerd Font";
     homepage = "https://github.com/romkatv/powerlevel10k-media/";
-    license = stdenv.lib.licenses.asl20;
-    maintainers = with stdenv.lib.maintainers; [ euank ];
-    platforms = with stdenv.lib.platforms; all;
+    license = lib.licenses.asl20;
+    maintainers = with lib.maintainers; [ euank ];
+    platforms = with lib.platforms; all;
   };
 }

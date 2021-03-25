@@ -19,6 +19,6 @@ stdenv.mkDerivation rec {
     name = "DiscordSRV";
     summary = "Bukkit plugin to connect minecraft chat to discord";
     architectures = [ "amd64" ];
-    license = stdenv.lib.licenses.gpl3;
+    license = lib.licenses.gpl3;
   };
 }

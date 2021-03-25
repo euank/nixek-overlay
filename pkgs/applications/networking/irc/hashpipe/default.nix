@@ -16,7 +16,7 @@ rustPlatform.buildRustPackage rec {
 
   cargoSha256 = "1ss8ai9isfx6pp7ng7mkk21x0zhschg1blrsbmj3vl0178pp7sqp";
 
-  meta = with stdenv.lib; {
+  meta = with lib; {
     description = "Pipes data to/from IRC";
     homepage = https://github.com/LinuxMercedes/hashpipe;
     license = licenses.gpl3;

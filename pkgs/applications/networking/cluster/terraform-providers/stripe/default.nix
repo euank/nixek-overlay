@@ -15,7 +15,7 @@ buildGoModule rec {
     mv ../go/bin/terraform-provider-stripe{,_v${version}}
   '';
 
-  meta = with stdenv.lib; {
+  meta = with lib; {
     homepage = "https://github.com/franckverrot/terraform-provider-stripe";
     description = "Terraform provider for stripe";
     platforms = platforms.linux;

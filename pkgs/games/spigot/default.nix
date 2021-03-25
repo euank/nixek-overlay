@@ -154,6 +154,6 @@ stdenv.mkDerivation rec {
     # Unfree because this mixes GPL code with proprietary minecraft server
     # code, and so you can't legally redistribute the output binary.
     # You're in the clear to use it yourself though.
-    license = stdenv.lib.licenses.unfree;
+    license = lib.licenses.unfree;
   };
 }
