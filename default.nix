@@ -36,5 +36,7 @@ self: super: rec {
     stripe = super.callPackage ./pkgs/applications/networking/cluster/terraform-providers/stripe {};
   };
 
+  vivarium = super.callPackage ./pkgs/applications/window-managers/vivarium {};
+
   nixek-images = super.callPackage ./images { };
 }
