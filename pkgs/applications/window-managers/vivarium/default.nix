@@ -26,13 +26,14 @@ let # taken from https://github.com/inclement/vivarium/blob/main/subprojects/tom
 in
 stdenv.mkDerivation rec {
   pname = "vivarium";
-  version = "0.0.2dev";
+  version = "0.0.3dev";
 
   src = fetchFromGitHub {
     owner = "inclement";
     repo = "vivarium";
-    rev = "5d2abea013be1cc8bdb685fbfeb10b1e30d82cdc";
-    sha256 = "sha256-wo7dF969sT18z/vKhEfbWrVfaanq3Cm/gIJTPSD6VMU=";
+    # Note, not on main: https://github.com/inclement/vivarium/pull/43
+    rev = "8519945168c8cbeb618de3707383c8bc8bf240f0";
+    sha256 = "sha256-oJjRvuzq3MgggTMuOlxbyJE2JzW9dc8VghyxzhmBYXI=";
   };
 
 
