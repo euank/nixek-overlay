@@ -83,7 +83,10 @@ let
     '';
   };
 
-  mvn2nix = (import (fetchTarball "https://github.com/euank/mvn2nix/archive/9057ed47da403fdbf3b78d2171f4c29e4e429f9c.tar.gz") { });
+  mvn2nix = (import (fetchTarball {
+    url = "https://github.com/euank/mvn2nix/archive/9057ed47da403fdbf3b78d2171f4c29e4e429f9c.tar.gz";
+    sha256 = "14r95wxaswzlwfpf4fzijfsbykdb1hnkwrhkw4ff7zlbz3020vbq";
+  }) { });
   apiRepo = mvn2nix.buildMavenRepositoryFromLockFile { file = ./mvn2nix-spigot-api.lock; };
   spigotRepo = mvn2nix.buildMavenRepositoryFromLockFile { file = ./mvn2nix-spigot.lock; };
 
