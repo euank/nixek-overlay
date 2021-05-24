@@ -1,4 +1,4 @@
 .PHONY: synapse
 synapse:
-	nix-build -A nixek-images.synapse ./resolved.nix
+	nix build '.#nixek-images.synapse'
 	docker load -i ./result
