@@ -1,4 +1,4 @@
-{ stdenv, spigot-mc, fetchFromGitHub, ant, openjdk11 }:
+{ lib, stdenv, spigot-mc, fetchFromGitHub, ant, openjdk11 }:
 
 stdenv.mkDerivation {
   name = "bukkit-sudofeedme";

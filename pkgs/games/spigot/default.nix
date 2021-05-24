@@ -1,4 +1,4 @@
-{ callPackage, fetchgit, fetchurl, maven, openjdk11, pkgs, rsync, stdenv, unzip }:
+{ lib, callPackage, fetchgit, fetchurl, maven, openjdk11, pkgs, rsync, stdenv, unzip }:
 
 # So, compiling spigot is a bit complicated and requires piecing together some _stuff_.
 let

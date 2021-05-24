@@ -1,4 +1,4 @@
-{ stdenv, fetchFromGitHub, pkgconfig, openssl, gnutls, perl }:
+{ lib, stdenv, fetchFromGitHub, pkgconfig, openssl, gnutls, perl }:
 
 stdenv.mkDerivation rec {
   pname = "inspircd";
