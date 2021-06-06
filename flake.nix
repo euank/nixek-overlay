@@ -11,15 +11,48 @@
       pkgs = import nixpkgs {
         system = "x86_64-linux";
         overlays = [
-          (final: prev: {
-            openjdk14 = nixpkgs-20_09.outputs.legacyPackages.x86_64-linux.pkgs.openjdk14;
-          })
           self.overlay
         ];
         config = { allowUnfree = true; };
       };
     in {
-      overlay = import ./default.nix;
+      overlay =  (final: prev: rec {
+        modules = {
+          inspircd = import ./modules/inspircd;
+          spigot-mc = import ./modules/spigot-mc;
+          drone-server = import ./modules/drone-server;
+          drone-docker-runner = import ./modules/drone-docker-runner;
+        };
+
+        hashpipe = final.callPackage ./pkgs/applications/networking/irc/hashpipe {};
+
+        inspircd = final.callPackage ./pkgs/applications/networking/irc/inspircd {};
+
+        inspircd2 = final.callPackage ./pkgs/applications/networking/irc/inspircd2 {};
+
+        maptool = final.callPackage ./pkgs/games/maptool {
+          openjdk14 = nixpkgs-20_09.outputs.legacyPackages.x86_64-linux.pkgs.openjdk14;
+        };
+
+        meslolgs-nf = final.callPackage ./pkgs/data/fonts/meslolgs-nf {};
+
+        np2kai = final.callPackage ./pkgs/misc/emulators/np2kai {};
+
+        spigot-mc = final.callPackage ./pkgs/games/spigot {};
+
+        bukkit-plugins = final.callPackage ./pkgs/games/spigot/plugins.nix {};
+
+        tl = final.callPackage ./pkgs/applications/security/tl {};
+
+        terraform-providers = final.terraform-providers // {
+          stripe = final.callPackage ./pkgs/applications/networking/cluster/terraform-providers/stripe {};
+        };
+
+        vivarium-unwrapped = final.callPackage ./pkgs/applications/window-managers/vivarium {};
+        vivarium = final.callPackage ./pkgs/applications/window-managers/vivarium/wrapper.nix {};
+
+        nixek-images = final.callPackage ./images { };
+      });
       packages.x86_64-linux = pkgs;
     };
 }
