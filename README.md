@@ -11,29 +11,23 @@ if upstream has changed significantly.
 
 ### Usage
 
-You can get a reference to a set of 'overlayed' packages via something like the following:
+This overlay is meant to be used with nix flakes.
+
+It may be used like so as a flake input:
 
 ```nix
-let
-  nixek = import <nixos-unstable> {
-    overlays = [ (import /home/esk/dev/nix/nixek) ];
-    config = {
-      allowUnfree = true;
-      allowBroken = true;
-      # ....
-    };
-  };
-in
-{
-  # reference 'nixek.pkg' as you like
+inputs.ekverlay.url = "github:euank/nixek-overlay";
 
-  # On nixos, if you want to use a module from this, use the following:
-  imports =
-    [ ./hardware-configuration.nix
-      # ...
-      nixek.modules.inspircd
-    ];
-  # use the module per usual
-  services.inspircd = { enable = true; package = nixek.inspircd; };
-}
+outputs = { self, nixpkgs, ekverlyay }:
+  let
+    pkgs = import nixpkgs {
+      system = "x86_64-linux";
+      overlays = [
+        ekverlay.overlay
+      ];
+      config = { allowUnfree = true; };
+    };
+  in {
+    # Normal outputs here, using the 'pkgs' reference above.
+  };
 ```
