@@ -8,8 +8,9 @@
 
   outputs = { self, nixpkgs, nixpkgs-20_09 }:
     let
+      system = "x86_64-linux";
       pkgs = import nixpkgs {
-        system = "x86_64-linux";
+        inherit system;
         overlays = [
           self.overlay
         ];
@@ -51,6 +52,8 @@
         vivarium = final.callPackage ./pkgs/applications/window-managers/vivarium/wrapper.nix {};
 
         nixek-images = final.callPackage ./images { };
+
+        amis = final.callPackage ./amis { inherit nixpkgs; };
       });
       packages.x86_64-linux = pkgs;
     };
