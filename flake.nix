@@ -24,6 +24,8 @@
           drone-docker-runner = import ./modules/drone-docker-runner;
         };
 
+        coldsnap = final.callPackage ./pkgs/tools/virtualization/coldsnap {};
+
         hashpipe = final.callPackage ./pkgs/applications/networking/irc/hashpipe {};
 
         inspircd = final.callPackage ./pkgs/applications/networking/irc/inspircd {};
