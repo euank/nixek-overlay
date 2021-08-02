@@ -26,6 +26,8 @@
 
         coldsnap = final.callPackage ./pkgs/tools/virtualization/coldsnap {};
 
+        nixos-ami-upload = final.callPackage ./pkgs/tools/virtualization/nixos-ami-upload {};
+
         hashpipe = final.callPackage ./pkgs/applications/networking/irc/hashpipe {};
 
         inspircd = final.callPackage ./pkgs/applications/networking/irc/inspircd {};
