@@ -20,8 +20,6 @@
       overlay =  (final: prev: rec {
         modules = {
           inspircd = import ./modules/inspircd;
-          drone-server = import ./modules/drone-server;
-          drone-docker-runner = import ./modules/drone-docker-runner;
         };
 
         coldsnap = final.callPackage ./pkgs/tools/virtualization/coldsnap {};
@@ -41,8 +39,6 @@
         meslolgs-nf = final.callPackage ./pkgs/data/fonts/meslolgs-nf {};
 
         np2kai = final.callPackage ./pkgs/misc/emulators/np2kai {};
-
-        bukkit-plugins = final.callPackage ./pkgs/games/spigot/plugins.nix {};
 
         tl = final.callPackage ./pkgs/applications/security/tl {};
 
