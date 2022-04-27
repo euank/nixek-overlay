@@ -32,10 +32,6 @@
 
         inspircd2 = final.callPackage ./pkgs/applications/networking/irc/inspircd2 {};
 
-        maptool = final.callPackage ./pkgs/games/maptool {
-          openjdk14 = nixpkgs-20_09.outputs.legacyPackages.x86_64-linux.pkgs.openjdk14;
-        };
-
         meslolgs-nf = final.callPackage ./pkgs/data/fonts/meslolgs-nf {};
 
         np2kai = final.callPackage ./pkgs/misc/emulators/np2kai {};
