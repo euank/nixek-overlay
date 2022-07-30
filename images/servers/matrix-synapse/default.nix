@@ -2,14 +2,15 @@
 
 pkgs.dockerTools.buildLayeredImage {
   name = "euank/synapse";
-  tag = "${pkgs.matrix-synapse.version}-1";
+  tag = "${pkgs.matrix-synapse.version}-2";
   contents = with pkgs; [
     matrix-synapse
     cacert
+    bashInteractive
   ];
   config = {
     Entrypoint = [
-      "/bin/homeserver" "--config-path" "/conf/homeserver.yaml"
+      "/bin/synapse_homeserver" "--config-path" "/conf/homeserver.yaml"
     ];
     Env = [
       "SSL_CERT_FILE=/etc/ssl/certs/ca-bundle.crt"
