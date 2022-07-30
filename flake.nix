@@ -12,12 +12,12 @@
       pkgs = import nixpkgs {
         inherit system;
         overlays = [
-          self.overlay
+          self.overlays.default
         ];
         config = { allowUnfree = true; };
       };
     in {
-      overlay =  (final: prev: rec {
+      overlays.default =  (final: prev: rec {
         modules = {
           inspircd = import ./modules/inspircd;
         };
