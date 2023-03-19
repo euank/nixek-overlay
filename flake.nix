@@ -50,6 +50,6 @@
 
         amis = final.callPackage ./amis { inherit nixpkgs; };
       });
-      packages.x86_64-linux = pkgs;
+      legacyPackages.x86_64-linux = pkgs.pkgs;
     };
 }
