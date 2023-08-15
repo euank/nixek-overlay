@@ -1,4 +1,4 @@
-{ lib, stdenv, fetchFromGitHub, pkgconfig, openssl, gnutls, perl }:
+{ lib, stdenv, fetchFromGitHub, pkg-config, openssl, gnutls, perl }:
 
 stdenv.mkDerivation rec {
   pname = "inspircd";
@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
 
   enableParallelBuilding = true;
 
-  nativeBuildInputs = [ perl openssl gnutls pkgconfig ];
+  nativeBuildInputs = [ perl openssl gnutls pkg-config ];
 
 
   # So, this package is still not ready for prime-time. Why not?

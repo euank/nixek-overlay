@@ -16,7 +16,7 @@
         config = { allowUnfree = true; };
       };
     in {
-      overlays.default =  (final: prev: rec {
+      overlays.default =  (final: prev: {
         modules = {
           inspircd = import ./modules/inspircd;
         };
@@ -36,8 +36,6 @@
         np2kai = final.callPackage ./pkgs/misc/emulators/np2kai {};
 
         sl = final.callPackage ./pkgs/tools/misc/sl {};
-        vivarium-unwrapped = final.callPackage ./pkgs/applications/window-managers/vivarium {};
-        vivarium = final.callPackage ./pkgs/applications/window-managers/vivarium/wrapper.nix {};
 
         nixek-images = final.callPackage ./images { };
 

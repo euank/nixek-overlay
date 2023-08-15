@@ -2,7 +2,7 @@
 
 pkgs.dockerTools.buildLayeredImage {
   name = "euank/synapse";
-  tag = "${pkgs.matrix-synapse.version}-2";
+  tag = "${pkgs.matrix-synapse-unwrapped.version}-1";
   contents = with pkgs; [
     matrix-synapse
     cacert

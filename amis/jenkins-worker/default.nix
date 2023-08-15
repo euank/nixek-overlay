@@ -21,6 +21,7 @@ let image =
         vim
       ];
 
+      users.groups.jenkins = {};
       users.users.jenkins = {
         description = "jenkins user";
         createHome = true;
