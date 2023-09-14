@@ -37,6 +37,8 @@
 
         tl = final.callPackage ./pkgs/applications/security/tl {};
 
+        sl = final.callPackage ./pkgs/tools/misc/sl {};
+
         terraform-providers = final.terraform-providers // {
           stripe = final.callPackage ./pkgs/applications/networking/cluster/terraform-providers/stripe {};
         };

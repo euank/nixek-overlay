@@ -1,0 +1,15 @@
+diff --git a/sl/Makefile b/sl/Makefile
+index 4d4aefa..c5fe5d3 100644
+--- a/Makefile
++++ b/Makefile
+@@ -10,8 +10,8 @@ CC = gcc
+ #DEBUGOPTS = -DDEBUG -g
+
+ # For Linux 2.0.x
+-LDFLAGS = -lncurses -ltermcap
+-CFLAGS = -Wall -O2 -DLINUX20 $(DEBUGOPTS)
++LDFLAGS = -lncurses
++CFLAGS = -static -Wall -O2 $(DEBUGOPTS)
+
+ # For Solaris
+ #LDFLAGS = -lcurses -ltermcap
