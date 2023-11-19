@@ -35,10 +35,7 @@
 
         np2kai = final.callPackage ./pkgs/misc/emulators/np2kai {};
 
-        tl = final.callPackage ./pkgs/applications/security/tl {};
-
         sl = final.callPackage ./pkgs/tools/misc/sl {};
-
         vivarium-unwrapped = final.callPackage ./pkgs/applications/window-managers/vivarium {};
         vivarium = final.callPackage ./pkgs/applications/window-managers/vivarium/wrapper.nix {};
 
