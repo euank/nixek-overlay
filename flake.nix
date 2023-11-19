@@ -39,10 +39,6 @@
 
         sl = final.callPackage ./pkgs/tools/misc/sl {};
 
-        terraform-providers = final.terraform-providers // {
-          stripe = final.callPackage ./pkgs/applications/networking/cluster/terraform-providers/stripe {};
-        };
-
         vivarium-unwrapped = final.callPackage ./pkgs/applications/window-managers/vivarium {};
         vivarium = final.callPackage ./pkgs/applications/window-managers/vivarium/wrapper.nix {};
 
