@@ -3,9 +3,11 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    # Pending https://nixpk.gs/pr-tracker.html?pr=432878
+    nixpkgs-master.url = "github:NixOS/nixpkgs/master";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs = { self, nixpkgs, nixpkgs-master }:
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs {
@@ -20,6 +22,8 @@
         modules = {
           inspircd = import ./modules/inspircd;
         };
+
+        inherit (nixpkgs-master.legacyPackages.${system}) matrix-synapse matrix-synapse-unwrapped;
 
         coldsnap = final.callPackage ./pkgs/tools/virtualization/coldsnap {};
 
